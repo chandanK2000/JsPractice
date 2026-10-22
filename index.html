@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Practice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 30px;
+        background-color: #f3f4f6;
+      }
+
+      h1 {
+        text-align: center;
+        color: #222;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 30px auto;
+      }
+
+      #studentDetails {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .student-card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e5e7eb;
+      }
+
+      .student-card h3 {
+        color: #4f46e5;
+        margin-top: 0;
+        font-size: 22px;
+      }
+
+      .student-card p {
+        color: #666;
+        margin-bottom: 0;
+      }
+
+      .counts {
+        border: none;
+        outline: none;
+        height: 30px;
+        width: 30px;
+        margin: auto;
+        background: rgb(226, 225, 230);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: white;
+        border-radius: 50%;
+      }
+
+      @media (max-width: 650px) {
+        #studentDetails {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 400px) {
+        #studentDetails {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      #demobg {
+        padding: 10px;
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My JavaScript Practice</h1>
+    <p>Learning JavaScript step by step.</p>
+
+    <div class="container">
+      <div id="studentDetails"></div>
+    </div>
+
+    <div>
+      <input type="text" id="convert" />
+      <button onclick="convertMiles()">Convert Kilo to Miles</button>
+      <p id="result"></p>
+    </div>
+
+    <h1>Random Background Color</h1>
+    <button onclick="changeBackgroundColor()">Change Background</button>
+
+    <button onclick="changedivbgcolors()">click me</button>
+
+    <div id="demobg" style="background-color: orange"></div>
+    <button onclick="colorchange()">click for color change</button>
+
+    <div id="changecolor">
+      <h2>i am</h2>
+    </div>
+
+    <button onclick="changedivbgcolors()">Change Div Background</button>
+    <div id="totalsum"></div>
+
+    <button onclick="startCounter()">Start Counter</button>
+    <button onclick="stopCounter()">Stop Counter</button>
+
+    <!--Basic Javascript  -->
+    <!-- <script src="./01_fundamentals/01_variables.js"></script> -->
+
+    <!-- storgage -->
+    <!-- <script src="./storage.js"></script> -->
+
+    <!-- cookies -->
+    <!-- <script src="./cookies.js"></script> -->
+
+    <!-- timers -->
+    <!-- <script src="./timers/timers.js"></script> -->
+
+    <!-- conditions -->
+    <!-- <script src="./01_fundamentals//04_conditions.js"></script> -->
+
+    <!-- loops -->
+    <!-- <script src="./01_fundamentals//05_loops.js"></script> -->
+    <!-- <script src="./01_fundamentals/whileloop.js"></script> -->
+
+    <!-- break & continues -->
+    <!-- <script src="./01_fundamentals/break&continues.js"></script> -->
+
+    <!-- strings -->
+    <!-- <script src="./01_fundamentals/strings.js"></script> -->
+    <!-- <script src="./01_fundamentals/stringsearch.js"></script> -->
+
+    <!-- javascript numbers -->
+    <!-- <script src="./01_fundamentals/numbers.js"></script> -->
+
+    <!-- funcitons -->
+    <!-- <script src="./02_functions/.js"></script> -->
+    <!-- <script src="./02_functions/basicfunction.js"></script> -->
+    <!-- <script src="./02_functions/basicfunction2.js"></script> -->
+
+    <!-- patterns -->
+    <!-- <script src="./06_interview_programs/patterns/pattern1.js"></script> -->
+
+    <!-- Numbers -->
+    <!-- <script src="./06_interview_programs/numbersPrograms/numbers/numberProgram1.js""></script> -->
+    <!-- <script src="./06_interview_programs/numbersPrograms/numbers/numberProgram2.js""></script> -->
+
+    <!-- random Numbers -->
+
+    <!-- <script src="./06_interview_programs/numbersPrograms/randoms/randomNumbers.js"></script> -->
+    <!-- <script src="./06_interview_programs/numbersPrograms/randoms/randomnumbers1.js"></script> -->
+
+    <!-- digits -->
+    <!-- <script src="./06_interview_programs/numbersPrograms/digits/digits1.js""></script>
+    <script src="./06_interview_programs/numbersPrograms/digits/digits2.js""></script> -->
+
+    <!-- prime Numbers -->
+    <!-- <script src="./06_interview_programs/numbersPrograms/primes/primeNumber.js"></script> -->
+    <!-- <script src="./06_interview_programs/numbersPrograms/primes/primeNumber1.js"></script> -->
+
+    <!-- fibonacci -->
+    <script src="./06_interview_programs/numbersPrograms/Fibonacci/Fibonacci1.js"></script>
+    <!-- <script src="./06_interview_programs/numbersPrograms/Fibonacci/Fibonacci2.js"></script> -->
+
+    <!-- level-1 -->
+    <!-- <script src="./06_interview_programs/level-01.js"></script> -->
+  </body>
+</html>

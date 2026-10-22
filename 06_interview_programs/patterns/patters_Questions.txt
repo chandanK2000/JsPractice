@@ -1,0 +1,1016 @@
+Level 1: Basic Star Patterns (Questions 1–10)
+Q1. Print one star.
+Concept: Simple console.log()
+*
+Q2. Print five stars on the same line.
+Concept: Loop + string concatenation
+*****
+Q3. Print five stars on separate lines.
+Concept: for loop + console.log()
+*
+*
+*
+*
+*
+Q4. Print two stars on the first line, three on the second, and four on the third.
+**
+***
+****
+Q5. Print one star on the first line, two on the second, and three on the third.
+*
+**
+***
+Q6. Print a growing star pattern with five rows.
+*
+**
+***
+****
+*****
+Q7. Print a decreasing star pattern with five rows.
+*****
+****
+***
+**
+*
+Q8. Print three rows, each containing four stars.
+****
+****
+****
+Q9. Print a square of stars with four rows and four columns.
+****
+****
+****
+****
+Q10. Print a rectangle with two rows and six columns.
+******
+******
+Level 2: Number Patterns (Questions 11–20)
+Q11. Print numbers from 1 to 5 on the same line.
+12345
+Q12. Print numbers from 1 to 5 on separate lines.
+1
+2
+3
+4
+5
+Q13. Print the same number five times.
+55555
+Q14. Print three rows of 123.
+123
+123
+123
+Q15. Print an increasing number pattern.
+1
+12
+123
+1234
+12345
+Q16. Print a decreasing number pattern.
+12345
+1234
+123
+12
+1
+Q17. Print repeated row numbers.
+1
+22
+333
+4444
+55555
+Q18. Print a pattern where each row starts from its row number.
+1
+23
+345
+4567
+56789
+Q19. Print numbers from 5 down to 1 on the same line.
+54321
+Q20. Print the multiplication table of 2, from 2 to 10.
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+Level 3: Triangles and Mixed Patterns (Questions 21–30)
+Q21. Print a right triangle of three rows.
+*
+**
+***
+Q22. Print an inverted triangle of four rows.
+****
+***
+**
+*
+Q23. Print a triangle using numbers.
+1
+12
+123
+1234
+Q24. Print a triangle using the letter A.
+A
+AA
+AAA
+AAAA
+Q25. Print alternating stars and hashes.
+*
+#
+*
+#
+*
+Q26. Print stars with a space between each star.
+* * * * *
+Q27. Print a hollow square with four rows and four columns.
+****
+*  *
+*  *
+****
+Q28. Print a pyramid with three rows.
+  *
+ ***
+*****
+Q29. Print a diamond-like pattern.
+  *
+ ***
+*****
+ ***
+  *
+Q30. Print a number pyramid.
+  1
+  123
+ 12345
+*
+*
+*
+*
+Level 4 — Advanced Star Patterns (Q31–Q40)
+Q31. Right-aligned triangle
+    *
+   **
+  ***
+ ****
+*****
+Q32. Inverted right-aligned triangle
+*****
+ ****
+  ***
+   **
+    *
+Q33. Centered pyramid
+    *
+   ***
+  *****
+ *******
+*********
+Q34. Inverted centered pyramid
+*********
+ *******
+  *****
+   ***
+    *
+Q35. Diamond pattern
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+Q36. Hollow triangle
+*
+**
+* *
+*  *
+*****
+Q37. Hollow pyramid
+    *
+   * *
+  *   *
+ *     *
+*********
+Q38. X pattern
+*   *
+ * *
+  *
+ * *
+*   *
+Q39. Plus pattern
+  *
+  *
+*****
+  *
+  *
+Q40. Butterfly pattern
+*      *
+**    **
+***  ***
+********
+***  ***
+**    **
+*      *
+Level 5 — Advanced Number Patterns (Q41–Q50)
+Q41. Floyd's triangle
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+Q42. Repeated ascending numbers
+1
+22
+333
+4444
+55555
+Q43. Palindrome number pyramid
+    1
+   121
+  12321
+ 1234321
+123454321
+Q44. Binary triangle
+1
+01
+101
+0101
+10101
+Q45. Alternating number checkerboard
+10101
+01010
+10101
+01010
+10101
+Q46. Multiplication table grid
+1 2 3 4 5
+2 4 6 8 10
+3 6 9 12 15
+4 8 12 16 20
+5 10 15 20 25
+Q47. Descending numbers in each row
+54321
+5432
+543
+54
+5
+Q48. Continuous number triangle
+1
+23
+456
+78910
+1112131415
+Note: Print numbers without spaces, as shown.
+Q49. Symmetric number pyramid
+    1
+   212
+  32123
+ 4321234
+543212345
+Q50. Pascal's triangle
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1
+Level 6 — Alphabet Patterns (Q51–Q55)
+Q51. Increasing alphabet triangle
+A
+AB
+ABC
+ABCD
+ABCDE
+Q52. Repeated alphabet rows
+A
+BB
+CCC
+DDDD
+EEEEE
+Q53. Reverse alphabet triangle
+ABCDE
+ABCD
+ABC
+AB
+A
+Q54. Continuous alphabet triangle
+A
+BC
+DEF
+GHIJ
+KLMNO
+Q55. Alphabet palindrome pyramid
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
+Level 7 — Logic Challenge Patterns (Q56–Q60)
+Q56. Hollow diamond
+    *
+   * *
+  *   *
+ *     *
+  *   *
+   * *
+    *
+Q57. Hourglass pattern
+*********
+ *******
+  *****
+   ***
+    *
+   ***
+  *****
+ *******
+*********
+Q58. Sandglass with numbers
+12345
+ 1234
+  123
+   12
+    1
+   12
+  123
+ 1234
+12345
+Q59. Concentric square pattern
+55555
+54445
+54345
+54445
+55555
+Create a 5×5 pattern with the outer border as 5 and inner layers decreasing toward the center.
+Q60. Spiral number pattern
+1  2  3  4
+12 13 14 5
+11 16 15 6
+10 9  8  7
+Sir, ab hum kaise proceed karenge?
+Recommended sequence:
+1.	Q31–Q32: spaces aur stars ka combination.
+2.	Q33–Q40: pyramids, hollow shapes aur butterfly.
+3.	Q41–Q50: nested loops, number logic aur sequences.
+4.	Q51–Q55: character codes aur alphabet logic.
+5.	Q56–Q60: advanced logic.
+Ab Q31 se start karte hain.
+Expected output:
+    *
+   **
+  ***
+ ****
+*****
+Aap code likhkar bhejiye, sir. Main aapke logic ko line-by-line check karunga aur mistake hui toh samjhaunga.
+give question collections more sir
+Bilkul sir! 💪 Ab aapke liye 100 aur JavaScript pattern programming questions (Q61–Q160) de raha hoon. Ye pehle wale 60 questions se aage ka collection hai, jismein intermediate se advanced logic tak practice kar sakte hain.
+Har question ke saath expected output diya hai. Abhi solutions nahi diye hain, taaki aap khud logic build kar sakein. Kuch advanced patterns mein nested loops ke saath conditions, arrays ya number logic bhi use hoga.
+Level 8 — Advanced Star Patterns (Q61–Q75)
+Q61. Right-aligned inverted triangle
+*****
+ ****
+  ***
+   **
+    *
+Q62. Left-aligned increasing triangle
+*
+**
+***
+****
+*****
+Q63. Double pyramid
+    *    *
+   ***  ***
+  **********
+ **************
+******************
+Q64. Hollow inverted pyramid
+*********
+ *     *
+  *   *
+   * *
+    *
+Q65. Hollow rectangle
+********
+*      *
+*      *
+********
+Q66. Hollow square with diagonals
+*****
+** **
+* * *
+** **
+*****
+Q67. Right-facing arrow
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+Q68. Left-facing arrow
+    *
+   **
+  ***
+ ****
+*****
+ ****
+  ***
+   **
+    *
+Q69. Double-wing butterfly
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+Q70. Hollow butterfly
+*        *
+**      **
+* *    * *
+*  *  *  *
+*   **   *
+*   **   *
+*  *  *  *
+* *    * *
+**      **
+*        *
+Q71. Cross pattern
+*   *
+ * *
+  *
+ * *
+*   *
+Q72. Hollow diamond
+  *
+ * *
+*   *
+ * *
+  *
+Q73. Christmas tree
+    *
+   ***
+  *****
+ *******
+*********
+    *
+    *
+Q74. Five-row hourglass
+*********
+ *******
+  *****
+   ***
+    *
+Q75. Double triangle
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+Level 9 — Number Logic Patterns (Q76–Q90)
+Q76. Increasing continuous numbers
+1
+23
+456
+78910
+1112131415
+Q77. Decreasing continuous numbers
+12345
+6789
+101112
+1314
+15
+Q78. Row number multiplied by column number
+1 2 3 4
+2 4 6 8
+3 6 9 12
+4 8 12 16
+Q79. Triangular repeated numbers
+1
+22
+333
+4444
+55555
+Q80. Reverse row numbers
+54321
+4321
+321
+21
+1
+Q81. Alternating row numbers
+12345
+54321
+12345
+54321
+12345
+Q82. Row-wise odd numbers
+1
+13
+135
+1357
+13579
+Q83. Row-wise even numbers
+2
+24
+246
+2468
+246810
+Q84. Powers of two
+1
+12
+124
+1248
+124816
+Q85. Fibonacci triangle
+0
+1 1
+2 3 5
+8 13 21 34
+55 89 144 233 377
+Q86. Multiples of three
+3
+36
+369
+36912
+3691215
+Q87. Square number pattern
+1
+49
+916
+1625
+2536
+Each row prints consecutive square numbers without spaces: \(1^2\), \(2^2\), \(3^2\), and so on. For this pattern, use the intended square sequence as your rule.
+Q88. Cubes pattern
+1
+18
+827
+6427
+Print cubes \(1^3, 2^3, 3^3, \ldots\) consecutively, without spaces, across rows of increasing length.
+Q89. Palindrome number rows
+1
+121
+12321
+1234321
+123454321
+Q90. Centered Pascal triangle
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1
+Level 10 — Alphabet Patterns (Q91–Q100)
+Q91. Reverse alphabet triangle
+ABCDE
+ABCD
+ABC
+AB
+A
+Q92. Reverse starting alphabet
+E
+DE
+CDE
+BCDE
+ABCDE
+Q93. Continuous alphabet triangle
+A
+BC
+DEF
+GHIJ
+KLMNO
+Q94. Alphabet pyramid
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
+Q95. Repeated alphabet rectangle
+AAAAA
+BBBBB
+CCCCC
+DDDDD
+EEEEE
+Q96. Alphabet checkerboard
+ABABA
+BABAB
+ABABA
+BABAB
+ABABA
+Q97. Alphabet diamond
+  A
+ ABA
+ABCBA
+ ABA
+  A
+Q98. Alternating ascending and descending alphabets
+ABCDE
+EDCBA
+ABCDE
+EDCBA
+ABCDE
+Q99. Alphabet staircase
+A
+BC
+CDE
+DEFG
+EFGHI
+Q100. Hollow alphabet square
+ABCDE
+B   D
+C   C
+D   B
+EDCBA
+Level 11 — Hollow and Boundary Patterns (Q101–Q115)
+Q101. Hollow right triangle
+*
+**
+* *
+*  *
+*****
+Q102. Hollow inverted triangle
+*****
+*  *
+* *
+**
+*
+Q103. Hollow pyramid
+    *
+   * *
+  *   *
+ *     *
+*********
+Q104. Hollow inverted pyramid
+*********
+ *     *
+  *   *
+   * *
+    *
+Q105. Hollow diamond
+  *
+ * *
+*   *
+ * *
+  *
+Q106. Hollow butterfly
+*      *
+**    **
+* *  * *
+*  **  *
+*  **  *
+* *  * *
+**    **
+*      *
+Q107. Border-only rectangle
+**********
+*        *
+*        *
+**********
+Q108. Hollow square with X
+*****
+** **
+* * *
+** **
+*****
+Q109. Hollow plus inside square
+*****
+  *
+*****
+  *
+  *
+Q110. Hollow hourglass
+*******
+ *   *
+  * *
+   *
+  * *
+ *   *
+*******
+Q111. Diagonal staircase
+*
+ *
+  *
+   *
+    *
+Q112. Opposite diagonal staircase
+    *
+   *
+  *
+ *
+*
+Q113. Two diagonal lines
+*   *
+ * *
+  *
+ * *
+*   *
+Q114. Hollow diamond with a filled center row
+  *
+ * *
+*****
+ * *
+  *
+Q115. Nested square borders
+*******
+*     *
+* *** *
+* * * *
+* *** *
+*     *
+*******
+Level 12 — Space, Alignment and Shape Logic (Q116–Q130)
+Q116. Right-aligned number triangle
+    1
+   12
+  123
+ 1234
+12345
+Q117. Right-aligned repeated numbers
+    1
+   22
+  333
+ 4444
+55555
+Q118. Inverted right-aligned numbers
+12345
+ 1234
+  123
+   12
+    1
+Q119. Centered alphabet pyramid
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
+Q120. Right-aligned binary triangle
+    1
+   01
+  101
+ 0101
+10101
+Q121. Diamond of numbers
+  1
+  123
+ 12345
+  123
+   1
+Q122. Number hourglass
+12345
+ 1234
+  123
+   12
+    1
+   12
+  123
+ 1234
+12345
+Q123. Centered star diamond
+    *
+   ***
+  *****
+ *******
+  *****
+   ***
+    *
+Q124. Alternating space and star rows
+* * * * *
+ * * * *
+* * * * *
+ * * * *
+Q125. Staircase with numbers and spaces
+1
+ 2
+  3
+   4
+    5
+Q126. Centered decreasing triangle
+*********
+ *******
+  *****
+   ***
+    *
+Q127. Two mirrored number triangles
+1        1
+12      21
+123    321
+1234  4321
+1234554321
+Q128. Number wings
+1        1
+12      21
+123    321
+1234  4321
+12345 54321
+Q129. Star ladder with indentation
+*
+ **
+  ***
+   ****
+    *****
+Q130. Alternating left and right triangles
+*
+**
+***
+****
+*****
+    *
+   **
+  ***
+ ****
+*****
+Level 13 — Advanced Algorithmic Patterns (Q131–Q145)
+Q131. Floyd's triangle with even numbers
+2
+4 6
+8 10 12
+14 16 18 20
+Q132. Floyd's triangle with odd numbers
+1
+3 5
+7 9 11
+13 15 17 19
+Q133. Triangular multiplication pattern
+1
+2 4
+3 6 9
+4 8 12 16
+5 10 15 20 25
+Q134. Consecutive sums
+1
+3
+6
+10
+15
+Print the running sum of the numbers 1 through each row number.
+Q135. Factorial triangle
+1
+12
+126
+12424
+120
+Create a pattern of factorial values: 1!, 2!, 3!, 4!, 5!. Print each value on its own line, without separators only if that's the intended display.
+Q136. Prime number triangle
+2
+23
+235
+2357
+235711
+Q137. Perfect-square sequence triangle
+1
+49
+916
+1625
+253649
+Concatenate square numbers in sequence; each row contains the next group of values.
+Q138. Powers of three
+1
+39
+327
+381
+Print powers of 3 by row. Define the row grouping before coding so the output is unambiguous.
+Q139. Fibonacci pyramid
+0
+1 1
+2 3 5
+8 13 21 34
+55 89 144 233 377
+Q140. Pascal's triangle
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+Q141. Number spiral
+1  2  3  4
+12 13 14 5
+11 16 15 6
+10 9  8  7
+Q142. Concentric square numbers
+55555
+54445
+54345
+54445
+55555
+Q143. Checkerboard of stars and dots
+*.*.*
+.*.*.
+*.*.*
+.*.*.
+Q144. Zigzag pattern
+  *   *
+ * * * *
+*   *   *
+Q145. Sierpinski-style triangle
+       *
+      * *
+     *   *
+    * * * *
+   *       *
+  * *     * *
+ *   *   *   *
+* * * * * * * *
+Level 14 — Expert Challenges (Q146–Q160)
+Q146. Spiral matrix, size 5×5
+1  2  3  4  5
+16 17 18 19 6
+15 24 25 20 7
+14 23 22 21 8
+13 12 11 10 9
+Q147. Matrix border with center
+11111
+10001
+10001
+10001
+11111
+Q148. Checkerboard number matrix
+12121
+21212
+12121
+21212
+12121
+Q149. Diagonal number matrix
+10001
+01010
+00100
+01010
+10001
+Q150. Identity matrix
+1000
+0100
+0010
+0001
+Q151. Lower triangular matrix
+1
+11
+111
+1111
+Q152. Upper triangular matrix
+1111
+ 111
+  11
+   1
+Q153. Matrix with row numbers
+11111
+22222
+33333
+44444
+55555
+Q154. Matrix with column numbers
+12345
+12345
+12345
+12345
+12345
+Q155. Matrix with row and column sums
+1 2 3
+2 4 6
+3 6 9
+Use row × column to generate each cell.
+Q156. Spiral stars
+*****
+    *
+*** *
+*   *
+*****
+Q157. Nested hollow squares
+*********
+*       *
+* ***** *
+* *   * *
+* * * * *
+* *   * *
+* ***** *
+*       *
+*********
+Q158. Diamond with numbers and spaces
+  1
+ 121
+12321
+ 121
+  1
+Q159. Alternating star-number triangle
+*
+12
+***
+1234
+*****
+Q160. Build your own pattern
+Choose a height of 5 rows and design a pattern combining stars, numbers, spaces, and at least one condition.
+Example output:
+1
+* *
+123
+* * *
+12345
+

@@ -1,0 +1,107 @@
+JavaScript Prime Number Practice — 100 Questions
+Level 1: Beginner (1–20)
+1. Write a program to check whether a number is prime.
+2. Print all prime numbers from 1 to 50.
+3. Print all prime numbers from 1 to 100.
+4. Print all prime numbers from 100 to 1 in descending order.
+5. Count the prime numbers between 1 and 100.
+6. Find the sum of all prime numbers from 1 to N.
+7. Find the first 10 prime numbers.
+8. Find the first 20 prime numbers.
+9. Print prime numbers between two user-given numbers.
+10. Count prime numbers between two given numbers.
+11. Find the largest prime number smaller than N.
+12. Find the smallest prime number greater than N.
+13. Check whether two given numbers are both prime.
+14. Print all prime numbers in an array.
+15. Create a function isPrime(n) that returns true or false.
+16. Create a function that returns all primes up to N in an array.
+17. Find the sum of the first N prime numbers.
+18. Find the average of prime numbers between 1 and N.
+19. Print prime numbers at even indexes of an array.
+20. Count prime and non-prime numbers in an array.
+Level 2 — Prime Number Logic (21–40)0/20 completed
+21. Find all prime factors of a given number.
+22. Find the smallest prime factor of a number.
+23. Find the largest prime factor of a number.
+24. Count the distinct prime factors of a number.
+25. Count prime factors including repeated factors.
+26. Find the sum of distinct prime factors of a number.
+27. Find the product of prime factors of a number.
+28. Print the prime factorization of a number, including exponents.
+29. Check whether a number has exactly one distinct prime factor.
+30. Check whether a number has exactly two distinct prime factors.
+31. Check whether a number is a semiprime.
+32. Print all semiprime numbers up to N.
+33. Find numbers with exactly three prime factors, counting multiplicity.
+34. Find numbers with exactly three distinct prime factors.
+35. Check whether all prime factors of a number are distinct.
+36. Check whether a number is a power of a single prime.
+37. Find the number of prime factors of N! without calculating N!.
+38. Find the smallest prime factor for every number from 2 to N.
+39. Print the prime factorization of every number from 2 to N.
+40. Find the number up to N with the greatest number of distinct prime factors.
+Level 3 — Medium (41–60)0/20 completed
+41. Check whether two primes are twin primes.
+42. Print all twin prime pairs up to N.
+43. Find all prime pairs whose difference is 4.
+44. Find all prime pairs whose difference is 6.
+45. Check whether a prime is a palindromic prime.
+46. Print all palindromic primes up to N.
+47. Check whether a number is an emirp number.
+48. Print all emirp numbers in a given range.
+49. Find consecutive primes whose difference is exactly 2.
+50. Find the Nth prime number.
+51. Find the prime immediately before a given prime.
+52. Find the prime immediately after a given prime.
+53. Find the nearest prime to a given number.
+54. Find the nearest prime below and above N.
+55. Check whether a number is a Sophie Germain prime.
+56. Print Sophie Germain primes up to N.
+57. Check whether a prime is a safe prime.
+58. Print all safe primes up to N.
+59. Find all prime numbers whose digits add up to a given target.
+60. Find all primes up to N whose digit reversal is also prime.
+Level 4 — Advanced (61–80)0/20 completed
+61. Print all primes up to N using the Sieve of Eratosthenes.
+62. Implement the Sieve of Eratosthenes using a function.
+63. Find all primes in a large range using a segmented sieve.
+64. Check primality using trial division only up to the square root of N.
+65. Implement primality testing using the 6k ± 1 optimization.
+66. Implement the Sieve of Atkin for a given limit.
+67. Count the primes up to N using a sieve.
+68. Find the sum of primes in a range using a sieve.
+69. Answer multiple prime-check queries efficiently after preprocessing.
+70. Find all Goldbach pairs for a given even number greater than 2.
+71. Print Goldbach decompositions for every even number up to N.
+72. Find a number that has the maximum number of Goldbach pairs within a range.
+73. Find the smallest prime gap greater than a specified value in a range.
+74. Find the largest gap between consecutive primes up to N.
+75. Count twin prime pairs up to N efficiently.
+76. Find consecutive prime triples where each adjacent pair differs by 2.
+77. Find all primes that are also Fibonacci numbers up to N.
+78. Find primes that are sums of two squares within a range.
+79. Find prime numbers that are powers of 10 plus or minus 1.
+80. Build a prime lookup table that answers repeated queries efficiently.
+Level 5 — Expert Challenges (81–100)0/20 completed
+81. Check whether a number is a Mersenne prime (2^p − 1 with prime p).
+82. Generate Mersenne prime candidates for increasing prime exponents.
+83. Implement the Lucas–Lehmer test for Mersenne primes.
+84. Check whether a number is a Fermat prime.
+85. Generate Fermat prime candidates using 2^(2^n) + 1.
+86. Implement modular exponentiation for primality algorithms.
+87. Implement the Miller–Rabin primality test for integers within its chosen valid range.
+88. Use deterministic Miller–Rabin bases for 32-bit integer primality testing.
+89. Compare trial division and Miller–Rabin on large integer inputs.
+90. Implement the Solovay–Strassen primality test.
+91. Generate random prime candidates of a specified bit length.
+92. Generate a probable prime by testing random odd candidates.
+93. Find primes in an interval using a segmented sieve.
+94. Count primes in many intervals using preprocessing.
+95. Find prime constellations with a specified pattern of offsets.
+96. Search for arithmetic progressions of a given length among primes within a limit.
+97. Find a prime p such that p, p + 2, and p + 6 are all prime.
+98. Find all prime numbers whose digits are strictly increasing.
+99. Find all truncatable primes up to a chosen digit length.
+100. Build a reusable prime utility library with isPrime, nextPrime, primeFactors, and primesInRange.
+

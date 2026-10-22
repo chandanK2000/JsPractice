@@ -1,0 +1,109 @@
+200 HTML, CSS and JavaScript practice questions
+Level 1 — Button clicks and text changes (1–20)
+Focus: HTML buttons, functions, onclick, innerHTML, textContent.
+Your practice checklist
+0/200 completed
+Level 1 — Button clicks and textQuestions 1–200/20
+1. Create a button that changes a heading to Hello World when clicked.
+2. Create a button that changes a paragraph's text to your name.
+3. Create a button that displays Welcome Sir inside a div.
+4. Create a button that hides a paragraph when clicked.
+5. Create a button that shows a hidden paragraph.
+6. Create one button that hides and shows a paragraph alternately.
+7. Create a button that changes the text of an h2 element.
+8. Create a button that displays the current date and time.
+9. Create a button that displays a random number inside a div.
+10. Create a button that displays a random number between 1 and 100.
+11. Create a button that clears the text inside a div.
+12. Create a button that changes the text color of a heading.
+13. Create a button that changes the font size of a paragraph.
+14. Create a button that makes a paragraph bold.
+15. Create a button that makes a paragraph italic.
+16. Create a button that underlines a heading.
+17. Create a button that changes the text alignment to center.
+18. Create a button that changes a heading to uppercase.
+19. Create a button that changes a heading to lowercase.
+20. Create three buttons that display three different messages in the same div.
+Level 2 — Background colors and stylesQuestions 21–400/20
+21. Create a button that changes the entire webpage background to red.
+22. Create a button that changes a div background to blue.
+23. Create a button that changes a heading background to yellow.
+24. Create three buttons that apply red, green and blue backgrounds.
+25. Create a button that chooses a random color from an array.
+26. Create an array of 10 colors and apply colors in sequence on each click.
+27. Create a button that changes a div background through all array colors and restarts at the beginning.
+28. Create a button that randomly changes both background and text colors.
+29. Create a button that changes the background of two divs to different colors.
+30. Create a button that changes the background of every paragraph.
+31. Create a button that changes a card's background color.
+32. Create a button that changes a div border color randomly.
+33. Create a button that changes border radius randomly.
+34. Create a button that changes a div's width on every click.
+35. Create a button that changes a div's height on every click.
+36. Create a button that changes a div's padding.
+37. Create a button that changes a div's margin.
+38. Create a button that changes a div's font family from an array.
+39. Create a button that randomly changes a div's background to a predefined pastel color.
+40. Create a button that displays the selected color name inside the div without removing its existing heading.
+Level 3 — Arrays and loops in the webpageQuestions 41–600/20
+Level 4 — Random numbers and random actionsQuestions 61–800/20
+61. Generate a random integer between 1 and 10 on button click.
+62. Generate a random integer between 1 and 100 and display it.
+63. Generate a random six-digit number.
+64. Generate a random dice result between 1 and 6.
+65. Create a dice-rolling webpage with a Roll Dice button.
+66. Generate a random number and display whether it is even or odd.
+67. Generate a random number and display whether it is positive or zero.
+68. Choose a random student name from an array.
+69. Choose a random quote from an array and display it.
+70. Choose a random background color from an array.
+71. Generate a random hexadecimal color and apply it to the body.
+72. Generate random RGB values and apply the color to a div.
+73. Create a random password from a predefined character collection for practice.
+74. Generate a random four-digit number for a non-security demo.
+75. Create a random emoji picker from an array.
+76. Create a random motivational message generator.
+77. Create a random food selector from an array of food names.
+78. Create a random number guessing game with a fixed secret number.
+79. Create a button that randomly selects one of five CSS classes.
+80. Create a random color generator that also displays the RGB or hexadecimal code.
+Level 5 — Events, counters and togglesQuestions 81–1000/20
+Level 6 — Input fields and calculationsQuestions 101–1200/20
+Level 7 — DOM manipulation and cardsQuestions 121–1400/20
+Level 8 — Forms and validationQuestions 141–1600/20
+Level 9 — Timers, animation and interactive UIQuestions 161–1800/20
+Level 10 — Mini projectsQuestions 181–2000/20
+181. Build a complete random background color generator with a color name or code display.
+182. Build a color palette generator with 10 colored boxes and a randomize button.
+183. Build a color changer that cycles through an array without repeating the same color immediately.
+184. Build a color picker with predefined colors and a reset button.
+185. Build a random gradient background generator.
+186. Build a dice game for two players that randomly generates results and identifies the winner.
+187. Build a number guessing game with hints such as too high or too low.
+188. Build a student marks calculator with total, average, highest and lowest marks.
+189. Build an employee directory with search and department filtering.
+190. Build a to-do list with add, complete and delete features.
+191. Build a character counter and word counter.
+192. Build a calculator for addition, subtraction, multiplication and division.
+193. Build a quiz app that displays one question at a time and calculates the final score.
+194. Build a simple expense tracker that adds expenses and calculates the total.
+195. Build a shopping cart that adds products and updates the total price.
+196. Build a digital clock with a light/dark theme toggle.
+197. Build a countdown timer with Start, Pause and Reset controls.
+198. Build a password generator with selectable length and character types for practice.
+199. Build a responsive gallery with filter buttons and dynamically generated cards.
+200. Build a JavaScript practice dashboard that lets you choose a question, run its function and reset its output.
+Copy all 200 questions
+How to practise, sir
+Use your existing files:
+•	index.html — HTML structure and buttons.
+•	Your CSS inside the <style> tag — design and layout.
+•	./02_functions/basicfunction2.js — JavaScript functions.
+For each question:
+1.	Write the HTML element or button.
+2.	Add the JavaScript function.
+3.	Use arrays, loops, conditions or DOM methods when the question requires them.
+4.	Test it in your browser and inspect the Console if something goes wrong.
+5.	Try to solve it yourself before checking a solution.
+My recommendation: Start with Questions 21–40, because they directly extend your current random background color exercise. Then progress through the sections in order. You don't need to complete all 200 in one day, sir; solve them one by one and practise until you can write the code without looking at examples.
+

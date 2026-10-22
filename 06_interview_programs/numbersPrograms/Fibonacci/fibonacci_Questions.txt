@@ -1,0 +1,120 @@
+JavaScript Fibonacci — Complete Practice Collection
+Level 1 — Beginner
+0/20 completed
+1. Print the first 10 Fibonacci numbers.
+2. Print the first N Fibonacci numbers, where N is given by the user.
+3. Print the first 5 Fibonacci numbers.
+4. Print the first 20 Fibonacci numbers.
+5. Print Fibonacci numbers up to a given limit N.
+6. Print Fibonacci numbers less than 100.
+7. Print Fibonacci numbers less than or equal to 500.
+8. Print Fibonacci numbers greater than 10 and less than 100.
+9. Print Fibonacci numbers between two given limits.
+10. Print the first N Fibonacci numbers on one line.
+11. Store the first N Fibonacci numbers in an array.
+12. Find the sum of the first N Fibonacci numbers.
+13. Count how many Fibonacci numbers are less than or equal to N.
+14. Find the largest Fibonacci number less than or equal to N.
+15. Find the smallest Fibonacci number greater than N.
+16. Print only the even Fibonacci numbers up to N.
+17. Print only the odd Fibonacci numbers up to N.
+18. Count the even and odd Fibonacci numbers among the first N terms.
+19. Print the Fibonacci sequence using a while loop.
+20. Generate a Fibonacci-like sequence starting with two given numbers, such as 20 and 30.
+Level 2 — Beginner to Medium
+Questions 21–40 · Number logic and calculations
+Level 2 progress
+0/20 completed
+21. Find the Nth Fibonacci number, using 1-based positions where the first term is 0.
+22. Find the Fibonacci number at a given 0-based index.
+23. Find the sum of the first N Fibonacci numbers.
+24. Find the sum of even Fibonacci numbers up to N.
+25. Find the sum of odd Fibonacci numbers up to N.
+26. Find the product of the first N Fibonacci numbers.
+27. Find the average of the first N Fibonacci numbers.
+28. Count how many Fibonacci numbers in a sequence are divisible by 2.
+29. Count Fibonacci numbers divisible by a given number K, up to a limit N.
+30. Find the last Fibonacci number that is divisible by a given number K within a limit.
+31. Check whether a given number belongs to the Fibonacci sequence.
+32. Print all Fibonacci numbers that are also prime, up to a limit N.
+33. Print Fibonacci numbers that are perfect squares, up to a limit N.
+34. Find the first Fibonacci number greater than a given N.
+35. Find the position of a given Fibonacci number.
+36. Check whether two given numbers are consecutive Fibonacci numbers.
+37. Print the first N Fibonacci numbers in reverse order.
+38. Find the difference between consecutive Fibonacci numbers for the first N terms.
+39. Find the ratio of consecutive Fibonacci numbers for several terms.
+40. Generate the first N terms using custom starting values A and B.
+Level 3 — Medium
+Questions 41–60 · Arrays, strings and functions
+Level 3 progress
+0/20 completed
+41. Return the first N Fibonacci numbers as an array.
+42. Return only even Fibonacci numbers in an array up to a limit N.
+43. Return only odd Fibonacci numbers in an array up to a limit N.
+44. Create a function that returns the sum of Fibonacci numbers in an array.
+45. Find the maximum and minimum values in an array of Fibonacci numbers.
+46. Remove duplicate values from a Fibonacci array.
+47. Find all missing Fibonacci values between two given Fibonacci numbers.
+48. Check whether every element in a given array is a Fibonacci number.
+49. Check whether an array follows the Fibonacci addition rule.
+50. Find the longest Fibonacci-like contiguous subarray in a given array.
+51. Find the longest Fibonacci-like subsequence in an array.
+52. Generate a Fibonacci sequence and convert it into a comma-separated string.
+53. Find the sum of digits of the Nth Fibonacci number.
+54. Count the digits in the Nth Fibonacci number.
+55. Find the last digit of the Nth Fibonacci number.
+56. Find the first digit of the Nth Fibonacci number.
+57. Find the frequency of each digit in a Fibonacci number.
+58. Reverse the digits of the Nth Fibonacci number.
+59. Check whether the Nth Fibonacci number is a palindrome.
+60. Create a function that returns the Fibonacci sequence without using console.log inside it.
+Level 4 — Advanced
+Questions 61–80 · Recursion and optimization
+Level 4 progress
+0/20 completed
+61. Generate the first N Fibonacci numbers using recursion.
+62. Find the Nth Fibonacci number using recursion.
+63. Generate Fibonacci numbers using memoization.
+64. Find the Nth Fibonacci number using an iterative approach with O(1) extra space.
+65. Compare the number of function calls in naive recursion and memoized recursion.
+66. Implement Fibonacci using a generator function.
+67. Implement Fibonacci using a JavaScript closure.
+68. Create a custom Fibonacci generator that accepts starting values A and B.
+69. Find the Nth Fibonacci number using matrix exponentiation.
+70. Find the Nth Fibonacci number using fast doubling.
+71. Calculate Fibonacci numbers modulo M to keep values small.
+72. Find the last digit of the Nth Fibonacci number efficiently for very large N.
+73. Find the last K digits of a Fibonacci number, where the calculation is feasible.
+74. Find the first Fibonacci number with at least D digits.
+75. Find the index of the first Fibonacci number containing a specified digit.
+76. Generate Fibonacci numbers lazily using an iterator.
+77. Write a function that supports multiple Fibonacci queries efficiently.
+78. Validate the input to a Fibonacci function, including negative and non-integer values.
+79. Handle large Fibonacci values using BigInt.
+80. Write unit tests for a Fibonacci function, including edge cases.
+Level 5 — Challenging Problems
+Questions 81–100 · Mathematical patterns and problem-solving
+Level 5 progress
+0/20 completed
+81. Find the greatest common divisor of two Fibonacci numbers.
+82. Check the identity F(n + 1) × F(n - 1) − F(n)² = 1 or −1 for valid indices.
+83. Find the sum of the first N Fibonacci numbers using a mathematical identity.
+84. Find the sum of the squares of the first N Fibonacci numbers.
+85. Generate Fibonacci numbers whose values are within a given interval without generating unnecessary terms.
+86. Find the first Fibonacci number divisible by a given integer K.
+87. Find the period of Fibonacci numbers modulo M (Pisano period).
+88. Find the Nth Fibonacci number modulo M using fast doubling.
+89. Find the number of Fibonacci terms required for their sum to exceed a target S.
+90. Find the smallest index N for which the Fibonacci number exceeds a very large threshold.
+91. Find the longest Fibonacci-like subsequence using dynamic programming.
+92. Count the number of Fibonacci numbers in a large interval using efficient iteration.
+93. Generate a Fibonacci triangle-like arrangement and explain how it differs from the standard sequence.
+94. Create a Fibonacci-based pattern using nested loops.
+95. Print a Fibonacci sequence in a pyramid layout.
+96. Use Fibonacci numbers to generate a simple animated counter in the browser.
+97. Build an interactive Fibonacci calculator using HTML inputs and JavaScript.
+98. Build a Fibonacci visualizer that shows each addition step.
+99. Compare iterative, recursive and memoized implementations for performance.
+100. Design a reusable Fibonacci module with functions for sequence generation, Nth term, validation and custom starting values.
+

@@ -1,0 +1,163 @@
+JavaScript digit problems — 150 practice questions
+Use while loops as your primary loop. Use if, % 10, Math.floor(num / 10), and variables wherever needed. Try solving each question yourself before looking for a solution.
+Level 1 — Basic digit operations (1–15)
+Goal: Practise extracting digits, counting them, and updating variables.
+Your practice tracker
+0/150 completed
+Level 1 — Basic digit operations15 questions · 0 completed
+1. Count the total digits in a number.
+2. Find the sum of all digits.
+3. Find the product of all digits.
+4. Reverse a number.
+5. Print every digit from right to left.
+6. Print every digit from left to right.
+7. Find the first digit of a number.
+8. Find the last digit of a number.
+9. Find the sum of the first and last digits.
+10. Find the difference between the first and last digits.
+11. Count how many digits a number contains without using String(num).length.
+12. Calculate the average of the digits.
+13. Find the square of each digit and print it.
+14. Find the cube of each digit and print it.
+15. Print each digit along with its position from the right.
+Level 2 — Even, odd, and zero digits15 questions · 0 completed
+16. Count the even digits in a number.
+17. Count the odd digits in a number.
+18. Count the zeros in a number.
+19. Count the non-zero digits in a number.
+20. Find the sum of even digits.
+21. Find the sum of odd digits.
+22. Find the product of even digits.
+23. Find the product of odd digits.
+24. Count digits divisible by 3.
+25. Count digits divisible by 5.
+26. Count digits greater than 5.
+27. Count digits smaller than 5.
+28. Count digits equal to 5.
+29. Find the sum of digits greater than 5.
+30. Find the sum of digits smaller than 5.
+Level 3 — Largest, smallest, and specific digits15 questions · 0 completed
+31. Find the largest digit in a number.
+32. Find the smallest digit in a number.
+33. Find the second-largest distinct digit.
+34. Find the second-smallest distinct digit.
+35. Find the difference between the largest and smallest digits.
+36. Count how many times digit 6 occurs.
+37. Count how many times a user-selected digit occurs.
+38. Check whether a number contains digit 7.
+39. Check whether a number contains digit 0.
+40. Find the first occurrence of a specified digit when scanning from the right.
+41. Find the last occurrence of a specified digit when scanning from the right.
+42. Find the most frequent digit.
+43. Find the least frequent digit.
+44. Print digits that occur exactly once.
+45. Print digits that occur more than once.
+Level 4 — Reversing and rearranging digits15 questions · 0 completed
+46. Reverse a number without converting it to a string.
+47. Check whether a number is a palindrome.
+48. Check whether a number and its reverse are equal.
+49. Remove the last digit from a number.
+50. Remove the first digit from a number.
+51. Swap the first and last digits.
+52. Move the last digit to the front.
+53. Move the first digit to the end.
+54. Reverse only the even digits while keeping the odd digits out of the result.
+55. Build a number using only even digits, preserving their order.
+56. Build a number using only odd digits, preserving their order.
+57. Build a number using only non-zero digits.
+58. Build a number after removing all occurrences of a specified digit.
+59. Replace every occurrence of digit 5 with digit 9.
+60. Create a reversed number and preserve the original number in a separate variable.
+Level 5 — Digit properties15 questions · 0 completed
+Level 6 — Classic number challenges15 questions · 0 completed
+76. Check whether a number is an Armstrong number.
+77. Check whether a number is a strong number.
+78. Check whether a number is a perfect number.
+79. Check whether a number is a Harshad number.
+80. Check whether a number is a spy number.
+81. Check whether a number is a neon number.
+82. Check whether a number is a duck number.
+83. Check whether a number is an automorphic number.
+84. Check whether a number is a sunny number.
+85. Check whether a number is a pronic number.
+86. Check whether a number is a happy number.
+87. Check whether a number is a disarium number.
+88. Check whether a number is a palindrome prime.
+89. Check whether a number is a Kaprekar number.
+90. Check whether a number is a Smith number.
+Level 7 — Digit maths and transformations15 questions · 0 completed
+91. Calculate the digital root by repeatedly adding digits.
+92. Keep summing digits until a single digit remains.
+93. Raise each digit to the power of the number of digits and add the results.
+94. Find the sum of factorials of the digits.
+95. Find the product of factorials of the digits.
+96. Find the sum of squares of the digits.
+97. Find the sum of cubes of the digits.
+98. Find the sum of digits at even positions.
+99. Find the sum of digits at odd positions.
+100. Find the difference between alternating digit sums.
+101. Multiply the digits and repeatedly sum the result until one digit remains.
+102. Add the number to its reverse.
+103. Subtract the reverse from the original number.
+104. Multiply a number by its reverse.
+105. Find the absolute difference between a number and its reverse.
+Level 8 — Position-based digit problems15 questions · 0 completed
+106. Count digits at even positions from the right.
+107. Count digits at odd positions from the right.
+108. Find the largest digit at an even position.
+109. Find the smallest digit at an odd position.
+110. Find the sum of digits at even positions from the right.
+111. Find the sum of digits at odd positions from the right.
+112. Swap the first two digits.
+113. Swap the last two digits.
+114. Remove the digit at a specified position from the right.
+115. Replace the digit at a specified position from the right.
+116. Insert a digit at a specified position from the right.
+117. Find the middle digit of an odd-length number.
+118. Find the two middle digits of an even-length number.
+119. Find the sum of the middle digit or digits.
+120. Split a number into two halves and compare their digit sums.
+Level 9 — Compare and search digits15 questions · 0 completed
+121. Find the largest digit shared by two numbers.
+122. Find the smallest digit shared by two numbers.
+123. Check whether two numbers contain exactly the same digits, including repetitions.
+124. Check whether two numbers contain the same set of digits, ignoring repetitions.
+125. Count the digits that appear in both numbers.
+126. Count the digits that appear in the first number but not the second.
+127. Find the first digit shared by two numbers when scanning from the right.
+128. Check whether two numbers have the same digit sum.
+129. Check whether two numbers have the same digit product.
+130. Find which number has the greater digit sum.
+131. Find which number has more even digits.
+132. Find which number has more odd digits.
+133. Check whether the digits of one number appear in another number in the same order.
+134. Find the longest consecutive run of identical digits.
+135. Find the longest consecutive run of increasing digits.
+Level 10 — Advanced digit challenges15 questions · 0 completed
+136. Find the smallest digit that does not occur in a number, from 0 to 9.
+137. Find the largest digit that does not occur in a number.
+138. Count how many different digits appear in a number.
+139. Find the digit with the highest frequency.
+140. Find all digits tied for the highest frequency.
+141. Sort the digits of a number in ascending order without converting it to a string.
+142. Sort the digits of a number in descending order without converting it to a string.
+143. Find the smallest number that can be formed from the digits.
+144. Find the largest number that can be formed from the digits.
+145. Move all zeros to the end of a number while preserving the order of other digits.
+146. Move all zeros to the beginning of a number.
+147. Remove duplicate digits while preserving their first-occurrence order.
+148. Find the sum of the digits of the square of a number.
+149. Check whether the square of a number ends with the original number.
+150. Find the smallest digit to remove so that the remaining number is divisible by 3.
+Bonus: 10 important interview questions
+151. Find all Armstrong numbers between 1 and 10,000.
+152. Find all palindrome numbers between 1 and 10,000.
+153. Find all numbers below 1,000 whose digit sum equals their digit product.
+154. Find all numbers below 10,000 that equal the sum of the factorials of their digits.
+155. Find all numbers below 10,000 divisible by their digit sum.
+156. Find all numbers between 100 and 999 with strictly increasing digits.
+157. Find all numbers between 100 and 999 with strictly decreasing digits.
+158. Find all numbers between 1 and 10,000 whose reverse is also prime.
+159. Find the number below 10,000 with the highest digit sum.
+160. Find the smallest number whose digits add up to a specified target.
+

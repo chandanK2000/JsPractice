@@ -1,0 +1,160 @@
+Timers Example in javascripts
+Level 1 — BeginnerQuestions 1–250/25
+1. Print 'Hello JavaScript' after 2 seconds using setTimeout().
+2. Print your name after 3 seconds.
+3. Print 'Welcome Sir' after 5 seconds.
+4. Print 'Start' immediately and 'End' immediately, then print 'Finished' after 2 seconds.
+5. Print numbers 1 to 5 with a 1-second delay between each number.
+6. Print numbers 10 to 1, one number every second.
+7. Print 'Good Morning' after 1 second using an arrow function.
+8. Create a named function that prints a message after 2 seconds.
+9. Pass your name as an extra argument to setTimeout().
+10. Use an anonymous function expression as a timer callback.
+11. Execute two setTimeout() calls with delays of 2 seconds and 4 seconds.
+12. Schedule three messages with different delays and observe their execution order.
+13. Print the current date after 3 seconds.
+14. Print the square of 5 after 2 seconds.
+15. Print the sum of two numbers after 3 seconds.
+16. Print every array element using setTimeout() with the same delay; observe the output.
+17. Print array elements in the correct order, one per second.
+18. Use setInterval() to print 'Hello' every second.
+19. Print an increasing counter every 2 seconds.
+20. Print even numbers from 2 to 20 at 1-second intervals.
+21. Print odd numbers from 1 to 19 at 500-millisecond intervals.
+22. Display a message every 3 seconds.
+23. Create two independent intervals that print different messages.
+24. Use setTimeout() to call another function after 2 seconds.
+25. Compare setTimeout() and setInterval() with practical examples.
+
+Level 2 — Basic timers and cancellationQuestions 26–500/25
+26. Cancel a setTimeout() before it executes using clearTimeout().
+27. Start a 5-second timeout and cancel it after 2 seconds.
+28. Use a button to start and cancel a timeout.
+29. Start an interval that prints numbers and stop it with clearInterval().
+30. Stop an interval automatically after 5 executions.
+31. Create a counter that starts at 1 and stops at 10.
+32. Start an interval only if no interval is currently running.
+33. Prevent a button from creating duplicate intervals.
+34. Create a function that starts and stops a message interval.
+35. Store the ID of a timeout in a variable and inspect its value.
+36. Create three timeouts and cancel only the second one.
+37. Create two intervals and stop only one of them.
+38. Write a function that cancels a previous timeout before scheduling a new one.
+39. Schedule a message and then replace it with another scheduled message.
+40. Print a counter every 100 milliseconds and stop after 20 counts.
+41. Run a timeout with a delay of 0 and compare it with synchronous console.log().
+42. Use a negative delay and observe how the browser handles it.
+43. Use a delay of 500 milliseconds and count how many times a callback runs in 5 seconds.
+44. Create a repeating task that stops when a condition becomes true.
+45. Use clearInterval() inside the interval callback itself.
+46. Use clearTimeout() with an already completed timeout and observe the result.
+47. Write a function that starts an interval and returns its interval ID.
+48. Write a reusable function that accepts a callback and delay for setTimeout().
+49. Write a reusable function that accepts a callback and delay for setInterval().
+50. Explain with code why a timer delay is not an exact execution guarantee.
+Level 3 — HTML, CSS and DOMQuestions 51–750/25
+51. Display a message in an HTML heading after 2 seconds.
+52. Change a paragraph's text after 3 seconds.
+53. Change an element's background colour after 2 seconds.
+54. Hide a notification 5 seconds after displaying it.
+55. Show a success message for 3 seconds, then hide it.
+56. Create a Start button that displays a counter on the page.
+57. Create Start and Stop buttons for an HTML counter.
+58. Create a Reset button that resets the counter to zero.
+59. Change the background colour every second using random hex colours.
+60. Stop automatic background colour changes with a button.
+61. Change the text colour every 2 seconds.
+62. Show a different quote from an array every 3 seconds.
+63. Display a random motivational message every 5 seconds.
+64. Rotate through five images every 2 seconds.
+65. Display a loading message, then show content after a delay.
+66. Create a delayed tooltip that appears after the pointer enters an element.
+67. Hide a tooltip 2 seconds after the pointer leaves an element.
+68. Display a temporary error message that disappears automatically.
+69. Disable a button for 3 seconds after it is clicked, then enable it again.
+70. Show a button click count and update it every second.
+71. Change a heading's font size every second within defined limits.
+72. Toggle a CSS class every 500 milliseconds.
+73. Create a blinking text effect with an interval and stop button.
+74. Create a progress bar that fills gradually using a timer.
+75. Make a notification queue that displays messages one after another.
+Level 4 — Intermediate timer logicQuestions 76–1000/25
+76. Build a digital clock that updates every second.
+77. Display the current date and time on an HTML page.
+78. Build a 10-second countdown timer.
+79. Build a countdown from a user-entered number.
+80. Add Start, Pause and Reset buttons to a countdown.
+81. Display 'Time is up!' when a countdown reaches zero.
+82. Build a stopwatch that measures elapsed seconds.
+83. Add Start, Stop and Reset controls to a stopwatch.
+84. Display elapsed time in MM:SS format.
+85. Display stopwatch time in HH:MM:SS format.
+86. Build a lap timer that stores lap times in an array.
+87. Create a reaction timer that randomly waits before enabling a button.
+88. Calculate the user's reaction time after the button becomes active.
+89. Build a quiz timer with a 30-second limit.
+90. Automatically submit a quiz when the timer reaches zero.
+91. Build a Pomodoro timer with work and break periods.
+92. Display a 5-second warning before a countdown finishes.
+93. Create a timer that repeats a task only a specified number of times.
+94. Schedule reminders at multiple time offsets.
+95. Create a debounce function using setTimeout().
+96. Cancel the previous debounce timeout when a new input arrives.
+97. Build a search box that waits 500 milliseconds after typing before searching.
+98. Create a throttle function that limits how often a callback executes.
+99. Compare debounce and throttle with input or scroll events.
+100. Build a timer that tracks actual elapsed time using Date.now() instead of trusting callback counts.
+Level 5 — Advanced JavaScript timingQuestions 101–1250/25
+101. Create a Promise that resolves after 2 seconds using setTimeout().
+102. Create a reusable delay(ms) function that returns a Promise.
+103. Use async/await to wait for a delay before printing a message.
+104. Run three asynchronous delays sequentially.
+105. Run multiple delay Promises concurrently using Promise.all().
+106. Create a timeout Promise that rejects after a specified delay.
+107. Race a simulated API request against a timeout using Promise.race().
+108. Write a retry function that waits before trying a failed operation again.
+109. Use increasing delays between retry attempts.
+110. Create a polling function that checks a condition until it becomes true.
+111. Use recursive setTimeout() to schedule the next task after the previous task completes.
+112. Compare recursive setTimeout() with setInterval() for repeated asynchronous work.
+113. Prevent overlapping asynchronous operations in an interval.
+114. Create a Promise-based sleep utility and reuse it in multiple functions.
+115. Cancel a pending timeout through a reusable cancellation function.
+116. Implement a cancellable delay using AbortController and AbortSignal.
+117. Create a sequential task runner that waits between tasks.
+118. Build a queue that processes one asynchronous task at a time.
+119. Use performance.now() to measure the execution time of a function.
+120. Measure timer drift by comparing expected and actual callback times.
+121. Compare setTimeout(), queueMicrotask() and Promise.then() execution order.
+122. Compare a timer callback with synchronous code and a resolved Promise.
+123. Schedule a visual animation with requestAnimationFrame() and compare it with setInterval().
+124. Build a timeout wrapper for a simulated API request, handling success, failure and timeout.
+125. Create a reusable timer utility with start, stop, pause, resume and reset methods.
+Level 6 — Real-world projectsQuestions 126–1500/25
+126. Build a complete digital clock with 12-hour and 24-hour display modes.
+127. Build a countdown application with custom hours, minutes and seconds.
+128. Build a stopwatch with lap recording and a lap history list.
+129. Build a Pomodoro application with configurable focus and break durations.
+130. Build a quiz application with a per-question timer and final score.
+131. Build a typing-speed test with a countdown and words-per-minute calculation.
+132. Build a reaction-speed game with random start delays.
+133. Build a memory game with a timer and move counter.
+134. Build a traffic light simulator with timed red, yellow and green phases.
+135. Build an automatic image carousel with Next, Previous, Start and Stop controls.
+136. Build a toast notification system with automatic dismissal.
+137. Build an OTP-style countdown display with a resend button and cooldown timer; use a mock OTP, not real authentication.
+138. Build a temporary password visibility feature that hides the password after a delay.
+139. Build a file upload progress simulation with pause and resume controls.
+140. Build a progress indicator that can be cancelled and reset.
+141. Build a random background generator with configurable change intervals.
+142. Build a countdown to a user-selected future date and time.
+143. Build a reminder application that schedules multiple reminders and lets users cancel them.
+144. Build an autosave simulation that saves text 1 second after the user stops typing.
+145. Build a search autocomplete simulation using debounce and mock data.
+146. Build a simulated API polling dashboard with start, stop and error handling.
+147. Build a retry system for failed simulated requests with a maximum retry count.
+148. Build a task scheduler that executes queued tasks at specified delays.
+149. Build a timer dashboard that runs multiple independent timers without duplicate intervals.
+150. Build a final Timer Manager project with multiple timers, pause/resume, cancellation, lap history and clean-up when components are removed.
+
+

@@ -1,0 +1,131 @@
+Level 1 — Beginner
+Questions 1–25
+1. Print numbers from 1 to 20, but stop when i reaches 8. Use break.
+2. Print numbers from 1 to 10, but skip 5. Use continue.
+3. Print numbers from 1 to 30, but stop at the first multiple of 7.
+4. Print numbers from 1 to 15, skipping all even numbers.
+5. Print numbers from 1 to 20, skipping all odd numbers.
+6. Print numbers from 10 down to 1, stopping at 5.
+7. Print numbers from 1 to 50, but stop when i becomes greater than 12.
+8. Print numbers from 1 to 20, skipping multiples of 3.
+9. Print numbers from 1 to 20, stopping before printing 10.
+10. Print numbers from 1 to 15, skipping 3 and 9.
+11. Use a while loop to print 1 to 10, stopping at 6.
+12. Use a while loop to print 1 to 10, skipping 4.
+13. Print multiples of 5 from 5 to 50, stopping before 25.
+14. Print numbers from 1 to 25, skipping numbers divisible by 4.
+15. Print numbers from 20 down to 1, skipping 15 and 10.
+16. Print numbers from 1 to 30, stopping at the first even number greater than 10.
+17. Print numbers from 1 to 20, skipping numbers between 6 and 10 inclusive.
+18. Print numbers from 1 to 20, stopping when i is divisible by both 2 and 3.
+19. Print numbers from 1 to 15, but skip 5 and stop at 12.
+20. Print numbers from 1 to 10 using continue to skip 1, 2 and 3.
+21. Print numbers from 1 to 30, stopping at the first multiple of 9.
+22. Print numbers from 1 to 20, skipping multiples of 2 or 5.
+23. Print numbers from 10 to 30, skipping numbers ending in 5.
+24. Print numbers from 1 to 20, stopping when i is greater than 7 and odd.
+25. Use a while loop to print odd numbers below 20, stopping at 13.
+Level 2 — Easy
+Questions 26–50
+26. Print even numbers from 2 to 40, stopping before 20.
+27. Print odd numbers from 1 to 25, skipping numbers divisible by 3.
+28. Given n = 25, print from 1 to n but stop at the first multiple of 4 greater than 10.
+29. Print 1 to 100, skipping multiples of 10.
+30. Print numbers from 1 to 50, stopping when the sum of printed numbers would exceed 50.
+31. Given an array [2, 4, 6, 8, 10, 12], stop when you find 8.
+32. Given an array [3, 7, 10, 15, 20], skip numbers below 10.
+33. Given an array of numbers, print values until you find a negative number.
+34. Print each character in 'JAVASCRIPT', stopping at 'S'.
+35. Print each character in 'PROGRAMMING', skipping vowels.
+36. Find the first number divisible by 7 between 1 and 100, then stop.
+37. Print numbers from 1 to 100, skipping those divisible by both 3 and 5.
+38. Print numbers from 1 to 50, stopping when a number is divisible by 7 and 9.
+39. Given an array of names, stop when you find 'Rahul'.
+40. Given an array of names, skip names shorter than 5 characters.
+41. Count numbers from 1 upward, stopping when the count reaches 12.
+42. Calculate a running sum from 1 upward, stopping once the sum exceeds 100.
+43. Print numbers from 1 to 30, skipping perfect squares.
+44. Print numbers from 1 to 100, stopping at the first number whose square exceeds 500.
+45. Given an array of ages, skip ages below 18 and stop at age 60 or above.
+46. Print the multiplication table of 7, stopping before 7 × 8.
+47. Print the multiplication table of 6, skipping products greater than 20.
+48. Given a string, stop printing characters when a space is found.
+49. Given an array, skip null and undefined values.
+50. Print numbers from 1 to 50, skipping multiples of 4 and stopping at 35.
+Level 3 — Intermediate
+Questions 51–75
+51. Find the first even number in an array using break.
+52. Find the first odd number in an array using break.
+53. Print all positive values in an array, skipping zero and negative values.
+54. Search for a target number in an array; stop when found.
+55. Search for a name in an array; skip empty strings.
+56. Find the first vowel in a string using break.
+57. Print characters in a string, skipping spaces and digits.
+58. Count non-zero numbers in an array, skipping zeros.
+59. Find the first number greater than 100 in an array.
+60. Find the first negative number and print its index.
+61. Calculate the sum of positive numbers, skipping negatives and stopping at zero.
+62. Print digits of a number from left to right, skipping zeros.
+63. Print digits of a number from right to left, stopping when digit 5 appears.
+64. Calculate the sum of digits, stopping if a digit is 0.
+65. Check whether a number contains digit 7; stop when found.
+66. Find the first repeated value in an array using nested loops and break.
+67. Print unique values by skipping values already seen in an earlier array section.
+68. Given student marks, skip absent students and stop when a mark is below 20.
+69. Find the first name longer than 8 characters.
+70. Print array values until two consecutive zeros are found.
+71. Find the first prime number in an array.
+72. Check an array for a number divisible by 11, skipping negatives.
+73. Print words in a sentence, skipping words shorter than 3 characters.
+74. Find the first uppercase letter in a string.
+75. Find the first number in an array that is divisible by 3 but not by 2.
+Level 4 — Advanced
+Questions 76–100
+76. Use nested loops to print a 5×5 grid, but stop the inner loop at column 3.
+77. Print a 5×5 grid, skipping cells where row equals column.
+78. Print multiplication tables from 1 to 10, stopping each table at product 30.
+79. Search a two-dimensional array for a target and stop both loops when found.
+80. Print all array pairs whose sum is 10, skipping pairs with equal indices.
+81. Find the first duplicate in a two-dimensional array.
+82. Print a triangle pattern, skipping the middle column in each row.
+83. Find the first row whose sum exceeds 50, then stop the outer loop.
+84. Check whether a matrix contains zero; stop searching when found.
+85. Find the largest number in an array, skipping invalid numeric values.
+86. Find the second-largest distinct number, skipping duplicates.
+87. Find the first pair of adjacent equal values in an array.
+88. Check whether a string is a palindrome, stopping at the first mismatch.
+89. Compare two strings character by character, stopping at the first difference.
+90. Find the first missing positive integer in an unsorted array.
+91. Find the first pair in a sorted array whose sum equals a target.
+92. Print Fibonacci numbers, stopping before the next number exceeds 1000.
+93. Find the first number in a range with exactly four divisors.
+94. Check if an array is sorted, stopping at the first descending pair.
+95. Find the longest consecutive increasing run, skipping invalid values.
+96. Use nested loops to find a common value between two arrays.
+97. Find the first row in a matrix containing only even numbers.
+98. Simulate a simple login with three attempts; break on success.
+99. Process transactions until an invalid transaction is encountered; skip zero-value transactions.
+100. Find the first word repeated in a sentence using nested loops.
+Level 5 — Challenge
+Questions 101–120
+101. Create a number-guessing loop that stops when the correct number is guessed.
+102. Simulate three login attempts, skipping empty passwords and stopping on success.
+103. Process an expense array, skipping cancelled expenses and stopping at a negative amount.
+104. Search a list of transactions and stop when a transaction ID matches the target.
+105. Find the first month where expenses exceed a budget, skipping months with missing data.
+106. Process employee records, skipping inactive employees and stopping at an employee with a target ID.
+107. Find the first student who passes every subject in a marks matrix.
+108. Find the first row with duplicate values in a matrix.
+109. Print prime numbers from 2 to 100, using break in the divisor-checking loop.
+110. Find all factors of a number, skipping non-factors and stopping after the square root.
+111. Check if a number is prime, stopping as soon as a divisor is found.
+112. Find the first pair of numbers whose product equals a target.
+113. Given a list of words, skip duplicates and stop when the word 'STOP' appears.
+114. Simulate processing orders: skip cancelled orders and stop at a failed payment.
+115. Find the first date with a reminder due, skipping completed reminders.
+116. Scan a string and stop when three consecutive digits are found.
+117. Validate a password character by character; stop when an invalid character appears.
+118. Find the first row in a matrix whose values sum to a prime number.
+119. Implement a menu loop that stops when the user chooses Exit; skip invalid menu options.
+120. Combine break and continue to process a list of 100 records, skipping invalid records and stopping at a sentinel value.
+

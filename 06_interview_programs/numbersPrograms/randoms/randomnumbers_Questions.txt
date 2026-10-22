@@ -1,0 +1,608 @@
+Random numbers questions collections
+Level 1 — Random number fundamentals (Questions 1–10)
+Sir, these build your foundation. Try writing each program before looking at the implementation.
+Q1. Generate a random decimal
+Goal: Generate a decimal from 0 inclusive to 1 exclusive.
+let num = Math.random();
+console.log(num);
+Q2. Generate an integer from 0 to 9
+let num = Math.floor(Math.random() * 10);
+console.log(num);
+Q3. Generate an integer from 1 to 10
+let num = Math.floor(Math.random() * 10) + 1;
+console.log(num);
+Q4. Generate a number from 20 to 50
+let min = 20;
+let max = 50;
+let num = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(num);
+Q5. Generate a random odd number from 1 to 19
+let num = Math.floor(Math.random() * 10) * 2 + 1;
+console.log(num);
+Q6. Generate a random even number from 2 to 20
+let num = (Math.floor(Math.random() * 10) + 1) * 2;
+console.log(num);
+Q7. Generate a random multiple of 5 from 5 to 50
+let num = (Math.floor(Math.random() * 10) + 1) * 5;
+console.log(num);
+Q8. Generate a random multiple of 10 from 10 to 100
+let num = (Math.floor(Math.random() * 10) + 1) * 10;
+console.log(num);
+Q9. Check whether a random number is even or odd
+let num = Math.floor(Math.random() * 100) + 1;
+
+if (num % 2 === 0) {
+  console.log(num, "is even");
+} else {
+  console.log(num, "is odd");
+}
+Q10. Check whether a random number is divisible by 5
+let num = Math.floor(Math.random() * 100) + 1;
+
+if (num % 5 === 0) {
+  console.log(num, "is divisible by 5");
+} else {
+  console.log(num, "is not divisible by 5");
+}
+Level 2 — Conditions and loops (Questions 11–20)
+These combine random numbers with the JavaScript concepts you're already practicing.
+No.	Challenge	Requirement
+11	Print 10 random numbers	Integers from 1 to 100
+12	Print only even numbers	Generate 10 numbers from 1 to 50
+13	Count even numbers	Count the even results among 10 random numbers
+14	Count odd numbers	Generate 20 numbers and count odd results
+15	Find the largest	Generate 10 numbers and track the maximum
+16	Find the smallest	Generate 10 numbers and track the minimum
+17	Count occurrences of 50	Generate 20 numbers from 1 to 100
+18	Stop when 50 appears	Use a while loop
+19	Stop at the first even number	Generate integers from 1 to 10 repeatedly
+20	Calculate the total	Generate 10 numbers and calculate their sum
+Implementation examples for Q11–Q20
+Use these as reference solutions after attempting the corresponding challenge.
+Q11 — Print 10 random numbers
+for (let i = 1; i <= 10; i++) {
+  let num = Math.floor(Math.random() * 100) + 1;
+  console.log(num);
+}
+Q12 — Print only even numbers
+for (let i = 1; i <= 10; i++) {
+  let num = Math.floor(Math.random() * 50) + 1;
+
+  if (num % 2 === 0) {
+    console.log(num);
+  }
+}
+Q13 — Count even numbers
+let count = 0;
+
+for (let i = 1; i <= 10; i++) {
+  let num = Math.floor(Math.random() * 50) + 1;
+
+  if (num % 2 === 0) {
+    console.log(num);
+    count++;
+  }
+}
+
+console.log("Even count:", count);
+Q14 — Count odd numbers
+let count = 0;
+
+for (let i = 1; i <= 20; i++) {
+  let num = Math.floor(Math.random() * 100) + 1;
+
+  if (num % 2 !== 0) count++;
+}
+
+console.log("Odd count:", count);
+Q15 — Find the largest
+let largest = 0;
+
+for (let i = 1; i <= 10; i++) {
+  let num = Math.floor(Math.random() * 100) + 1;
+  console.log(num);
+
+  if (num > largest) largest = num;
+}
+
+console.log("Largest:", largest);
+Q16 — Find the smallest
+let smallest = 101;
+
+for (let i = 1; i <= 10; i++) {
+  let num = Math.floor(Math.random() * 100) + 1;
+  console.log(num);
+
+  if (num < smallest) smallest = num;
+}
+
+console.log("Smallest:", smallest);
+Q17 — Count how many times 50 appears
+let count50 = 0;
+
+for (let i = 1; i <= 20; i++) {
+  let num = Math.floor(Math.random() * 100) + 1;
+
+  if (num === 50) count50++;
+}
+
+console.log("Number 50 appeared:", count50, "times");
+Q18 — Stop when 50 appears
+let num = 0;
+let attempts = 0;
+
+while (num !== 50 && attempts < 10000) {
+  num = Math.floor(Math.random() * 100) + 1;
+  console.log(num);
+  attempts++;
+}
+
+if (num === 50) {
+  console.log("Found 50!");
+} else {
+  console.log("Maximum attempts reached.");
+}
+The attempt limit prevents the loop from running indefinitely if 50 takes a long time to appear.
+Q19 — Stop at the first even number
+let num;
+
+while (true) {
+  num = Math.floor(Math.random() * 10) + 1;
+  console.log(num);
+
+  if (num % 2 === 0) {
+    console.log("Found an even number!");
+    break;
+  }
+}
+Q20 — Calculate the total
+let total = 0;
+
+for (let i = 1; i <= 10; i++) {
+  let num = Math.floor(Math.random() * 100) + 1;
+  console.log(num);
+  total += num;
+}
+
+console.log("Total:", total);
+Level 3 — Arrays and unique numbers (Questions 21–30)
+ 
+Q21. Generate a random array
+Create an array containing 10 random integers between 1 and 100.
+ 
+Q22. Find the largest array element
+Generate 10 numbers and find the maximum.
+ 
+Q23. Find the smallest array element
+Generate 10 numbers and find the minimum.
+ 
+Q24. Filter even numbers
+Generate an array of 20 random numbers and store only even numbers in a second array.
+No.	Challenge	Requirement
+25	Filter odd numbers	Store odd values in a new array
+26	Sort random numbers	Sort 10 generated integers in ascending order
+27	Remove duplicates	Produce an array with unique values
+28	Generate unique numbers	Select 6 unique integers from 1 to 49
+29	Shuffle an array	Randomize the order of existing elements
+30	Random array statistics	Find the sum, average, minimum and maximum
+Implementation examples
+Q21 — Generate an array
+let numbers = [];
+
+for (let i = 0; i < 10; i++) {
+  numbers.push(Math.floor(Math.random() * 100) + 1);
+}
+
+console.log(numbers);
+Q24 — Filter even numbers
+let numbers = [];
+let evenNumbers = [];
+
+for (let i = 0; i < 20; i++) {
+  numbers.push(Math.floor(Math.random() * 100) + 1);
+}
+
+for (let num of numbers) {
+  if (num % 2 === 0) evenNumbers.push(num);
+}
+
+console.log("All numbers:", numbers);
+console.log("Even numbers:", evenNumbers);
+Q26 — Sort random numbers
+let numbers = [];
+
+for (let i = 0; i < 10; i++) {
+  numbers.push(Math.floor(Math.random() * 100) + 1);
+}
+
+numbers.sort((a, b) => a - b);
+
+console.log(numbers);
+Q27 — Remove duplicates
+let numbers = [];
+
+for (let i = 0; i < 20; i++) {
+  numbers.push(Math.floor(Math.random() * 10) + 1);
+}
+
+let uniqueNumbers = [...new Set(numbers)];
+
+console.log("Original:", numbers);
+console.log("Unique:", uniqueNumbers);
+Q28 — Generate 6 unique numbers from 1 to 49
+let numbers = [];
+
+while (numbers.length < 6) {
+  let num = Math.floor(Math.random() * 49) + 1;
+
+  if (!numbers.includes(num)) {
+    numbers.push(num);
+  }
+}
+
+console.log(numbers);
+Q29 — Shuffle an array
+let numbers = [1, 2, 3, 4, 5, 6];
+
+for (let i = numbers.length - 1; i > 0; i--) {
+  let j = Math.floor(Math.random() * (i + 1));
+
+  [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+}
+
+console.log(numbers);
+This is the Fisher–Yates shuffle, a standard way to shuffle an array uniformly when the random index selection is uniform.
+Q30 — Calculate array statistics
+let numbers = [];
+
+for (let i = 0; i < 10; i++) {
+  numbers.push(Math.floor(Math.random() * 100) + 1);
+}
+
+let total = numbers.reduce((sum, num) => sum + num, 0);
+
+console.log("Numbers:", numbers);
+console.log("Sum:", total);
+console.log("Average:", total / numbers.length);
+console.log("Minimum:", Math.min(...numbers));
+console.log("Maximum:", Math.max(...numbers));
+Level 4 — Games and simulations (Questions 31–40)
+ 
+Q31. Dice simulator
+Generate an integer from 1 to 6, just like rolling a standard die.
+let dice = Math.floor(Math.random() * 6) + 1;
+console.log("Dice:", dice);
+ 
+Q32. Roll two dice
+Generate two independent values from 1 to 6 and calculate their sum.
+ 
+Q33. Coin toss
+Randomly select "Heads" or "Tails".
+let result = Math.random() < 0.5 ? "Heads" : "Tails";
+console.log(result);
+ 
+Q34. Number guessing game
+Generate a secret number and let a player make guesses until they get it right.
+No.	Challenge	Requirement
+35	Rock-paper-scissors	Randomize the computer's choice
+36	Random quiz question	Pick one question from an array
+37	Random winner	Select one participant from a list
+38	Lucky draw	Pick 3 distinct winners
+39	Cricket score simulator	Generate a ball outcome and accumulate runs
+40	Dice race	Roll repeatedly and determine who reaches a target first
+Implementation examples
+Q32 — Roll two dice
+let die1 = Math.floor(Math.random() * 6) + 1;
+let die2 = Math.floor(Math.random() * 6) + 1;
+
+console.log("Die 1:", die1);
+console.log("Die 2:", die2);
+console.log("Total:", die1 + die2);
+Q35 — Rock-paper-scissors computer choice
+let choices = ["rock", "paper", "scissors"];
+
+let index = Math.floor(Math.random() * choices.length);
+let computerChoice = choices[index];
+
+console.log("Computer chose:", computerChoice);
+Q37 — Random winner
+let participants = ["Asha", "Rahul", "Priya", "Amit"];
+
+let index = Math.floor(Math.random() * participants.length);
+
+console.log("Winner:", participants[index]);
+Q38 — Pick 3 distinct winners
+let participants = ["Asha", "Rahul", "Priya", "Amit", "Neha"];
+
+for (let i = participants.length - 1; i > 0; i--) {
+  let j = Math.floor(Math.random() * (i + 1));
+  [participants[i], participants[j]] = [participants[j], participants[i]];
+}
+
+console.log("Winners:", participants.slice(0, 3));
+This shuffles the participant list and selects the first three people without duplicates.
+Level 5 — Functions and reusable logic (Questions 41–50)
+No.	Challenge	What to build
+41	getRandomNumber(min, max)	A reusable integer generator
+42	getRandomEven(min, max)	Generate an even integer within a valid range
+43	getRandomOdd(min, max)	Generate an odd integer within a valid range
+44	getRandomMultiple(n, count)	Generate a random positive multiple of n up to n × count
+45	generateRandomArray(size, min, max)	Return an array of random integers
+46	getRandomItem(array)	Select a random array element
+47	shuffleArray(array)	Return a shuffled copy without changing the original
+48	generateUniqueNumbers(count, min, max)	Generate unique random integers
+49	generateOTP()	Generate a six-digit numeric OTP
+50	generateRandomPassword(length)	Generate a password from selected character sets
+Implementation examples
+Q41 — Reusable random integer function
+function getRandomNumber(min, max) {
+  if (!Number.isInteger(min) || !Number.isInteger(max) || min > max) {
+    throw new Error("Provide valid integer bounds.");
+  }
+
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+console.log(getRandomNumber(20, 50));
+console.log(getRandomNumber(1, 100));
+Q45 — Generate a random array
+function generateRandomArray(size, min, max) {
+  let numbers = [];
+
+  for (let i = 0; i < size; i++) {
+    numbers.push(getRandomNumber(min, max));
+  }
+
+  return numbers;
+}
+
+console.log(generateRandomArray(10, 1, 100));
+This example uses the getRandomNumber() function from Q41.
+Q46 — Select a random item
+function getRandomItem(items) {
+  if (items.length === 0) {
+    throw new Error("Array must not be empty.");
+  }
+
+  let index = Math.floor(Math.random() * items.length);
+  return items[index];
+}
+
+console.log(getRandomItem(["Red", "Blue", "Green"]));
+Q49 — Generate a six-digit OTP
+function generateOTP() {
+  return Math.floor(100000 + Math.random() * 900000).toString();
+}
+
+console.log(generateOTP());
+This produces a six-digit string, but for actual authentication OTPs, use a cryptographically secure generator on the backend instead of Math.random().
+Q50 — Generate a random password
+function generateRandomPassword(length) {
+  let characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%";
+
+  let password = "";
+
+  for (let i = 0; i < length; i++) {
+    let index = Math.floor(Math.random() * characters.length);
+    password += characters[index];
+  }
+
+  return password;
+}
+
+console.log(generateRandomPassword(12));
+This is a learning example, not a secure production password generator. Real passwords should use cryptographically secure randomness.
+Level 6 — Practical mini-projects (Questions 51–60)
+These challenges show where random selection can be useful in actual JavaScript applications.
+ 
+Q51. Random quiz application
+Pick a random question from an array and display its answer options.
+ 
+Q52. Random color generator
+Generate a random hexadecimal color such as #3A7FD5.
+let color = "#" + Math.floor(Math.random() * 16777216)
+  .toString(16).padStart(6, "0");
+console.log(color);
+ 
+Q53. Prize wheel
+Randomly select a prize from a predefined list.
+ 
+Q54. Bingo number generator
+Generate numbers without repeating previously selected numbers.
+No.	Challenge	What to build
+55	Random study planner	Pick one topic from a study list
+56	Random task selector	Select one task from a to-do array
+57	Monte Carlo simulation	Estimate a probability by repeating random trials
+58	Random test-data generator	Generate fake names, ages and scores for testing
+59	Random maze or grid	Randomly choose directions to build a simple maze
+60	Complete random-game project	Build a number guessing game with attempts, hints, and replay
+More implementation examples
+Q53 — Prize wheel logic
+let prizes = ["Try again", "Small prize", "Gift card", "Big prize"];
+
+let index = Math.floor(Math.random() * prizes.length);
+
+console.log("You won:", prizes[index]);
+Q56 — Random task selector
+let tasks = [
+  "Practice JavaScript",
+  "Read 10 pages",
+  "Solve 5 coding problems",
+  "Review yesterday's notes"
+];
+
+let index = Math.floor(Math.random() * tasks.length);
+
+console.log("Today's selected task:", tasks[index]);
+Q57 — Monte Carlo simulation: estimate heads probability
+let heads = 0;
+let trials = 10000;
+
+for (let i = 0; i < trials; i++) {
+  if (Math.random() < 0.5) {
+    heads++;
+  }
+}
+
+console.log("Estimated heads probability:", heads / trials);
+The result should usually be near 0.5, but it won't necessarily equal exactly 0.5.
+Q60 — Complete number guessing game
+This version runs in the browser console and asks the player to guess the secret number.
+let secretNumber = Math.floor(Math.random() * 100) + 1;
+let attempts = 0;
+let guess;
+
+while (guess !== secretNumber) {
+  guess = Number(prompt("Guess a number from 1 to 100:"));
+  attempts++;
+
+  if (!Number.isInteger(guess) || guess < 1 || guess > 100) {
+    alert("Enter a whole number from 1 to 100.");
+    continue;
+  }
+
+  if (guess < secretNumber) {
+    alert("Too low! Try again.");
+  } else if (guess > secretNumber) {
+    alert("Too high! Try again.");
+  } else {
+    alert(`Correct! You won in ${attempts} attempts.`);
+  }
+}
+Important concepts to remember
+Concept	JavaScript
+Random decimal from 0 to less than 1	Math.random()
+Round down	Math.floor()
+Integer from 1 to max	Math.floor(Math.random() * max) + 1
+Integer between min and max, inclusive	Math.floor(Math.random() * (max - min + 1)) + min
+Pick a random array element	array[Math.floor(Math.random() * array.length)]
+Check whether a number is even	num % 2 === 0
+Prevent duplicates in a small selection	array.includes(num)
+Secure randomness	Web Crypto API, such as crypto.getRandomValues()
+One important distinction, sir: random selection can produce the same result more than once. If a task requires unique numbers, you must prevent duplicates or shuffle a collection. And for security-sensitive uses—such as real authentication OTPs, password generation, or security tokens—use cryptographically secure randomness rather than Math.random().
+Let's continue practicing one question at a time
+Since you've already practiced basic ranges, even/odd checks, loops, finding the largest and smallest numbers, and arrays, let's start with a challenge that combines your existing skills.
+Challenge 28 — Six unique random numbers
+Intermediate
+Task: Generate 6 unique random integers between 1 and 49 and store them in an array.
+Example output:
+[7, 14, 22, 31, 38, 46]
+Rules:
+•	Use a loop.
+•	Use Math.random() and Math.floor().
+•	Do not allow duplicate numbers.
+•	Print the final array.
+How would you like to proceed, sir?
+Give me a hint first
+Show me the complete solution
+I'll write the code myself
+Continue
+Level 1: Random number basics (1–15)
+1.	Generate a random decimal between 0 and 1.
+2.	Generate a random integer between 0 and 9.
+3.	Generate a random integer between 1 and 10.
+4.	Generate a random integer between 20 and 50.
+5.	Generate a random odd number between 1 and 19.
+6.	Generate a random even number between 2 and 20.
+7.	Generate a random multiple of 5 between 5 and 50.
+8.	Generate a random multiple of 10 between 10 and 100.
+9.	Generate a random integer between 50 and 100.
+10.	Generate a random integer between 100 and 200.
+11.	Generate a random negative integer between -10 and -1.
+12.	Generate a random integer between -50 and 50.
+13.	Generate a random number and check whether it is even or odd.
+14.	Generate a random number and check whether it is divisible by 5.
+15.	Generate a random number and check whether it is prime.
+Level 2: Conditions and loops (16–30)
+16.	Print 10 random integers between 1 and 100.
+17.	Print only even random numbers generated between 1 and 50.
+18.	Print only odd random numbers generated between 1 and 100.
+19.	Generate 20 random numbers and count the even numbers.
+20.	Generate 20 random numbers and count the odd numbers.
+21.	Generate 10 random numbers and find the largest number.
+22.	Generate 10 random numbers and find the smallest number.
+23.	Generate 20 random numbers and count how many times 50 appears.
+24.	Keep generating random numbers until 50 appears.
+25.	Keep generating random numbers until an even number appears.
+26.	Generate random numbers until a number greater than 90 appears.
+27.	Generate 10 random numbers and calculate their sum.
+28.	Generate 10 random numbers and calculate their average.
+29.	Generate 20 random numbers and count how many are divisible by 5.
+30.	Generate random numbers until three even numbers have been found.
+Level 3: Arrays and unique values (31–45)
+31.	Store 10 random integers between 1 and 100 in an array.
+32.	Find the largest number in a random array.
+33.	Find the smallest number in a random array.
+34.	Count the even numbers in a random array.
+35.	Count the odd numbers in a random array.
+36.	Create a second array containing only even random numbers.
+37.	Create a second array containing only odd random numbers.
+38.	Sort a random array in ascending order.
+39.	Sort a random array in descending order.
+40.	Remove duplicate numbers from a random array.
+41.	Generate six unique random integers between 1 and 49.
+42.	Shuffle an existing array randomly.
+43.	Select a random element from an array of names.
+44.	Select three unique winners from a participant array.
+45.	Calculate the sum, average, minimum, and maximum of a random array.
+Level 4: Background, colors and DOM (46–60)
+46.	Change the webpage background to a random color whenever a button is clicked.
+47.	Generate a random hexadecimal background color.
+48.	Generate a random gradient using two random colors.
+49.	Change a heading's text color randomly on each button click.
+50.	Generate a random RGB color using rgb().
+51.	Generate a random HSL color using hsl().
+52.	Create a random color palette containing five colors.
+53.	Display the current random color code on the webpage.
+54.	Create a button that generates a new random background every second.
+55.	Generate a random background color for each card in a dashboard.
+56.	Generate random circles of different colors and sizes.
+57.	Generate random shapes at random positions on the webpage.
+58.	Create a random confetti effect when a button is clicked.
+59.	Create a random gradient generator with a button to copy its CSS code.
+60.	Create a random theme generator that changes the background, text, and button colors together.
+Level 5: Passwords, IDs and codes (61–75)
+61.	Generate a random six-digit numeric ID.
+62.	Generate an employee ID such as EMP-5832.
+63.	Generate a product ID such as PRD-82471.
+64.	Generate an order reference such as ORD-2026-5831.
+65.	Generate a random username using a name array and random digits.
+66.	Generate a random password using uppercase and lowercase letters.
+67.	Generate a random password containing letters, numbers, and symbols.
+68.	Generate a password of a user-specified length.
+69.	Generate a six-digit OTP as a string.
+70.	Generate a random coupon code such as SAVE8K2P.
+71.	Generate a random invoice reference such as INV-A7K92P.
+72.	Generate a random ticket number such as TKT-72941.
+73.	Generate a random verification reference code.
+74.	Generate a random student ID with an STU- prefix.
+75.	Generate 10 random IDs and check whether any duplicates exist.
+Level 6: Games and simulations (76–90)
+76.	Build a dice simulator that generates numbers from 1 to 6.
+77.	Simulate rolling two dice and calculate their sum.
+78.	Build a coin toss application that returns Heads or Tails.
+79.	Build a number guessing game from 1 to 100.
+80.	Build a rock-paper-scissors game against the computer.
+81.	Create a random multiple-choice quiz question selector.
+82.	Build a lottery number generator that avoids duplicates.
+83.	Create a random playing-card picker.
+84.	Build a random winner selector for a class.
+85.	Build a random team generator that divides students into teams.
+86.	Create a dice race where two players compete to reach a target.
+87.	Build a random math quiz using random operands.
+88.	Create a random reaction-time game.
+89.	Simulate 100 coin tosses and count Heads and Tails.
+90.	Simulate rolling a die 1,000 times and calculate the frequency of each result.
+Level 7: Advanced and real-world projects (91–100)
+91.	Create a reusable getRandomNumber(min, max) function.
+92.	Create a function that returns a random element from any array.
+93.	Create a function that generates a random array of a specified length.
+94.	Create a function that generates unique random integers within a range.
+95.	Build a random fake-user generator with names, ages, and usernames.
+96.	Build a random product-data generator for testing an e-commerce application.
+97.	Create a random task selector from a to-do list.
+98.	Build a random quiz application that tracks the user's score.
+99.	Create a random maze or grid generator.
+100.	Build a complete random-number game with hints, attempt counting, a restart button, and a final score.
+

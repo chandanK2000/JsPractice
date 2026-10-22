@@ -1,0 +1,1135 @@
+Strings Method
+JavaScript charAt() — 20 Practice Questions
+Level 1: Beginner
+Q1. Get the first character
+Create a function getFirstChar(name) that returns the first character of a string.
+Expected output:
+•	"Rahul" → R
+•	"JavaScript" → J
+Q2. Get the last character
+Create a function getLastChar(word) that returns the last character using charAt() and length.
+Expected output:
+•	"Chandan" → n
+•	"Computer" → r
+Q3. Get a character at a given index
+Create a function getCharAt(word, index).
+Expected output:
+•	getCharAt("Computer", 3) → p
+•	getCharAt("JavaScript", 4) → S
+Q4. Check whether a name starts with A
+Create a function that returns "Yes" if the first character is A or a; otherwise, return "No".
+Expected output:
+•	"Anjali" → Yes
+•	"aman" → Yes
+•	"Rahul" → No
+Q5. Get the middle character
+Create a function that returns the middle character of an odd-length string.
+Expected output:
+•	"Hello" → l
+•	"Cat" → a
+•	"Rahul" → h
+Level 2: Beginner to Intermediate
+Q6. Print the first character of every name
+Use a function and a for loop.
+let students = ["Mohan", "Anjali", "Rahul", "Sohan"];
+Expected output:
+M
+A
+R
+S
+Q7. Get initials
+Create a function getInitials(firstName, lastName) that returns the first character of each name together.
+Expected output:
+•	"Chandan", "Kumar" → CK
+•	"Rahul", "Sharma" → RS
+Q8. Check the last character
+Create a function that returns "Yes" if the last character is n or N; otherwise, return "No".
+Expected output:
+•	"Rohan" → Yes
+•	"KIRAN" → Yes
+•	"Rahul" → No
+Q9. Check whether a word starts with a vowel
+Check whether the first character is a, e, i, o, or u, regardless of case.
+Expected output:
+•	"Apple" → Vowel
+•	"orange" → Vowel
+•	"Banana" → Not a vowel
+Q10. Count names starting with S
+Use charAt() and a loop to count names starting with S or s.
+let names = ["Sohan", "Rahul", "Sneha", "suman", "Anjali"];
+Expected output:
+Total names starting with S: 3
+Level 3: Intermediate
+Q11. Count names ending with n
+Use a loop and charAt() to count names whose last character is n or N.
+let names = ["Rohan", "Mohan", "Rahul", "Kiran", "Anjali"];
+Expected output:
+Total names ending with n: 3
+Q12. Find names starting and ending with the same character
+Use charAt() to check whether the first and last characters of each word are the same.
+let words = ["radar", "level", "hello", "madam", "cat"];
+Expected matching words:
+•	radar
+•	level
+•	madam
+Q13. Convert the first character to uppercase
+Create a function that returns a name with its first character uppercase and the remaining characters unchanged. Use charAt() to get the first character.
+Expected output:
+•	"rahul" → Rahul
+•	"chandan" → Chandan
+Q14. Check a username's first character
+Return "Invalid" if the first character is a digit from 0 to 9; otherwise, return "Accepted".
+Expected output:
+•	"7chandan" → Invalid
+•	"chandan7" → Accepted
+•	"3rahul" → Invalid
+Q15. Print characters at even indexes
+Use a for loop and charAt() to print characters at indexes 0, 2, 4, 6....
+Expected output for "JavaScript":
+J
+v
+S
+r
+p
+Level 4: Advanced Practice
+Q16. Print characters in reverse order
+Use a loop and charAt() to print a word's characters from last to first. Do not use reverse().
+Expected output for "RAHUL":
+L
+U
+H
+A
+R
+Q17. Count uppercase first letters
+Given an array of names, count how many names start with an uppercase English letter. Assume all names are nonempty.
+let names = ["Rahul", "anjali", "Sohan", "mohan", "Kiran"];
+Expected output:
+Total uppercase names: 3
+Q18. Find the longest name and its first character
+Use a loop to find the longest name in the array, then use charAt() to print its first character.
+let names = ["Raj", "Chandan", "Anjali", "Christopher", "Mohan"];
+Expected output:
+Longest name: Christopher
+First character: C
+Q19. Count words whose first and last characters match
+Use a loop and charAt() to count matching words.
+let words = ["anna", "hello", "civic", "world", "noon", "cat"];
+Expected output:
+Total matching words: 3
+Q20. Create a character-analysis function
+Create a function analyzeWord(word) that prints:
+1.	The first character.
+2.	The last character.
+3.	The middle character if the length is odd; otherwise, print "No single middle character".
+4.	Whether the first and last characters match.
+Expected output for "radar":
+First character: r
+Last character: r
+Middle character: d
+First and last match: Yes
+
+Charcodeat practice
+
+Level 1: Basic (Q1–Q8)
+Q1. Get the character code
+Write code to print the character code of the first character in "Rahul".
+Expected output:
+82
+Q2. Get the last character's code
+Create getLastCharCode(word) to return the code of the last character.
+Input: "ABC"
+Expected output:
+67
+Q3. Get the code at a given index
+Create getCharCode(word, index).
+Input: getCharCode("Hello", 1)
+Expected output:
+101
+Q4. Print all character codes
+Use a for loop to print every character code in "CAT".
+Expected output:
+67
+65
+84
+Q5. Get the first character's code
+Create getFirstCharCode(name) and test it with "Anjali" and "Mohan".
+Expected output:
+65
+77
+Q6. Get the middle character's code
+Create getMiddleCharCode(word) for odd-length strings.
+Input: "Cat"
+Expected output:
+97
+Q7. Get the code of the last character of a name
+Input: "Chandan"
+Expected output:
+110
+Q8. Print the character codes of "DOG"
+Use a loop to print the code of each character.
+Expected output:
+68
+79
+71
+Level 2: Intermediate (Q9–Q17)
+Q9. Count uppercase letters
+Count the uppercase letters in "HeLLo" using charCodeAt().
+Expected output:
+3
+Q10. Print character codes in reverse order
+Use a loop to print the character codes of "ABC" from last to first.
+Expected output:
+67
+66
+65
+Q11. Check the first character
+Create isUppercaseFirstChar(word). Return true if the first character is an uppercase English letter; otherwise, return false.
+Expected output:
+isUppercaseFirstChar("Rahul")  // true
+isUppercaseFirstChar("rahul")  // false
+isUppercaseFirstChar("7rahul") // false
+Q12. Count lowercase letters
+Count the lowercase English letters in "JaVaScript".
+Expected output:
+7
+Q13. Count digit characters
+Count the digit characters in "Chandan123Kumar45".
+Expected output:
+5
+Q14. Calculate the sum of character codes
+Calculate the sum of all character codes in "ABC".
+Expected output:
+198
+Q15. Find the character with the highest code
+Given the array below, find the character with the highest code unit.
+let letters = ["A", "B", "Z", "C"];
+Expected output:
+Z
+Q16. Count names starting with uppercase letters
+Use charCodeAt() and a loop.
+let names = ["Rahul", "anjali", "Sohan", "mohan", "Kiran"];
+Expected output:
+3
+Q17. Check whether a string starts with a digit
+Create startsWithDigit(word) using character codes.
+Expected output:
+startsWithDigit("7chandan") // true
+startsWithDigit("chandan7") // false
+startsWithDigit("3rahul")   // true
+Level 3: Advanced (Q18–Q25)
+Q18. Count uppercase, lowercase, and digit characters
+Analyze the string "AbC123xy".
+Expected output:
+Uppercase: 2
+Lowercase: 3
+Digits: 3
+Q19. Find the sum of character codes at even indexes
+Use indexes 0, 2, 4, 6... for the string "ABCDE".
+Expected output:
+201
+Q20. Find the sum of character codes at odd indexes
+Use indexes 1, 3, 5, 7... for the string "ABCDE".
+Expected output:
+133
+Q21. Check whether the first and last characters have the same code
+Create a function sameFirstLastCode(word).
+Expected output:
+sameFirstLastCode("radar") // true
+sameFirstLastCode("hello") // false
+sameFirstLastCode("level") // true
+Q22. Count characters with codes greater than 90
+Count the characters whose code units are greater than 90 in "ABCabcXYZ".
+Expected output:
+3
+Q23. Convert character codes back into characters
+Use String.fromCharCode() to convert these codes into a string:
+let codes = [72, 69, 76, 76, 79];
+Expected output:
+HELLO
+Q24. Understand Unicode code units
+Print the results of the following expressions:
+console.log("A😀B".charCodeAt(0));
+console.log("A😀B".charCodeAt(1));
+console.log("A😀B".charCodeAt(2));
+console.log("A😀B".charCodeAt(3));
+Expected output:
+65
+55357
+56832
+66
+Q25. Create a character-analysis function
+Create analyzeString(word) that counts uppercase letters, lowercase letters, and digits using charCodeAt(). Test it with "AbC123xy9".
+Expected output:
+Uppercase: 2
+Lowercase: 4
+Digits: 4
+
+JavaScript concat() — 20 Practice Questions
+Level 1: Basic (1–5)
+Q1. Join two strings.
+let a = "Hello";
+let b = "World";
+
+console.log(a.concat(b));
+Q2. Join two strings with a space.
+let firstName = "Chandan";
+let lastName = "Kumar";
+
+console.log(firstName.concat(" ", lastName));
+Q3. Join three strings.
+let a = "Java";
+let b = "Script";
+let c = "Developer";
+
+console.log(a.concat(b, c));
+Q4. Add punctuation.
+let message = "Good Morning";
+
+console.log(message.concat("!"));
+Q5. Join a string with a number represented as a string.
+let a = "100";
+let b = "200";
+
+console.log(a.concat(b));
+Level 2: Beginner to Intermediate (6–10)
+Q6. Check whether the original string changes.
+let name = "Chandan";
+
+let result = name.concat(" Kumar");
+
+console.log(result);
+console.log(name);
+Q7. Join multiple words.
+let a = "I";
+let b = "am";
+let c = "learning";
+let d = "JavaScript";
+
+console.log(a.concat(" ", b, " ", c, " ", d));
+Q8. Join strings with a hyphen.
+let day = "15";
+let month = "10";
+let year = "2026";
+
+console.log(day.concat("-", month, "-", year));
+Q9. Join two strings without a space.
+let a = "Full";
+let b = "Stack";
+
+console.log(a.concat(b));
+Q10. Join a string with an empty string.
+let name = "Rahul";
+
+console.log(name.concat(""));
+Level 3: Intermediate (11–15)
+Q11. Predict the output.
+let a = "Good";
+let b = " ";
+let c = "Evening";
+let d = "!";
+
+console.log(a.concat(b, c, d));
+Q12. Join strings using a variable.
+let city = "Bengaluru";
+let country = "India";
+
+let location = city.concat(", ", country);
+
+console.log(location);
+Q13. Concatenate inside a loop.
+let result = "";
+
+for (let i = 1; i <= 4; i++) {
+    result = result.concat(i.toString());
+}
+
+console.log(result);
+Q14. Join array elements using concat() on strings.
+let result = "Names: ";
+let a = "Rahul";
+let b = "Sohan";
+let c = "Mohan";
+
+console.log(result.concat(a, ", ", b, ", ", c));
+Q15. Understand the difference between two results.
+let a = "10";
+let b = "20";
+
+console.log(a.concat(b));
+console.log(Number(a) + Number(b));
+Level 4: Advanced Practice (16–20)
+Q16. Build a sentence.
+let name = "Chandan";
+let skill = "React";
+let role = "Developer";
+
+let result = name.concat(" is a ", skill, " ", role);
+
+console.log(result);
+Q17. Use concat() with a function.
+function greet(name) {
+    return "Hello, ".concat(name, "!");
+}
+
+console.log(greet("Chandan"));
+console.log(greet("Rahul"));
+Q18. Concatenate strings conditionally.
+let result = "Java";
+
+if (true) {
+    result = result.concat("Script");
+}
+
+console.log(result);
+Q19. Predict both outputs carefully.
+let a = "Hello";
+let b = a.concat(" ", "World");
+
+console.log(a);
+console.log(b);
+Q20. Combine concat() with a loop and condition.
+let result = "";
+
+for (let i = 1; i <= 6; i++) {
+    if (i % 2 === 0) {
+        result = result.concat(i.toString());
+    }
+}
+
+console.log(result);
+JavaScript at() — 20 Practice Questions
+Level 1: Basic (Questions 1–5)
+Q1. Get the first character.
+let name = "Chandan";
+
+console.log(name.at(0));
+Predict the output.
+Q2. Get the last character.
+let city = "Bengaluru";
+
+console.log(city.at(-1));
+Q3. Get the third character.
+let language = "JavaScript";
+
+console.log(language.at(2));
+Q4. Get the second-last character.
+let fruit = "Mango";
+
+console.log(fruit.at(-2));
+Q5. Check an invalid index.
+let word = "Hello";
+
+console.log(word.at(20));
+console.log(word.at(-10));
+Predict both outputs.
+Level 2: Beginner to Intermediate (Questions 6–10)
+Q6. Check the first and last characters of a username.
+let username = "Rahul123";
+
+console.log(username.at(0));
+console.log(username.at(-1));
+Q7. Find the middle character.
+let word = "India";
+let middleIndex = Math.floor(word.length / 2);
+
+console.log(word.at(middleIndex));
+Q8. Use at() with a number converted to a string.
+let number = 12345;
+let text = String(number);
+
+console.log(text.at(0));
+console.log(text.at(-1));
+Q9. Check whether a word starts and ends with the same character.
+let word = "radar";
+
+console.log(word.at(0) === word.at(-1));
+Q10. Understand case sensitivity.
+let word = "JavaScript";
+
+console.log(word.at(0) === word.at(-1));
+console.log(word.at(0).toLowerCase() === word.at(-1).toLowerCase());
+Predict both outputs.
+Level 3: Intermediate (Questions 11–15)
+Q11. Print every character using a loop.
+let name = "Mohan";
+
+for (let i = 0; i < name.length; i++) {
+    console.log(name.at(i));
+}
+Write the complete output.
+Q12. Print characters in reverse order.
+let word = "HELLO";
+
+for (let i = -1; i >= -word.length; i--) {
+    console.log(word.at(i));
+}
+Q13. Count how many names end with "n".
+let names = ["Rohan", "Mohan", "Rahul", "Kiran", "Aman"];
+let count = 0;
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i].at(-1) === "n") {
+        count++;
+    }
+}
+
+console.log(count);
+Q14. Print the last character of every name.
+let students = ["Anjali", "Rahul", "Sohan", "Priya"];
+
+for (let i = 0; i < students.length; i++) {
+    console.log(students[i].at(-1));
+}
+Q15. Find names whose first and last characters match.
+let words = ["radar", "hello", "level", "world", "madam"];
+
+for (let i = 0; i < words.length; i++) {
+    if (words[i].at(0) === words[i].at(-1)) {
+        console.log(words[i]);
+    }
+}
+Write the complete output.
+Level 4: Advanced (Questions 16–20)
+Q16. Create a function to return the last character.
+Complete the function:
+function getLastCharacter(word) {
+    // Write your code here
+}
+
+console.log(getLastCharacter("JavaScript"));
+console.log(getLastCharacter("Chandan"));
+console.log(getLastCharacter("India"));
+Expected behavior: the function should return the last character of each string.
+Q17. Count names that start and end with the same character, ignoring case.
+let names = ["Anna", "Rahul", "Level", "MOM", "hello"];
+let count = 0;
+
+for (let i = 0; i < names.length; i++) {
+    let first = names[i].at(0).toLowerCase();
+    let last = names[i].at(-1).toLowerCase();
+
+    if (first === last) {
+        count++;
+    }
+}
+
+console.log(count);
+Predict the output.
+Q18. Extract the last two characters of every word.
+let words = ["Chandan", "Rahul", "Mohan", "India"];
+
+for (let i = 0; i < words.length; i++) {
+    console.log(words[i].at(-2) + words[i].at(-1));
+}
+Write the complete output.
+Q19. Use at() with break and continue.
+Print the last character of each name, but skip names whose last character is "a" and stop when the name is "Mohan".
+let names = ["Rahul", "Anjali", "Rohan", "Priya", "Mohan", "Kiran"];
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i] === "Mohan") {
+        break;
+    }
+
+    if (names[i].at(-1) === "a") {
+        continue;
+    }
+
+    console.log(names[i].at(-1));
+}
+Predict the output.
+Q20. Build a username validator.
+A username is valid if:
+•	It contains at least 3 characters.
+•	Its first character is a letter.
+•	Its last character is a digit.
+Complete the function:
+function isValidUsername(username) {
+    // Write your code here
+}
+
+console.log(isValidUsername("Rahul7"));
+console.log(isValidUsername("7Rahul"));
+console.log(isValidUsername("An1"));
+console.log(isValidUsername("Mohan"));
+console.log(isValidUsername("A1"));
+
+JavaScript String Methods — 30 Mixed Practice Questions
+Level 1: Basic understanding (1–10)
+For each question, predict the exact output.
+Q1.
+let name = "Chandan";
+console.log(name.charAt(0));
+Q2.
+let name = "Chandan";
+console.log(name.at(-1));
+Q3.
+let name = "Chandan";
+console.log(name[6]);
+Q4.
+let word = "JavaScript";
+console.log(word.charAt(4));
+Q5.
+let word = "JavaScript";
+console.log(word.at(-1));
+Q6.
+let word = "Hello";
+console.log(word[1]);
+console.log(word.charAt(1));
+console.log(word.at(1));
+Q7.
+let city = "Delhi";
+console.log(city.at(-2));
+Q8.
+let city = "Delhi";
+console.log(city.charAt(-2));
+Q9.
+let city = "Delhi";
+console.log(city[-2]);
+Q10.
+let word = "Mohan";
+console.log(word.charAt(10));
+console.log(word.at(10));
+console.log(word[10]);
+Level 2: Confusion questions (11–20)
+Be careful, sir! Some outputs are similar, but not all are the same.
+Q11. Empty string
+let word = "";
+console.log(word.charAt(0));
+console.log(word.at(0));
+console.log(word[0]);
+Q12. Uppercase versus lowercase
+let word = "Chandan";
+console.log(word.at(0) === "c");
+console.log(word.charAt(0) === "C");
+Q13. Calculate the last index
+let word = "JavaScript";
+
+console.log(word[word.length - 1]);
+console.log(word.at(-1));
+Q14. Second-last character
+let word = "Rahul";
+
+console.log(word.charAt(word.length - 2));
+console.log(word.at(-2));
+console.log(word[word.length - 2]);
+Q15. Negative index confusion
+let word = "Hello";
+
+console.log(word.at(-5));
+console.log(word.charAt(-5));
+console.log(word[-5]);
+Q16. Index zero
+let word = "ABC";
+
+console.log(word.at(0));
+console.log(word.charAt(0));
+console.log(word[0]);
+Q17. Length versus index
+let word = "India";
+
+console.log(word.length);
+console.log(word.charAt(word.length));
+console.log(word.at(word.length));
+console.log(word[word.length]);
+Q18. One-character string
+let word = "A";
+
+console.log(word.at(-1));
+console.log(word.charAt(0));
+console.log(word[1]);
+Q19. Compare characters
+let a = "Hello";
+let b = "hello";
+
+console.log(a.at(0) === b.at(0));
+console.log(a.charAt(0).toLowerCase() === b[0].toLowerCase());
+Q20. Number converted into a string
+let number = 12345;
+let text = String(number);
+
+console.log(text.at(-1));
+console.log(text.charAt(0));
+console.log(text[2]);
+Level 3: Loops and real coding scenarios (21–25)
+For these questions, trace the loop carefully.
+Q21. Print the characters in forward order.
+let word = "CODE";
+
+for (let i = 0; i < word.length; i++) {
+    console.log(word.at(i));
+}
+Write the complete output.
+Q22. Print characters in reverse order.
+let word = "HELLO";
+
+for (let i = word.length - 1; i >= 0; i--) {
+    console.log(word[i]);
+}
+Q23. Count names ending in "n".
+let names = ["Rohan", "Rahul", "Mohan", "Priya", "Kiran"];
+let count = 0;
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i].at(-1) === "n") {
+        count++;
+    }
+}
+
+console.log(count);
+Q24. Skip names starting with "A".
+let names = ["Anjali", "Rahul", "Aman", "Sohan", "Anamika"];
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i].charAt(0) === "A") {
+        continue;
+    }
+
+    console.log(names[i].at(-1));
+}
+Q25. Find names whose first and last characters match.
+let names = ["radar", "hello", "level", "mohan", "madam"];
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i][0] === names[i].at(-1)) {
+        console.log(names[i]);
+    }
+}
+Level 4: Advanced confusion and coding challenges (26–30)
+Q26. Find the output — strings are immutable.
+let word = "Hello";
+
+word[0] = "Y";
+
+console.log(word);
+console.log(word.at(0));
+console.log(word.charAt(0));
+Q27. Use break and at() together.
+let names = ["Rahul", "Mohan", "Anjali", "Kiran", "Sohan"];
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i].at(-1) === "l") {
+        break;
+    }
+
+    console.log(names[i].charAt(0));
+}
+Q28. Count uppercase starting characters.
+let names = ["Rahul", "anjali", "Sohan", "mohan", "Kiran"];
+let count = 0;
+
+for (let i = 0; i < names.length; i++) {
+    if (names[i][0] === names[i][0].toUpperCase()) {
+        count++;
+    }
+}
+
+console.log(count);
+Q29. Write a function to return the last character.
+Complete the function using at().
+function getLastCharacter(word) {
+    // Write your code here
+}
+
+console.log(getLastCharacter("JavaScript")); // Expected: t
+console.log(getLastCharacter("Chandan"));    // Expected: n
+console.log(getLastCharacter("India"));      // Expected: a
+Q30. Mixed-method challenge — validate a username.
+A username is valid when:
+•	It contains at least 3 characters.
+•	The first character is "C" (uppercase).
+•	The last character is a digit from 0 to 9.
+Complete the function using a combination of charAt(), at(), or [].
+function validateUsername(username) {
+    // Write your code here
+}
+
+console.log(validateUsername("Chandan7")); // true
+console.log(validateUsername("Chandan"));  // false
+console.log(validateUsername("chandan7")); // false
+console.log(validateUsername("C12"));      // true
+console.log(validateUsername("C1"));       // false
+Your revision cheat sheet
+Expression	What it does
+str.charAt(0)	Gets the first character
+str.at(-1)	Gets the last character
+str[str.length - 1]	Gets the last character
+str.charAt(-1)	Returns ""
+str.at(-1)	Supports negative indexes
+str[-1]	Returns undefined
+str.at(str.length)	Returns undefined
+str[str.length]	Returns undefined
+
+
+
+
+JavaScript slice() — 20 Practice Questions
+Remember: slice(start, end) includes start but excludes end.
+Question 1
+Basic
+What is the output?
+console.log("Hello".slice(0, 3));
+Show hint
+Question 2
+Basic
+What is the output?
+console.log("JavaScript".slice(4));
+Show hint
+Question 3
+Basic
+What is the output?
+console.log("Chandan".slice(1, 4));
+Show hint
+Question 4
+Basic
+What is the output?
+console.log("Welcome".slice(0, 1));
+Show hint
+Question 5
+Basic
+What is the output?
+console.log("Developer".slice(5));
+Show hint
+Question 6
+Negative indexes
+What is the output?
+console.log("JavaScript".slice(-3));
+Show hint
+Question 7
+Negative indexes
+What is the output?
+console.log("Computer".slice(-5, -2));
+Show hint
+Question 8
+Negative indexes
+What is the output?
+console.log("Notebook".slice(-4, -1));
+Show hint
+Question 9
+Negative indexes
+What is the output?
+console.log("Programming".slice(-6));
+Show hint
+Question 10
+Negative indexes
+What is the output?
+console.log("Elephant".slice(-5, -3));
+Show hint
+Question 11
+Tricky
+What is the output?
+console.log("Hello".slice(2, 2));
+Show hint
+Question 12
+Tricky
+What is the output?
+console.log("JavaScript".slice(7, 3));
+Show hint
+Question 13
+Tricky
+What is the output?
+console.log("abcdef".slice(2, 100));
+Show hint
+Question 14
+Tricky
+What is the output?
+console.log("abcdef".slice(-100, 3));
+Show hint
+Question 15
+Tricky
+What is the output?
+console.log("abcdef".slice(2, -1));
+Show hint
+Question 16
+Variables
+What is the output?
+let word = "Education"; console.log(word.slice(2, 6));
+Show hint
+Question 17
+Variables
+What is the output?
+let name = "Anamika"; console.log(name.slice(-4));
+Show hint
+Question 18
+Functions
+What is the output?
+function getPart(text) { return text.slice(1, 5); } console.log(getPart("Morning"));
+Show hint
+Question 19
+Arrays + strings
+What is the output?
+let students = ["Mohan", "Rahul", "Anjali"]; console.log(students[1].slice(1, 4));
+Show hint
+Question 20
+Challenge
+What is the output, and does the original string change?
+let message = "JavaScript"; let result = message.slice(0, 4); console.log(result); console.log(message);
+Show hint
+
+
+JavaScript substring() — 20 Practice Questions
+Level 1: Basic (Q1–Q5)
+Question 1
+Basic
+What is the output?
+console.log("Hello".substring(0, 3));
+Question 2
+Basic
+What is the output?
+console.log("JavaScript".substring(4));
+Question 3
+Basic
+What is the output?
+console.log("Chandan".substring(2, 5));
+Question 4
+Basic
+What is the output?
+console.log("Developer".substring(0, 1));
+Question 5
+Basic
+What is the output?
+console.log("Computer".substring(3, 7));
+Level 2: Negative and swapped indexes (Q6–Q10)
+Question 6
+Negative indexes
+What is the output?
+console.log("Chandan".substring(-3, 4));
+Show hint
+Question 7
+Negative indexes
+What is the output?
+console.log("JavaScript".substring(-4));
+Show hint
+Question 8
+Negative indexes
+What is the output?
+console.log("Hello".substring(-2, -1));
+Show hint
+Question 9
+Swapped indexes
+What is the output?
+console.log("Programming".substring(7, 3));
+Show hint
+Question 10
+Swapped indexes
+What is the output?
+console.log("JavaScript".substring(6, 2));
+Show hint
+Level 3: Tricky cases (Q11–Q15)
+Question 11
+What is the output?
+console.log("Hello".substring(2, 2));
+Question 12
+What is the output?
+console.log("Hello".substring(0, 100));
+Question 13
+What is the output?
+console.log("abcdef".substring(3, -1));
+Question 14
+What is the output?
+console.log("abcdef".substring(-5, 3));
+Question 15
+What is the output?
+console.log("abcdef".substring(4, 2));
+Level 4: Variables, functions and loops (Q16–Q20)
+Question 16
+Variables
+What is the output?
+let word = "Education"; console.log(word.substring(2, 6));
+Question 17
+Variables
+What is the output?
+let name = "Anamika"; console.log(name.substring(3));
+Question 18
+Functions
+What is the output?
+function getPart(text) { return text.substring(1, 5); } console.log(getPart("Morning"));
+Question 19
+Loops
+What is the output?
+let word = "HELLO"; for (let i = 0; i < 3; i++) { console.log(word.substring(i, i + 2)); }
+Question 20
+Challenge
+What are both outputs? Does the original string change?
+let message = "JavaScript"; let result = message.substring(4, 1); console.log(result); console.log(message);
+
+
+Sure sir! 😊 Let's practice 25 JavaScript padStart() questions, from beginner to advanced level.
+Try to predict the output of every question before running the code, sir. I will check your answers and give you a score out of 10.
+Level 1: Beginner (Q1–Q10)
+Practice questions
+Write the output for each question. For spaces, you can write [spaces]Hi so the answer is clear.
+Q1. What is the output?
+console.log("5".padStart(3, "0"));
+Q2. What is the output?
+console.log("Hi".padStart(5, "*"));
+Q3. What is the output?
+console.log("Hello".padStart(5, "*"));
+Q4. What is the output?
+console.log("Hi".padStart(4));
+Q5. What is the output?
+console.log("25".padStart(4, "0"));
+Q6. What is the output?
+console.log("cat".padStart(6, "-"));
+Q7. What is the output?
+console.log("123".padStart(2, "0"));
+Q8. What is the output?
+console.log("A".padStart(5, "ab"));
+Q9. What is the output?
+console.log("".padStart(3, "x"));
+Q10. What is the output?
+console.log("JS".padStart(6, "abc"));
+Q11. What is the output?
+console.log("7".padStart(4));
+Q12. What is the output?
+console.log("10".padStart(5, "0"));
+Q13. What is the output?
+console.log("dog".padStart(7, "."));
+Q14. What is the output?
+console.log("abc".padStart(6, "xy"));
+Q15. What is the output?
+console.log("Hi".padStart(3, "123"));
+Q16. What is the output?
+let name = "Ram"; console.log(name.padStart(6, "*"));
+Q17. What is the output?
+let id = "42"; console.log(id.padStart(5, "0"));
+Q18. What is the output?
+console.log("abcd".padStart(7, "12"));
+Q19. What is the output?
+console.log("OK".padStart(8, "-="));
+Q20. What is the output?
+console.log("9".padStart(4, "ab"));
+Q21. What is the output?
+let value = "25"; console.log(value.padStart(4, "0")); console.log(value);
+Q22. What is the output?
+console.log("hello".padStart(8, "123"));
+Q23. What is the output?
+console.log("".padStart(5));
+Q24. What is the output?
+console.log("12345".padStart(8, "0"));
+Q25. What is the output?
+let code = "JS"; console.log(code.padStart(5, "*")); console.log(code.length);
+Submit all 25 answers
+JavaScript practice: replace() vs replaceAll()
+Level 1 — Beginner (Q1–Q10)
+Predict the output of each code snippet.
+Your 30-question worksheet
+0/30 answered
+Write the exact output. If there are multiple console.log statements, write each output on a separate line. For questions with no match, write the original string.
+Level 1 — Beginner
+Q1
+console.log("apple".replace("a", "A"));
+Q2
+console.log("banana".replace("a", "o"));
+Q3
+console.log("cat cat".replace("cat", "dog"));
+Q4
+console.log("apple apple".replaceAll("apple", "mango"));
+Q5
+console.log("hello hello".replace("hello", "Hi"));
+Q6
+console.log("hello hello".replaceAll("hello", "Hi"));
+Q7
+console.log("red blue red".replace("red", "green"));
+Q8
+console.log("red blue red".replaceAll("red", "green"));
+Q9
+console.log("111-222-333".replace("-", ":"));
+Q10
+console.log("111-222-333".replaceAll("-", ":"));
+Level 2 — Intermediate
+Q11
+console.log("banana".replace(/a/g, "X"));
+Q12
+console.log("banana".replace(/a/, "X"));
+Q13
+console.log("HELLO".replace("hello", "Hi"));
+Q14
+console.log("HELLO".replaceAll("hello", "Hi"));
+Q15
+console.log("HELLO".replace(/hello/i, "Hi"));
+Q16
+console.log("Hello hello HELLO".replace(/hello/gi, "Hi"));
+Q17
+console.log("one two one two".replace("one", "three"));
+Q18
+console.log("one two one two".replaceAll("one", "three"));
+Q19
+console.log("mississippi".replace("ss", "XX"));
+Q20
+console.log("mississippi".replaceAll("ss", "XX"));
+Level 3 — Advanced
+Q21
+let text = "JavaScript is fun"; let result = text.replace("fun", "powerful"); console.log(result); console.log(text);
+Q22
+console.log("A1B2C3".replace(/[0-9]/g, "*"));
+Q23
+console.log("a-b-c-d".replaceAll("-", ""));
+Q24
+console.log("2026/10/15".replaceAll("/", "-"));
+Q25
+console.log("foo foo food".replaceAll("foo", "bar"));
+Q26
+console.log("banana".replace(/na/g, "NA"));
+Q27
+console.log("abcabcabc".replace(/abc/g, "X"));
+Q28
+console.log("red RED Red".replace(/red/gi, "blue"));
+Q29
+console.log("12345".replaceAll("2", "22"));
+Q30
+let name = "Chandan"; console.log(name.replaceAll("a", "A")); console.log(name);
+Level 1 — Beginner
+Q1. What is the output?
+console.log("apple,banana,mango".split(","));
+Q2. What is the output?
+console.log("I love JavaScript".split(" "));
+Q3. What is the output?
+console.log("HELLO".split(""));
+Q4. What is the output?
+console.log("2026-10-15".split("-"));
+Q5. What is the output?
+console.log("one two three".split(" "));
+Q6. What is the output?
+console.log("apple".split(","));
+Q7. What is the output?
+console.log("a-b-c-d".split("-"));
+Q8. What is the output?
+console.log("red,green,blue".split(",", 2));
+Q9. What is the output?
+console.log("a,b,c,d".split(",", 3));
+Q10. What is the output?
+console.log("Hello World".split());
+Level 2 — Intermediate
+Q11. What is the output?
+console.log("a,,b,c".split(","));
+Q12. What is the output?
+console.log("banana".split("a"));
+Q13. What is the output?
+console.log("mississippi".split("ss"));
+Q14. What is the output?
+console.log("JavaScript".split("a"));
+Q15. What is the output?
+console.log("one-two-three".split("-", 1));
+Q16. What is the output?
+console.log("abc".split(""));
+Q17. What is the output?
+console.log("apple,banana,mango".split(",", 0));
+Q18. What is the output?
+console.log("a b c".split(" "));
+Q19. What is the output?
+console.log("2026/10/15".split("/"));
+Q20. What is the output?
+console.log("cat|dog|bird".split("|"));
+Level 3 — Advanced
+Q21. What is the output?
+let text = "red,green,blue"; let result = text.split(","); console.log(result.length); console.log(result[1]);
+Q22. What is the output?
+console.log("a-b-c".split("-", 5));
+Q23. What is the output?
+console.log("".split(","));
+Q24. What is the output?
+console.log("a.b.c".split("."));
+Q25. What is the output?
+let name = "Ram Kumar"; console.log(name.split(" ")); console.log(name);
+

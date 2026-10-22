@@ -1,0 +1,158 @@
+Functions example 
+Level 1: Basic functions (1–15)
+1.	Create a function that prints "Hello, World!".
+2.	Create a function that prints your name.
+3.	Create a function that accepts one number and prints it.
+4.	Create a function that accepts two numbers and prints their sum.
+5.	Create a function that returns the difference between two numbers.
+6.	Create a function that multiplies two numbers.
+7.	Create a function that divides two numbers.
+8.	Create a function that returns the square of a number.
+9.	Create a function that returns the cube of a number.
+10.	Create a function that returns the remainder of two numbers.
+11.	Create a function that converts minutes into seconds.
+12.	Create a function that converts hours into minutes.
+13.	Create a function that converts Celsius to Fahrenheit.
+14.	Create a function that calculates the area of a rectangle.
+15.	Create a function that calculates the area of a circle.
+Level 2: Parameters and return (16–30)
+16.	Create a function that accepts three numbers and returns their sum.
+17.	Create a function that accepts three numbers and returns their average.
+18.	Create a function that accepts a person's age and returns their birth year using the current year as an input.
+19.	Create a function that accepts a number and returns "Even" or "Odd".
+20.	Create a function that checks whether a number is positive, negative, or zero.
+21.	Create a function that accepts two numbers and returns the larger number.
+22.	Create a function that accepts two numbers and returns the smaller number.
+23.	Create a function that returns the absolute value of a number.
+24.	Create a function that returns the power of a number using Math.pow().
+25.	Create a function that returns the square root of a number.
+26.	Create a function that checks whether a person is eligible to vote.
+27.	Create a function that converts kilometers to meters.
+28.	Create a function that calculates the final price after a discount.
+29.	Create a function that calculates simple interest.
+30.	Create a function that returns the largest of three numbers.
+Level 3: Functions with loops (31–45)
+31.	Create a function that prints numbers from 1 to 10.
+32.	Create a function that prints numbers from 10 down to 1.
+33.	Create a function that prints all even numbers up to a given number.
+34.	Create a function that prints all odd numbers up to a given number.
+35.	Create a function that returns the sum of numbers from 1 to n.
+36.	Create a function that returns the sum of all even numbers from 1 to n.
+37.	Create a function that returns the sum of all odd numbers from 1 to n.
+38.	Create a function that returns the factorial of a number.
+39.	Create a function that prints a multiplication table for a given number.
+40.	Create a function that counts the digits in a number.
+41.	Create a function that returns the sum of the digits of a number.
+42.	Create a function that reverses the digits of a number.
+43.	Create a function that checks whether a number is a palindrome.
+44.	Create a function that checks whether a number is prime.
+45.	Create a function that prints all prime numbers between two given numbers.
+Level 4: Maximum, minimum and arguments (46–60)
+46.	Create a function that accepts any number of arguments and returns their total count.
+47.	Create a function using arguments that returns the sum of all arguments.
+48.	Create a function using arguments that returns the largest argument.
+49.	Create a function using arguments that returns the smallest argument.
+50.	Create a function that returns the average of all arguments.
+51.	Create a function that counts how many arguments are positive.
+52.	Create a function that counts how many arguments are negative.
+53.	Create a function that counts how many arguments are even.
+54.	Create a function that counts how many arguments are odd.
+55.	Create a function that returns the sum of only the even arguments.
+56.	Create a function that returns the sum of only the odd arguments.
+57.	Create a function that returns the product of all arguments.
+58.	Create a function that finds the second-largest argument.
+59.	Create a function that finds the second-smallest argument.
+60.	Create a function that returns the difference between the maximum and minimum arguments.
+Level 5: Rest parameters ...args (61–75)
+61.	Write a function countArgs(...args) that returns the number of arguments.
+62.	Write a function sum(...args) that returns their sum.
+63.	Write a function findMax(...args) that returns the maximum.
+64.	Write a function findMin(...args) that returns the minimum.
+65.	Write a function average(...args) that returns their average.
+66.	Write a function that returns only positive values from ...args.
+67.	Write a function that returns only negative values from ...args.
+68.	Write a function that returns an array of even arguments.
+69.	Write a function that returns an array of odd arguments.
+70.	Write a function that counts how many arguments are greater than 100.
+71.	Write a function that returns the longest string passed to it.
+72.	Write a function that returns the shortest string passed to it.
+73.	Write a function that combines all string arguments into one string.
+74.	Write a function that returns the unique values from all arguments.
+75.	Write a function that returns the arguments in reverse order.
+Level 6: Arrays and functions (76–90)
+76.	Create a function that accepts an array and returns its sum.
+77.	Create a function that returns the maximum element in an array.
+78.	Create a function that returns the minimum element in an array.
+79.	Create a function that counts even numbers in an array.
+80.	Create a function that counts odd numbers in an array.
+81.	Create a function that returns a new array containing only positive numbers.
+82.	Create a function that returns a new array containing only names longer than five characters.
+83.	Create a function that counts the frequency of each number in an array.
+84.	Create a function that removes duplicate values from an array.
+85.	Create a function that returns the second-largest unique number in an array.
+86.	Create a function that returns the longest name in an array.
+87.	Create a function that returns the shortest name in an array.
+88.	Create a function that searches for a particular value in an array.
+89.	Create a function that reverses an array without using reverse().
+90.	Create a function that merges two arrays and removes duplicates.
+
+Level 7: Advanced function challenges (91–100)
+91.	Create a function that accepts another function as an argument and executes it.
+92.	Create a function that returns another function.
+93.	Create an arrow function that calculates the square of a number.
+94.	Create a recursive function that calculates factorial.
+95.	Create a recursive function that calculates the sum of numbers from 1 to n.
+96.	Create a function that generates a random integer between a minimum and maximum value.
+97.	Create a function that generates a random six-digit number.
+98.	Create a function that generates a random background color and applies it to a webpage.
+99.	Create a function that accepts a list of student marks and returns the grade for each student.
+100.	Create a calculator function that accepts two numbers and an operator (+, -, *, /) and returns the correct result.
+*****************************************************************************
+Prime number examples below:
+
+1. Prime-related JavaScript practice questions
+Q32. Print all prime numbers in a range
+Print prime numbers from 1 to 100.
+Example: 2, 3, 5, 7, 11, ...
+Q33. Count prime and non-prime numbers
+Count both types between 1 and 100.
+Example: Prime count = 25; non-prime count = 75, treating 1 as non-prime.
+Q34. Sum of prime numbers
+Find the sum of all primes from 1 to 20.
+Example: 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77
+Q35. Find the largest prime number in a range
+Find the largest prime between 1 and 50.
+Answer: 47
+Q36. Find the smallest prime number in a range
+Find the smallest prime between 10 and 50.
+Answer: 11
+Q37. Check twin primes
+Find prime pairs whose difference is 2, such as (11, 13) and (17, 19).
+Q38. Find consecutive prime numbers
+Print the first 10 prime numbers.
+Example: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29
+Q39. Check a prime palindrome
+Check whether a number is both prime and a palindrome.
+Example: 131 is prime and reads the same backward.
+Q40. Check a circular prime
+Rotate the digits and check whether every rotation is prime.
+Example: 197 → 197, 971, 719; all are prime.
+2. More advanced challenges
+Once you complete the first 10, try these:
+11.	Find the average of prime numbers in a given range.
+12.	Find the second-largest prime number in an array.
+13.	Separate prime and non-prime numbers into two arrays.
+14.	Count the prime digits in a number, such as 2379.
+15.	Find all prime factors of a number, such as 60 → 2, 3, 5.
+16.	Find the number of prime factors of a number.
+17.	Check whether two numbers are twin primes.
+18.	Find the nearest prime number to a given number.
+19.	Find the difference between consecutive prime numbers.
+20.	Generate the first n prime numbers.
+21.	Check whether a number is a Goldbach number — an even integer greater than 2 that can be expressed as the sum of two primes.
+22.	Find all prime numbers in an array.
+23.	Find duplicate prime numbers in an array.
+24.	Find the frequency of each prime number in an array.
+25.	Find the sum of prime digits and non-prime digits separately.
+
+
