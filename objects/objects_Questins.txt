@@ -1,0 +1,469 @@
+JavaScript Objects — 350 Practice Questions
+-------------------------------------------------------------------------------------
+
+Level 1: Object fundamentals (1–30)
+
+Topics: object literals, properties, values, dot notation and bracket notation
+1. Create a student object with name, age, course, and isLearning properties.
+
+2. Create an object representing a car with brand, model, year, and color.
+
+3. Create an object representing a book with title, author, and price.
+
+4. Create an object representing an employee with id, name, salary, and department.
+
+5. Print the complete student object.
+
+6. Access the name property using dot notation.
+
+7. Access the age property using bracket notation.
+
+8. Print the values of all properties individually.
+
+9. Update the student's age.
+
+10. Change the student's course to "ReactJS".
+
+11. Add an email property to an existing object.
+
+12. Add a city property to a person object.
+
+13. Delete the email property from an object.
+
+14. Check whether an object contains a name property using the in operator.
+
+15. Check whether an object contains an email property using Object.hasOwn().
+
+16. Access a property whose key is stored in a variable.
+
+17. Create an object with a property key containing a space, such as "first name".
+
+18. Access the "first name" property using bracket notation.
+
+19. Create an object using shorthand property names.
+
+20. Create an object with a computed property name.
+
+21. Create an object containing a string, number, Boolean, array, and another object.
+
+22. Store a function as an object property and call it.
+
+23. Create an object with a method that prints a greeting.
+
+24. Create two different objects representing two students.
+
+25. Compare two objects with identical properties using ===.
+
+26. Create an empty object and add five properties afterward.
+
+27. Check whether a property exists without checking its value.
+
+28. Print the number of own enumerable string-keyed properties.
+
+29. Retrieve an object's property names using Object.keys().
+
+30. Explain through code the difference between a missing property and a property whose value is undefined.
+
+----------------------------above completed-----------------------------------------------
+
+Level 2: Reading, updating and iterating (31–60)
+
+
+31. Print all keys of an object using Object.keys().
+
+32. Print all property values using Object.values().
+
+33. Print all key-value pairs using Object.entries().
+
+34. Print every property using a for...in loop.
+
+35. Print only the values of an object using a loop.
+
+36. Count the number of properties in an object.
+
+37. Calculate the sum of all numeric property values.
+
+38. Find the largest numeric property value.
+
+39. Find the smallest numeric property value.
+
+40. Count how many property values are strings.
+
+41. Count how many property values are numbers.
+
+42. Count Boolean-valued properties.
+
+43. Create a new object containing only numeric properties.
+
+44. Create a new object containing only string properties.
+
+45. Convert all string values in an object to uppercase.
+
+46. Convert all string values in an object to lowercase.
+
+47. Multiply all numeric property values by two.
+
+48. Create a new object with every numeric value increased by 10.
+
+49. Find the property whose value matches a supplied value.
+
+50. Find all keys whose values are greater than 50.
+
+51. Check whether any property has a falsy value.
+
+52. Check whether all property values are numbers.
+
+
+53. Find properties with empty-string values.
+
+54. Remove properties whose values are null or undefined.
+
+55. Create a copy containing only truthy-valued properties.
+
+56. Convert an object's keys into an array.
+
+57. Convert an object's values into an array.
+
+58. Swap the keys and values of an object when all values are unique strings.
+
+59. Create a frequency object counting the occurrences of each string in an array.
+
+60. Convert an array of key-value pairs into an object using Object.fromEntries().
+
+-----------------------compled above questions---------------------------
+
+Level 3: Nested objects (61–90)
+
+61. Create a person object containing a nested address object.
+62. Access the person's city inside the address.
+63. Update the nested city property.
+64. Add a new property inside a nested object.
+65. Delete a property from a nested object.
+66. Create an employee with a nested department and manager.
+67. Access the manager's name.
+68. Create a company object containing an array of employee objects.
+69. Print every employee's name.
+70. Find an employee by ID inside the array.
+71. Find employees whose salary exceeds a given amount.
+72. Calculate the total salary of all employees.
+73. Find the employee with the highest salary.
+74. Find the employee with the lowest salary.
+75. Count employees in each department.
+76. Create a nested object representing a student's subjects and marks.
+77. Calculate the total marks of a student.
+78. Calculate the average marks.
+79. Find the subject with the highest marks.
+80. Find subjects with marks below 40.
+81. Safely access a missing nested property using optional chaining.
+82. Display a custom message when a nested property is missing using ??.
+83. Safely access an array element inside an object.
+84. Access a deeply nested property using optional chaining at each uncertain level.
+85. Write a function that safely reads a nested property from a supplied object.
+86. Write a function that updates a nested property using a sequence of keys.
+87. Write a function that checks whether a nested path exists.
+88. Write a function that retrieves a nested value with a default fallback.
+89. Find all leaf values in a nested object.
+90. Count all leaf properties in a nested object, including properties inside nested objects.
+
+---------------------------------------------------------------------------------------------
+
+Level 4: Built-in Object methods (91–120)
+
+91. Use Object.keys() to retrieve property names.
+92. Use Object.values() to retrieve property values.
+93. Use Object.entries() to retrieve key-value pairs.
+94. Use Object.fromEntries() to reconstruct an object from entries.
+95. Use Object.hasOwn() to check an own property.
+96. Compare Object.hasOwn() with the in operator.
+97. Use Object.assign() to copy properties into another object.
+98. Merge three objects using Object.assign().
+99. Merge objects using the spread operator.
+100. Demonstrate which values overwrite duplicate keys during a merge.
+101. Use Object.create() to create an object with a specified prototype.
+102. Check an object's prototype using Object.getPrototypeOf().
+103. Change an object's prototype using Object.setPrototypeOf() and examine the result.
+104. Retrieve own property names using Object.getOwnPropertyNames().
+105. Retrieve own Symbol keys using Object.getOwnPropertySymbols().
+106. Retrieve all own keys, including string and Symbol keys, using Reflect.ownKeys().
+107. Inspect a property using Object.getOwnPropertyDescriptor().
+108. Inspect all own property descriptors.
+109. Define a property using Object.defineProperty().
+110. Define multiple properties using Object.defineProperties().
+111. Create an immutable top-level object using Object.freeze().
+112. Check whether an object is frozen.
+113. Seal an object using Object.seal().
+114. Check whether an object is sealed.
+115. Prevent new properties using Object.preventExtensions().
+116. Check whether an object is extensible.
+117. Compare the behavior of freeze(), seal(), and preventExtensions().
+118. Use Object.is() to compare values.
+119. Compare Object.is() with === using NaN and 0 versus -0.
+120. Determine whether a property is enumerable using its descriptor.
+
+-------------------------------------------------------------------------------
+
+Level 5: Copying, cloning and merging (121–150)
+
+121. Create a shallow copy using the spread operator.
+122. Create a shallow copy using Object.assign().
+123. Verify that modifying a top-level property on a copy doesn't change the original.
+124. Demonstrate how a shallow copy shares nested object references.
+125. Demonstrate how a shallow copy shares nested array references.
+126. Create a deep clone using structuredClone() for supported data.
+127. Deep-clone a nested object and verify reference independence.
+128. Compare structuredClone() with JSON serialization-based cloning.
+129. Demonstrate what JSON serialization loses, such as undefined object properties.
+130. Merge two objects containing unique properties.
+131. Merge two objects containing duplicate properties.
+132. Merge three objects in a specific precedence order.
+133. Merge two nested objects without losing existing nested properties.
+134. Merge nested objects across three levels.
+135. Write a reusable shallow-merge function.
+136. Write a function that merges two objects without mutating either input.
+137. Write a function that merges two objects and gives the second object priority.
+138. Write a function that merges two objects and gives the first object priority.
+139. Write a function that combines numeric values for duplicate keys by addition.
+140. Write a function that combines array values for duplicate keys.
+141. Write a function that combines unique array values for duplicate keys.
+142. Write a function that removes duplicate property entries when constructing an object from pairs.
+143. Compare two flat objects for shallow equality.
+144. Write a recursive function to compare nested objects for deep equality.
+145. Write a function that returns the keys present in both objects.
+146. Write a function that returns keys present only in the first object.
+147. Write a function that returns keys present only in the second object.
+148. Write a function that returns an object containing only changed properties.
+149. Write a function that creates a patch object describing differences between two objects.
+150. Write a function that applies a patch object to create an updated copy.
+
+----------------------------------------------------------------------------------
+
+Level 6: Property descriptors, getters and setters (151–180)
+
+151. Create a property that is non-writable using Object.defineProperty().
+152. Attempt to change a non-writable property in strict mode and observe the error.
+153. Create a non-enumerable property.
+154. Compare Object.keys() and Object.getOwnPropertyNames() for that object.
+155. Create a non-configurable property.
+156. Inspect writable, enumerable, and configurable flags.
+157. Modify a property's descriptor where permitted.
+158. Demonstrate why a non-configurable property cannot have its configurability changed back.
+159. Create a getter that returns a full name.
+160. Create a setter that updates a person's name.
+161. Create a getter that calculates the total price.
+162. Create a setter that rejects a negative age.
+163. Create an object with a computed getter.
+164. Count how many times a getter is accessed.
+165. Compare a regular method with a getter.
+166. Create a property with both a getter and a setter.
+167. Create a read-only computed property.
+168. Implement a temperature object that converts Celsius to Fahrenheit through getters and setters.
+169. Implement a bank account object with a private balance using a closure.
+170. Implement a bank account using JavaScript private fields in a class.
+171. Prevent extensions and test adding a new property.
+172. Seal an object and test modifying an existing writable property.
+173. Freeze an object and test changing a property.
+174. Demonstrate that freezing a nested object is not automatic.
+175. Write a recursive function to freeze nested objects.
+176. Test how Object.freeze() behaves with an array property.
+177. Inspect descriptors on an array's length property.
+178. Explain through code why Object.freeze() doesn't make an object deeply immutable.
+179. Create a property whose value is a function and inspect its descriptor.
+180. Write a function that returns a summary of all property descriptors.
+
+-----------------------------------------------------------------------------
+
+Level 7: this, constructors, prototypes and classes (181–210)
+
+181. Create a constructor function for a Person.
+182. Create three instances using new Person().
+183. Add a method to a constructor-created object through this.
+184. Add a shared method to Person.prototype.
+185. Verify that two instances share the same prototype method.
+186. Check whether an object is an instance of a constructor using instanceof.
+187. Inspect the prototype chain of an object.
+188. Demonstrate property lookup through the prototype chain.
+189. Shadow a prototype property with an own property.
+190. Delete an own property and observe the inherited property becoming visible again.
+191. Use Object.create() to build an object with a chosen prototype.
+192. Create a constructor that validates its arguments.
+193. Create a constructor that tracks the number of instances.
+194. Demonstrate why arrow functions don't have their own this.
+195. Compare this inside a regular method and an arrow function.
+196. Extract a method from an object and examine its this behavior.
+197. Use call() to invoke a method with a chosen this.
+198. Use apply() to invoke a method with an array of arguments.
+199. Use bind() to create a function with a fixed this.
+200. Create a class with a constructor and instance method.
+201. Create a class with a static method.
+202. Create a class with a getter and setter.
+203. Extend a base class using extends.
+204. Call a parent constructor using super().
+205. Override a parent class method.
+206. Demonstrate method overriding and super.method().
+207. Create a static property and static method.
+208. Create a class with a private field using #.
+209. Demonstrate that a private class field cannot be accessed externally.
+210. Compare constructor functions and ES6 classes.
+
+------------------------------------------------------------------------
+
+Level 8: Advanced properties, Symbols and conversion (211–240)
+
+
+211. Create two Symbols with the same description and compare them.
+212. Use a Symbol as an object property key.
+213. Show why Object.keys() doesn't include Symbol keys.
+214. Retrieve Symbol keys using Object.getOwnPropertySymbols().
+215. Use Reflect.ownKeys() to retrieve string and Symbol keys.
+216. Retrieve a shared Symbol using Symbol.for().
+217. Compare Symbol() and Symbol.for().
+218. Retrieve a Symbol registry key using Symbol.keyFor().
+219. Use Symbol.iterator to make a custom object iterable.
+220. Create an object that can be used with for...of.
+221. Implement a custom Symbol.toPrimitive method.
+222. Demonstrate an object's string conversion using toString().
+223. Compare implicit conversion with explicit conversion using String().
+224. Create an object with a custom valueOf() method.
+225. Explain why ordinary object keys are strings or Symbols.
+226. Demonstrate numeric property keys being converted to strings.
+227. Demonstrate that two distinct object keys can collide when used as ordinary object keys.
+228. Compare an object with a Map for storing key-value pairs.
+229. Use a Proxy to log property reads.
+230. Use a Proxy to validate property assignments.
+231. Use a Proxy to reject deletion of a protected property.
+232. Use Reflect.get() to read a property.
+233. Use Reflect.set() to update a property.
+234. Use Reflect.has() to check for a property.
+235. Use Reflect.deleteProperty() to delete a property.
+236. Demonstrate property enumeration order for integer-like and string keys.
+237. Compare own properties with inherited properties.
+238. Demonstrate how enumerable and non-enumerable properties differ.
+239. Explain why JSON serialization omits Symbol-keyed properties.
+240. Create a custom object that provides a meaningful JSON representation using toJSON().
+
+----------------------------------------------------------------------------------
+
+Level 9: Logical problems, debugging and interviews (241–280)
+
+241. Predict the output when two variables reference the same object.
+242. Predict the output when two objects have identical contents but different references.
+243. Find and fix a bug caused by accidentally sharing a nested object.
+244. Find and fix a bug caused by mutating an input object.
+245. Find and fix a bug involving an inherited property.
+246. Determine why Object.keys() misses a non-enumerable property.
+247. Fix a program that tries to access a missing nested property.
+248. Fix a program that attempts to call a non-function property as a method.
+249. Write a function to count own properties without using Object.keys().
+250. Write a function to test whether an object is empty.
+251. Write a function to remove a specified property without mutating the original object.
+252. Write a function to rename a property.
+253. Write a function to invert an object when values are unique.
+254. Write a function to group objects by a specified property.
+255. Write a function to index an array of objects by ID.
+256. Write a function to find duplicate values across object properties.
+257. Write a function to find the most frequent property value.
+258. Write a function to sort object entries by numeric value.
+259. Write a function to sort object entries by key alphabetically.
+260. Write a function to filter object properties by a key prefix.
+261. Write a function to filter properties by a supplied predicate.
+262. Write a function to map object values using a callback.
+263. Write a function to transform an object into an array of formatted strings.
+264. Write a function to flatten a nested object into dotted paths.
+265. Write a function to reconstruct an object from dotted paths.
+266. Write a function to recursively search for a value in a nested object.
+267. Write a function to find all paths to a particular value.
+268. Write a function to count every property recursively.
+269. Write a function to recursively remove empty objects.
+270. Write a function to recursively remove null values.
+271. Write a function to recursively remove undefined values.
+272. Write a function to compare two nested objects and report changed paths.
+273. Write a function to merge arrays and objects recursively with a defined policy.
+274. Write a function to safely set a nested property using a path array.
+275. Handle a property key such as "__proto__" safely when building a dictionary.
+276. Explain the risks of using an ordinary object as a dictionary for arbitrary user-supplied keys.
+277. Use Object.create(null) to create a dictionary without a prototype.
+278. Compare Object.create(null) with {}.
+279. Explain why JSON.stringify() fails on circular references.
+280. Write a circular-reference detector for nested objects.
+
+-----------------------------------------------------------------------------
+
+Level 10: Real-world projects and expert challenges (281–320)
+
+281. Create a product object with ID, name, price, stock, and category.
+282. Calculate a product's discounted price.
+283. Calculate the total value of inventory from an array of product objects.
+284. Find products that are out of stock.
+285. Find the most expensive product in an inventory.
+286. Group products by category.
+287. Build a lookup object from products indexed by ID.
+288. Update a product's stock immutably.
+289. Create a warehouse object containing multiple products.
+290. Calculate the stock total for each warehouse.
+291. Merge warehouse inventory updates while preserving existing product details.
+292. Create a user profile object from partial API response data.
+293. Provide default values for missing API properties using ??.
+294. Safely read nested user details using optional chaining.
+295. Normalize API response keys into a consistent object structure.
+296. Transform an API array of users into an object indexed by user ID.
+297. Remove sensitive fields from a user object before displaying it.
+298. Create a function that picks selected properties from an object.
+299. Create a function that omits selected properties from an object.
+300. Compare two API responses and produce an update summary.
+301. Implement immutable updates for nested React state objects.
+302. Update one user's details in an array without mutating the original array or objects.
+303. Toggle a Boolean property in a copied object.
+304. Update one nested property while preserving unrelated nested properties.
+305. Merge default configuration settings with user-provided settings.
+306. Build a shopping cart object and calculate its total.
+307. Update shopping cart quantities and remove items.
+308. Group transactions by category.
+309. Calculate total money in and money out from transaction objects.
+310. Create a finance summary object containing income, expenses, and balance.
+311. Convert form field values into a structured user object.
+312. Validate required object properties and return useful error messages.
+313. Create a reusable object validator that checks types and allowed values.
+314. Convert an object into URL query parameters.
+315. Convert URL query parameters back into a plain object.
+316. Serialize and restore supported application data safely.
+317. Build a nested menu object and traverse all menu items recursively.
+318. Implement a simple object-based cache with get, set, and delete operations.
+319. Build a configurable permission object and check whether a user can perform an action.
+320. Create a final mini-project combining nested objects, validation, immutable updates, filtering, sorting, grouping, and summaries.
+
+--------------------------------------------------------------------------------------
+
+Bonus: 30 additional challenge questions (321–350)
+
+321. Implement deep equality for objects containing arrays and nested objects.
+322. Deep-clone supported objects while handling circular references.
+323. Write a recursive deep-merge function with clearly defined array behavior.
+324. Implement a function that detects circular references and returns the paths.
+325. Build a dependency tree from nested object configuration.
+326. Write a function to diff two objects and generate add, update, and delete operations.
+327. Write a function to apply a sequence of object patch operations.
+328. Implement an undo/redo history for immutable object updates.
+329. Create a schema-driven object validator with nested rules.
+330. Build a recursive object transformation utility that accepts a callback.
+331. Create a safe getter that supports array indexes and dotted paths.
+332. Create a safe setter that prevents prototype-pollution paths.
+333. Implement an object-based event registry with subscribe, emit, and unsubscribe.
+334. Build a memoization cache using object arguments and discuss reference identity.
+335. Implement a small LRU cache using Map and explain why it suits the task.
+336. Compare object property access and Map lookup for different key types.
+337. Build a proxy-based validator for an object with numeric and string fields.
+338. Create a proxy that records changes to an object.
+339. Implement a read-only view using a proxy.
+340. Create an object that implements a custom iterable protocol.
+341. Implement a custom Symbol.toPrimitive conversion for a money object.
+342. Design a class hierarchy for warehouse products and specialized products.
+343. Implement a class with private state and controlled public accessors.
+344. Create a plugin configuration object with default, override, and validation rules.
+345. Build a permissions checker with roles, actions, and inherited defaults.
+346. Normalize deeply nested API data into a flat structure indexed by IDs.
+347. Denormalize flat API data into nested objects.
+348. Implement a transaction-safe update workflow that validates before applying changes.
+349. Debug a program combining prototypes, descriptors, Symbols, nested references, and optional chaining.
+350. Build a complete object-management mini-project with CRUD operations, search, sorting, filtering, validation, cloning, merging, and reporting.
+
+-----------------------------------------------------------------------------------------------
