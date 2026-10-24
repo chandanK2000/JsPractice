@@ -135,34 +135,63 @@ Level 2: Reading, updating and iterating (31–60)
 Level 3: Nested objects (61–90)
 
 61. Create a person object containing a nested address object.
+
 62. Access the person's city inside the address.
+
 63. Update the nested city property.
+
 64. Add a new property inside a nested object.
+
 65. Delete a property from a nested object.
+
 66. Create an employee with a nested department and manager.
+
 67. Access the manager's name.
+
 68. Create a company object containing an array of employee objects.
+
 69. Print every employee's name.
+
 70. Find an employee by ID inside the array.
+
 71. Find employees whose salary exceeds a given amount.
+
 72. Calculate the total salary of all employees.
+
 73. Find the employee with the highest salary.
+
 74. Find the employee with the lowest salary.
+
 75. Count employees in each department.
+
 76. Create a nested object representing a student's subjects and marks.
+
 77. Calculate the total marks of a student.
+
 78. Calculate the average marks.
+
 79. Find the subject with the highest marks.
+
 80. Find subjects with marks below 40.
+
 81. Safely access a missing nested property using optional chaining.
+
 82. Display a custom message when a nested property is missing using ??.
+
 83. Safely access an array element inside an object.
+
 84. Access a deeply nested property using optional chaining at each uncertain level.
+
 85. Write a function that safely reads a nested property from a supplied object.
+
 86. Write a function that updates a nested property using a sequence of keys.
+
 87. Write a function that checks whether a nested path exists.
+
 88. Write a function that retrieves a nested value with a default fallback.
+
 89. Find all leaf values in a nested object.
+
 90. Count all leaf properties in a nested object, including properties inside nested objects.
 
 ---------------------------------------------------------------------------------------------
