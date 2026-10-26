@@ -1,6 +1,9 @@
 Category 1: Hoisting fundamentals — Questions 1–20
+
 Level: Beginner
+
 1. What is hoisting in JavaScript? Write a definition for your notebook.
+
 2. Why does JavaScript have hoisting behavior?
 3. What does the term hoisting mean in simple English?
 4. Does JavaScript literally move every declaration to the top of the code? Explain.
@@ -20,7 +23,10 @@ Level: Beginner
 18. What is the relationship between hoisting and a variable's scope?
 19. Explain hoisting with one example using a variable and another using a function.
 20. Write a short paragraph explaining hoisting as if you were answering an interview question.
+
+----------------------------------------------------------------------------------
 Category 2: var hoisting — Questions 21–40
+
 Level: Beginner
 
 21. Predict the output:
@@ -135,8 +141,14 @@ console.log(a);
 38. Write a program that demonstrates var hoisting inside a function.
 39. Write a program that demonstrates var redeclaration and reassignment.
 40. Debug a program where a developer incorrectly assumes var a = 10 is entirely moved to the top.
+
+
+----------------------------------------------------------------------------------
+
 Category 3: let, const, and the Temporal Dead Zone — Questions 41–60
+
 Level: Beginner to intermediate
+
 41. Are let and const hoisted in JavaScript? Explain accurately.
 42. What is the Temporal Dead Zone (TDZ)?
 43. Predict the output or error:
@@ -223,8 +235,14 @@ test();
 
 
 60. Write a program demonstrating the TDZ and explain which statement causes the error.
+
+
+----------------------------------------------------------------------------------
+
 Category 4: Function declaration hoisting — Questions 61–80
+
 Level: Beginner to intermediate
+
 61. What is a function declaration? Write an example.
 62. Can a function declaration be called before its definition? Demonstrate.
 63. Predict the output:
@@ -321,8 +339,14 @@ first();
 78. Write an example showing a function declaration that uses a variable declared later.
 79. Debug a program where a developer mistakenly thinks a function declaration must always appear before its call.
 80. Write an interview-style answer explaining function declaration hoisting.
+
+
+----------------------------------------------------------------------------------
+
 Category 5: Function expressions and arrow functions — Questions 81–100
+
 Level: Intermediate
+
 81. What is a function expression?
 82. What is the difference between a function declaration and a function expression?
 83. Predict the output or error:
@@ -423,7 +447,12 @@ run();
 
 99. Rewrite a function expression example as a function declaration and compare the behavior when called before its definition.
 100. Create a program containing one function declaration, one var function expression, and one arrow function. Test each before and after assignment.
+
+
+----------------------------------------------------------------------------------
+
 Category 6: Hoisting with objects, arrays, and classes — Questions 101–120
+
 Level: Intermediate to advanced
 
 Sir, these questions focus on objects and classes. Remember: an object literal itself is not a special kind of hoisted declaration; the variable holding it follows the rules of var, let, or const.
@@ -515,7 +544,12 @@ console.log(dog instanceof Animal);
 118. Explain the difference between class declaration behavior and function declaration behavior.
 119. Write an example that combines a hoisted function declaration and an object variable that is not initialized until later.
 120. Write a program using an object, an array, a function declaration, and a let variable. Identify each hoisting behavior.
+
+
+----------------------------------------------------------------------------------
+
 Category 7: Hoisting inside functions, blocks, and loops — Questions 121–140
+
 Level: Intermediate to advanced
 
 121. Predict the output:
@@ -638,7 +672,12 @@ outer();
 138. Explain why a variable declared with var inside a function does not become global merely because it is hoisted.
 139. Create a program that combines a loop, an object, and var hoisting.
 140. Create a program that combines a nested function, a let variable, and a TDZ error. Explain the error.
+
+
+----------------------------------------------------------------------------------
+
 Category 8: Multiple-choice questions — Questions 141–160
+
 Level: Mixed
 
 141. What is hoisting?
@@ -763,7 +802,12 @@ var test = function () {
 - B) All source code is physically rearranged
 - C) Different declaration types have different initialization and accessibility rules
 - D) Hoisting only applies to variables declared globally
+
+
+----------------------------------------------------------------------------------
+
 Category 9: Debugging and code correction — Questions 161–180
+
 Level: Intermediate to advanced
 
 161. Fix the following code so it prints 10 without producing an error:
@@ -871,8 +915,14 @@ class User {
 178. Correct a program that confuses undefined with an undeclared variable.
 179. Write a program with three hoisting errors and fix each error.
 180. Create your own broken program involving var, let, const, and a function declaration. Explain and correct every issue.
+
+
+----------------------------------------------------------------------------------
+
 Category 10: Subjective, interview, and advanced challenges — Questions 181–200
+
 Level: Advanced
+
 181. Explain hoisting using a real-world analogy.
 182. Explain the difference between declaration instantiation and statement execution at a high level.
 183. Describe the important differences between hoisting behavior for var, let, and const.
