@@ -1,60 +1,134 @@
 Category 1 — Scope fundamentals (Questions 1–20)
-Difficulty: Beginner
+
 1. What is scope in JavaScript? Write a simple example.
+
 2. Declare a global variable name and access it inside a function.
+
 3. Create a function with a local variable age. Try accessing it outside the function.
+
 4. Declare let city = "Delhi" globally and print it inside a function.
+
 5. Create a function with var message = "Hello". Print it inside the function.
+
 6. Create a function with let message = "Hello". Print it inside the function.
+
 7. Create a function with const message = "Hello". Print it inside the function.
+
 8. Declare let x = 10 globally and let x = 20 inside a function. Print both values in their respective scopes.
-9. Predict the output: let x = 10; function test() { let x = 20; console.log(x); } test(); console.log(x);
+
+9. Predict the output: let x = 10;
+ function test()
+  { let x = 20; console.log(x); 
+  } 
+  test(); 
+  console.log(x);
+
 10. Create a global variable count = 100. Write a function that declares a local variable count = 50.
+
 11. What happens when you access a local variable outside its function?
+
 12. Declare a variable using var inside an if block. Can you access it outside the block?
+
 13. Repeat Question 12 using let. What happens?
+
 14. Repeat Question 12 using const. What happens?
+
+
 15. Create a for loop using var i. Print i after the loop.
+
+
 16. Repeat Question 15 using let i. Print i after the loop.
+
+
 17. Create a block using { } and declare let score = 90 inside it. Try accessing score outside.
+
+
 18. Create a block using { } and declare var score = 90 inside it. Try accessing score outside.
+
+
 19. Demonstrate the difference between function scope and block scope.
+
+
 20. Write a program demonstrating global scope, function scope, and block scope together.
+
+------------------------------------------------------------------------------------------------
+
 Category 2 — Scope and lexical scope (Questions 21–40)
+
 Difficulty: Beginner to intermediate
+
 21. What is lexical scope? Explain with an example.
+
 22. Create an outer function containing a variable name and an inner function that prints it.
+
 23. Can an inner function access a variable declared in its outer function? Demonstrate.
+
 24. Can an outer function access a variable declared only inside its inner function? Test it.
+
 25. Create three nested functions and access a variable from the outermost function.
+
 26. Predict the output: let x = 5; function outer() { let x = 10; function inner() { console.log(x); } inner(); } outer();
+
 27. Modify Question 26 so the inner function prints the global x instead.
+
 28. Declare the same variable name in global, outer, and inner scopes. Print each value.
+
 29. What is variable shadowing? Demonstrate using let.
+
 30. Demonstrate variable shadowing using var inside a function.
+
 31. Predict the output: let a = 10; { let a = 20; console.log(a); } console.log(a);
+
 32. Predict the output: var a = 10; { var a = 20; } console.log(a);
+
 33. Create an arrow function that accesses a variable from its surrounding scope.
+
 34. Can a regular function access a variable declared in its caller's local scope? Test using two separate functions.
+
 35. Write a function that reads a global variable but does not modify it.
+
+
 36. Write a function that modifies a global variable. Show the value before and after calling it.
+
+
 37. Create a block-scoped variable inside an if statement and use it inside a nested block.
+
 38. Predict the output: let value = 1; function test() { console.log(value); let value = 2; } test();
+
+
 39. Explain why lexical scope depends on where a function is defined rather than where it is called.
+
 40. Write a program demonstrating lexical scope and variable shadowing together.
+
+-------------------------Above completed sir------------------------------------------------
 Category 3 — Scope: intermediate and advanced (Questions 41–60)
+
 Difficulty: Intermediate
+
 41. Create two functions that each declare a local variable with the same name.
+
 42. Write a function that uses a global variable when no local variable with that name exists.
+
 43. Write a function that shadows a global variable without changing the global value.
+
 44. Predict the output: var x = 1; function test() { var x = 2; if (true) { var x = 3; } console.log(x); } test(); console.log(x);
+
 45. Predict the output: let x = 1; function test() { let x = 2; if (true) { let x = 3; console.log(x); } console.log(x); } test();
+
 46. Write a nested function that reads variables from two different outer scopes.
+
 47. Demonstrate how a block-scoped variable behaves inside a nested if statement.
+
 48. Predict the output: let a = 1; function one() { let b = 2; function two() { let c = 3; console.log(a, b, c); } two(); } one();
+
 49. Explain the difference between lexical scope and dynamic scope.
+
 50. Write a program that demonstrates global, function, block, and lexical scope.
+
+-------------------------------------------------------------------------------------
+
 Category 4 — Hoisting fundamentals (Questions 51–70)
+
 Difficulty: Beginner
 51. What is hoisting in JavaScript? Write a definition and example.
 52. Predict the output: console.log(a); var a = 10;
@@ -76,8 +150,12 @@ Difficulty: Beginner
 68. Rewrite a var example using the simplified hoisting mental model.
 69. Does hoisting mean JavaScript literally moves every line of code to the top? Explain.
 70. Write three examples showing different behaviors of var, let, and const before initialization.
+
+-------------------------------------------------------------------------------------------
 Category 5 — Function hoisting and tricky cases (Questions 71–90)
+
 Difficulty: Intermediate
+
 71. Call a function declaration before its definition. What happens?
 72. Predict the output: greet(); function greet() { console.log("Hello"); }
 73. Create a function declaration named add and call it before its definition.
@@ -98,8 +176,13 @@ Difficulty: Intermediate
 88. Predict the output: function test() { console.log(a); var a = 10; } test();
 89. Predict the output: function test() { console.log(a); let a = 10; } test();
 90. Write a program containing a function declaration, a function expression, var, and let. Explain which can be accessed before their declarations and what happens.
+
+------------------------------------------------------------------------------------------------
+
 Category 6 — Closure fundamentals (Questions 91–110)
+
 Difficulty: Beginner
+
 91. What is a closure? Write a notebook definition.
 92. Create an outer function with name = "Chandan" and an inner function that prints it.
 93. Return an inner function from an outer function and execute it afterward.
@@ -120,8 +203,13 @@ Difficulty: Beginner
 108. Explain what return inner does compared with return inner().
 109. Demonstrate that a closure can still access an outer variable after the outer function returns.
 110. Write a closure example and explain exactly which variable the inner function remembers.
+
+------------------------------------------------------------------------------------------------
+
 Category 7 — Closure: state and independent environments (Questions 111–130)
+
 Difficulty: Intermediate
+
 111. Create a counter closure and call it five times.
 112. Create two independent counters using the same counter function.
 113. Predict the output: function outer() { let count = 0; return function() { count++; console.log(count); }; } let a = outer(); let b = outer(); a(); a(); b();
@@ -142,8 +230,12 @@ Difficulty: Intermediate
 128. Create a closure that keeps track of how many times a function is called.
 129. Create a closure that remembers a list of names and allows another name to be added.
 130. Explain how a closure can keep a variable private from direct outside access.
+
+----------------------------------------------------------------------------------------------
 Category 8 — Closure with loops, callbacks, and functions (Questions 131–150)
+
 Difficulty: Intermediate to advanced
+
 131. Predict the output: for (var i = 1; i <= 3; i++) { setTimeout(() => console.log(i), 0); }
 132. Modify Question 131 using let so the callbacks print 1, 2, and 3.
 133. Explain why callbacks inside a loop using var can share the same variable.
@@ -164,8 +256,12 @@ Difficulty: Intermediate to advanced
 148. Explain the relationship between lexical scope and closure.
 149. Explain how closures are used in event handlers and callbacks.
 150. Write a practical example combining a loop, a callback, and closure.
+
+---------------------------------------------------------------------------------------------
 Category 9 — Advanced scope, hoisting, and closure output questions (Questions 151–175)
+
 Difficulty: Advanced
+
 151. Predict the output: var x = 10; function test() { console.log(x); var x = 20; } test();
 152. Predict the output: let x = 10; function test() { console.log(x); let x = 20; } test();
 153. Predict the output: function outer() { var x = 1; function inner() { console.log(x); var x = 2; } inner(); } outer();
@@ -191,8 +287,12 @@ Difficulty: Advanced
 173. Write a closure that updates a variable while a separate global variable has the same name.
 174. Create a nested closure with three scopes and demonstrate variable shadowing.
 175. Explain what can keep an outer function's lexical environment reachable and when that environment may eventually be eligible for garbage collection.
+
+----------------------------------------------------------------------------------------------
 Category 10 — Real-world and interview-level challenges (Questions 176–200)
-Difficulty: Intermediate to advanced
+
+Difficulty: Intermediate to advanced:
+
 176. Build a counter using closure with increment(), decrement(), and getCount().
 177. Build a private bank balance using closure with deposit(), withdraw(), and getBalance().
 178. Build a score tracker that supports adding points and resetting the score.
@@ -219,72 +319,11 @@ Difficulty: Intermediate to advanced
 199. Build a small real-world example that uses scope, hoisting, and closures together. Explain each part.
 200. Final challenge: Build a closure-based account manager with private balance, deposit, withdrawal, transaction count, and balance retrieval. Validate invalid amounts and insufficient funds.
 
-How to practise these 200 questions, sir
-I recommend solving them in this order:
-Day / session	Questions	Focus
-Session 1	1–20	Scope basics
-Session 2	21–50	Lexical scope and shadowing
-Session 3	51–70	Hoisting fundamentals
-Session 4	71–90	Function hoisting and TDZ
-Session 5	91–110	Closure basics
-Session 6	111–130	Independent closures and private state
-Session 7	131–150	Loops, callbacks, and closures
-Session 8	151–175	Advanced output questions
-Session 9	176–190	Real-world applications
-Session 10	191–200	Debugging and interview challenges
-
-You don't have to finish everything in one day, sir. Focus on understanding the output and explaining why it happens.
-
-Your first task: Start with Question 1 and solve it in JavaScript. Send me your code, and I'll check your logic, correct any mistakes, and explain them before we move to Question 2. We will go one by one, without skipping questions or repeating them unnecessarily. 💪
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-do one things sir only give scopes realted 100 questions sir  with every angles sir
-
-
-
-
-
-
-
-
-
-
-
-
-
-Yes sir! 💯 Let's focus only on JavaScript Scope for now. We will keep Hoisting and Closure as separate topics for later practice.
-
-I've prepared 100 JavaScript Scope questions, covering all important angles from beginner to advanced, including output prediction, debugging, coding exercises, nested functions, lexical scope, variable shadowing, and interview questions.
-JavaScript Scope — 100 Practice Questions
-Your scope practice roadmap
-100
-Questions
-
-10
-Categories
-
-3
-Difficulty levels
-
-
-Beginner → Intermediate → Advanced
-
+---------------------------------------------------------------------------------------------------------
 Category 1: Scope fundamentals (1–10)
+
 Level: Beginner
+
 1. What is scope in JavaScript? Write its definition with an example.
 2. What are the different types of scope in JavaScript?
 3. Declare a global variable name = "Chandan" and access it inside a function.
@@ -295,8 +334,12 @@ Level: Beginner
 8. Create a global variable city = "Delhi" and print it from two different functions.
 9. Create two functions that each declare a local variable named message with different values.
 10. Write a program demonstrating global scope and function scope.
+
+------------------------------------------------------------------------------
 Category 2: Global scope and function scope (11–20)
+
 Level: Beginner
+
 11. What is global scope? Give an example.
 12. What is function scope? Give an example.
 13. Declare var score = 100 globally and var score = 50 inside a function. Print both values.
@@ -307,8 +350,12 @@ Level: Beginner
 18. Create three functions that access the same global variable.
 19. Can two different functions have local variables with the same name? Demonstrate.
 20. Write a program containing one global variable and three function-local variables. Identify each variable's scope.
+
+------------------------------------------------------------------------------------------
 Category 3: Block scope and var, let, const (21–30)
+
 Level: Beginner to intermediate
+
 21. What is block scope in JavaScript?
 22. Declare var x = 10 inside an if block and try accessing it outside.
 23. Repeat Question 22 using let.
@@ -319,8 +366,12 @@ Level: Beginner to intermediate
 28. Create nested blocks and declare a different let variable in each block.
 29. Write a for loop using var i. Print i after the loop.
 30. Repeat Question 29 using let i. Explain the difference.
+
+------------------------------------------------------------------------------
 Category 4: Lexical scope and nested functions (31–40)
+
 Level: Beginner to intermediate
+
 31. What is lexical scope? Write a definition and example.
 32. Create an outer function with a variable name and an inner function that prints it.
 33. Create three nested functions and access a variable from the outermost function.
@@ -331,8 +382,12 @@ Level: Beginner to intermediate
 38. Create nested arrow functions that access variables from their surrounding scopes.
 39. Demonstrate that a function's lexical scope depends on where it is defined, not where it is called.
 40. Write a program demonstrating global scope, function scope, block scope, and lexical scope together.
+
+-------------------------------------------------------------------------
 Category 5: Variable shadowing (41–50)
+
 Level: Intermediate
+
 41. What is variable shadowing? Explain with an example.
 42. Declare let x = 10 globally and another let x = 20 inside a function. Print both values.
 43. Create three nested scopes that declare a variable named value with different values.
@@ -503,7 +558,10 @@ console.log(x);
 
 
 60. Write your own program with four variables across three nested scopes. Predict the output before running it.
+
+--------------------------------------------------------------------------------------------------
 Category 7: Scope debugging and error identification (61–70)
+
 Level: Intermediate
 
 61. Find and explain the scope error:
@@ -597,7 +655,10 @@ function display() {
 
 
 70. Debug a program of your own that produces a ReferenceError because a variable is outside its accessible scope.
+
+-------------------------------------------------------------------------------------------
 Category 8: Scope with loops, conditions, and callbacks (71–80)
+
 Level: Intermediate to advanced
 
 71. Predict the output:
@@ -633,8 +694,12 @@ console.log(x);
 78. Write a function inside an if block that accesses a variable declared in an outer scope.
 79. Explain which variables are accessible inside a callback function defined within another function.
 80. Write a practical example using a loop, an if block, and a function. Identify all scopes.
+
+------------------------------------------------------------------------------------------
 Category 9: Advanced scope concepts (81–90)
+
 Level: Advanced
+
 81. Explain the difference between lexical scope and dynamic scope.
 82. What is the scope chain? Demonstrate it using three nested functions.
 83. Explain how JavaScript searches for a variable when it is referenced inside a nested function.
@@ -661,8 +726,12 @@ fn();
 88. Compare var, let, and const regarding function scope, block scope, and redeclaration.
 89. Explain how modules provide scope isolation in JavaScript.
 90. Create a nested-function program and draw its scope chain, showing which variables are accessible at each level.
+
+--------------------------------------------------------------------------------------
 Category 10: Real-world and interview challenges (91–100)
+
 Level: Intermediate to advanced
+
 91. Create a student-details function with local variables for name, age, and marks. Keep them inaccessible outside the function.
 92. Create two employee functions with independent local variables for name and salary.
 93. Build a shopping-cart function that uses local variables for items and total price.
@@ -673,3 +742,5 @@ Level: Intermediate to advanced
 98. Given a complex program, label every variable as global, function-scoped, or block-scoped.
 99. Write an interview-style example that demonstrates lexical scope, shadowing, and the scope chain together.
 100. Final challenge: Build a small employee salary calculator using functions and proper scope. Keep employee data local, calculate salary and bonus in nested functions, and explain why each variable is accessible where it is used.
+
+----------------------------------end---------------------------------------------------------------

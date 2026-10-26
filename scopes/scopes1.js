@@ -1,171 +1,340 @@
-"use strict";
-console.log("----------scope example in javascript-----------");
+console.log("----scopes example in javascript-----------");
 
-// Topic 1: What is Scope in JavaScript?
-// Definition: Scope in JavaScript determines where a variable or function can be accessed in a program.
+// 1. What is scope in JavaScript? Write a simple example.
 
-// In simple words, sir, scope tells us where we can use a variable.
+// Scope in JavaScript is the area of a program where a variable or function can be accessed
 
-// Global variables has Global Scope:
+// example
 
-// All scripts and functions in the same web page can access a variable with global scope.
+let name = "chandan";
 
-// Example 1: Global Scope
+function greet() {
+  let messege = "Hello";
 
-// let name = "Chandan";
+  console.log(name);
+  console.log(messege);
+}
 
-// function greet() {
-//   console.log(name);
+greet();
+console.log(name);
+
+// =========================================================
+
+// 2. Declare a global variable name and access it inside a function.
+
+console.log(
+  "--- Declare a global variable name and access it inside a function-----",
+);
+
+let myname = "chandan kumar yadav";
+
+function displayNmae() {
+  console.log(myname);
+}
+
+displayNmae();
+
+// ===========================================================
+
+// 3. Create a function with a local variable age. Try accessing it outside the function.
+
+console.log(
+  "---Create a function with a local variable age. Try accessing it outside the function.---",
+);
+
+function myage() {
+  let age = 29;
+
+  return age;
+}
+
+console.log(myage()); //29
+// console.log(age); // age is not defined reference error
+
+// ==================================================================
+
+// 4. Declare let city = "Delhi" globally and print it inside a function.
+console.log(
+  '--Declare let city = "Delhi" globally and print it inside a function---',
+);
+
+let city = "Delhi";
+
+function DisplayCity() {
+  console.log(city);
+}
+
+DisplayCity(); //Delhi
+
+// ====================================================
+
+// Create a function with var message = "Hello". Print it inside the function.
+
+console.log(
+  '---Create a function with var message = "Hello". Print it inside the function--',
+);
+
+var message = "Hello";
+
+const Mygreet = () => {
+  console.log(message);
+};
+
+Mygreet(); //Hello
+
+// ================================================================
+
+// 6. Create a function with let message = "Hello". Print it inside the function.
+
+console.log(
+  '--Create a function with let message = "Hello". Print it inside the function--',
+);
+
+let messages = "Hello";
+
+let Hello = function () {
+  console.log(messages);
+};
+
+Hello();
+
+// ==================================================
+
+// 7. Create a function with const message = "Hello". Print it inside the function.
+
+console.log(
+  '---Create a function with const message = "Hello". Print it inside the function.--',
+);
+
+const Messagess = "Hello";
+
+function MyMessagess() {
+  console.log(Messagess);
+}
+
+MyMessagess();
+
+// ================================================================
+// 8. Declare let x = 10 globally and let x = 20 inside a function. Print both values in their respective scopes.
+
+console.log(
+  "--Declare let x = 10 globally and let x = 20 inside a function. Print both values in their respective scopes.--",
+);
+
+let x = 10;
+
+function Results() {
+  let x = 20;
+  console.log(x);
+}
+
+Results(); // prints 20 inside
+console.log(x); // this is gloabl varialbes x print 10
+
+// =======================================================================
+
+// 9. Predict the output: let y = 10; function test() { let y = 20; console.log(y); } test(); console.log(y);
+
+console.log(
+  "--Predict the output: let y = 10; function test() { let y = 20; console.log(y); } test(); console.log(y)--",
+);
+
+let y = 10;
+function test() {
+  let y = 20;
+  console.log(y);
+}
+test(); //20
+console.log(y); //10
+
+// =========================================================================
+
+// 10. Create a global variable count = 100. Write a function that declares a local variable count = 50.
+
+console.log(
+  "--Create a global variable count = 100. Write a function that declares a local variable count = 50-",
+);
+
+let count = 100;
+
+function LocalVariables() {
+  let count = 50;
+  console.log("Local count:", count);
+}
+
+LocalVariables();
+
+console.log("Global count:", count);
+
+// ==============================================
+
+// 11. What happens when you access a local variable outside its function?
+console.log(
+  "--- What happens when you access a local variable outside its function?---",
+);
+
+// here i am giving one example sir
+
+function abc() {
+  let z = 200;
+  console.log(`Local variables values is this ${z}`);
+}
+
+abc();
+
+// console.log(z); //throw error reference error z is not defined
+
+// A local variable declared inside a function cannot be accessed directly outside that function.
+
+// =========================================================
+// 12. Declare a variable using var inside an if block. Can you access it outside the block?
+
+console.log(
+  "--Declare a variable using var inside an if block. Can you access it outside the block--",
+);
+
+console.log("--- var inside an if block ---");
+
+if (true) {
+  var age = 29;
+  console.log("Inside if block:", age);
+}
+
+console.log("Outside if block:", age); // yes
+
+// If var is declared inside a function, you can access it anywhere inside that same function, but not directly outside the function.
+
+// ==================================================
+// 13. Repeat Question 12 using let. What happens?
+
+console.log("--- let inside an if block ---");
+
+// if(true){
+//     let ages=30;
+//     console.log("Inside if block:", ages);
+
 // }
 
-// greet();
-// console.log(name);
+// console.log("Outside if block:", ages);  //reference error ages is not defined because let is blocked scoped
 
-// Function Scope
-// All JavaScript functions have their own scope.
+// ==================================================
+// 14. Repeat Question 12 using const. What happens?
 
-// Variables defined inside a function are not accessible (visible) from outside the function.
+console.log("--- const inside an if block ---");
 
-// Variables declared with var, let and const are quite similar when declared inside a function.
-
-// They all have Function Scope:
-
-function myFunction1() {
-  var carName = "Volvo"; // Function Scope
+if (true) {
+  const myage = 30;
+  console.log("Inside if block:", myage);
 }
 
-function myFunction2() {
-  let carName = "Volvo"; // Function Scope
+console.log("Outside if block:", myage); //reference error myage is not defined because const is blocked scoped
+
+// =================================================
+// 15. Create a for loop using var i. Print i after the loop.
+
+console.log("--- Create a for loop using var i. Print i after the loop---");
+
+var i = 1;
+for (i; i < 5; i++) {
+  console.log(i);
 }
-
-function myFunction3() {
-  const carName = "Volvo"; // Function Scope
-}
-// Example
-// Variables declared within a JavaScript function, are LOCAL to the function:
-
-// code here can NOT use carName
-
-function myFunction() {
-  let carName = "Volvo";
-  // code here CAN use carName
-}
-
-// // code here can NOT use carName
-// Local Variables have Function Scope
-// They can only be accessed from within the function
-// No scripts or functions outside the function can access them
-// Variables with the same name can be used outside the function
-// Variables with the same name can be used in different functions
-// Local variables are created when a function starts
-// Local variables are deleted when the function is completed
-// Arguments (parameters) work as local variables inside functions
-
-// hoisting exaple
-
-// 1. What is hoisting?
-// Definition for your notebook: Hoisting is JavaScript's behavior of processing variable and function declarations before executing the code in their respective scope.
-
-// console.log(a);
-
-// var a=10;
-
-// console.log(a)
-
-// Conceptual model only, not literal code rewriting
-// var a; // initialized as undefined
-
-// console.log(a);
-
-// a = 10;
-
-// console.log(a);
-
-// 3. What happens with let and const?
-
-// console.log(a)
-
-// let a=20;
-
-let a = 20;
-console.log(a);
-
-// Example A: Function declaration
-// greet();
-
-// function greet() {
-//   console.log("Hello Chandan");
-// }
-
-console.log("-----------------");
-// Example B: Function expression using var
-// greet();
-
-// var greet = function () {
-//   console.log("Hello Chandan");
-// };
-
-// Example C: Function expression using let
-// greet();
-
-// let greet = function () {
-//   console.log("Hello Chandan");
-// };
-
-// 1. What is Closure?
-// Definition for your notebook:
-
-// A closure is a feature in JavaScript where an inner function remembers and can access variables from its outer function, even after the outer function has finished executing.
-
-console.log("-----closure example in javascript------");
-function outer() {
-  let name = "chandan kumar yadav";
-
-  function inner() {
-    console.log(name);
-  }
-  return inner;
-}
-
-let result = outer();
-
-result();
-
-
-// 3. How does it work?
 // 1
-
-// outer() executes
-
-// The variable name is created with the value "Chandan".
 // 2
-
-// return inner
-// The outer function returns the inner function itself. It does not execute inner yet.
 // 3
+// 4
 
-// result() executes
-// The inner function can still access the name variable from its outer scope and prints "Chandan".
+console.log(i); //5 because i every time updating and last checked loop and increase then 5 print
 
-// 4. Why is this called a closure?
-// Sir, normally, after outer() finishes, its execution is complete. But the returned inner function retains access to the variable name from the outer function's scope.
+// =================================================
+// 16. Repeat Question 15 using let i. Print i after the loop.
 
-// That retained access is called a closure.
+console.log("--- Create a for loop using let i. Print i after the loop---");
 
+// let j = 1;
+// for (j; j < 5; j++) {
+//   console.log(j);
+// }
+// // 1
+// // 2
+// // 3
+// // 4
 
-// one more example below
+// console.log(j); //5 because j every time updating and last checked loop and increase then 5 print
 
-function counter() {
-  let count = 0;
-
-  return function () {
-    count++;
-    console.log(count);
-  };
+for (let j = 1; j < 5; j++) {
+  console.log(j);
 }
 
-let results = counter();
+// console.log(j);  reference error j is not defined
 
-results();
-results();
-results();
+// 1
+// 2
+// 3
+// 4
+// 5  reference error becasue here j is inside the for so it is blocked scoped 
+
+// ====================================================
+
+// 17. Create a block using { } and declare let score = 90 inside it. Try accessing score outside.
+
+{
+    let score=90;
+}
+
+// console.log(score) // reference error score is not defined because let and const are blocked scoped right ?
+
+// =========================================================
+
+// 18. Create a block using { } and declare var score = 90 inside it. Try accessing score outside.
+
+{
+    var scores=90;
+}
+
+console.log(scores); // dispaly scores 90 becasue var  not-blocked scoped
+
+// ==============================================================
+
+// 19. Demonstrate the difference between function scope and block scope.
+
+// the variables used inside the function that is function scope and the variables used inside block that is blcoked scope setInterval
+
+// we will undersatnd with one example  sir Headers
+
+// function mylife(){
+//     let mynamess="My name is madhav";
+//     retun mynamess;
+// }
+
+// console.log(mynamess())// not print because weare try ing to print outside of the function and here mynamess is fucntion scope variables
+
+// exampel of blocked scope
+
+// {
+//     let w=40;
+// }
+
+// console.log(w) // not print reference error w is not defined sir 
+
+// =========================================================
+
+// 20. Write a program demonstrating global scope, function scope, and block scope together.
+
+let mystate="Bihar";
+
+{
+    let mystate="karnataka";
+    let fatherName='udho Prasad Yadav';
+    console.log(mystate) //karnataka
+}
+console.log(mystate); // 
+console.log(fatherName); // reference erro fatherName is not defined because this is blocked scope
+
+function Mydetails(){
+    let mobile=6360487464;
+    console.log(mobile);
+}
+Mydetails(); //6360487464
+console.log(mystate) //Bihar
+
+console.log(mobile) // reference error mobile is not defined sir because this is block funciton scope
