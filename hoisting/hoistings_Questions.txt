@@ -1,0 +1,925 @@
+Category 1: Hoisting fundamentals — Questions 1–20
+Level: Beginner
+1. What is hoisting in JavaScript? Write a definition for your notebook.
+2. Why does JavaScript have hoisting behavior?
+3. What does the term hoisting mean in simple English?
+4. Does JavaScript literally move every declaration to the top of the code? Explain.
+5. What is the difference between declaring a variable and initializing a variable?
+6. What is the difference between initialization and assignment?
+7. Explain how JavaScript prepares declarations before executing statements.
+8. What is the difference between a variable declaration and a function declaration?
+9. Does hoisting work with variables and functions in the same way?
+10. Explain the difference between hoisting and normal top-to-bottom execution.
+11. What is meant by the simplified hoisting mental model?
+12. Why should developers understand hoisting?
+13. Can hoisting affect the output of a program? Demonstrate.
+14. What is the difference between a syntax error, a ReferenceError, and a TypeError in hoisting examples?
+15. Explain the difference between a variable being declared and being available for use.
+16. Does hoisting apply inside functions as well as at the top level?
+17. Can two different declarations have different hoisting behavior?
+18. What is the relationship between hoisting and a variable's scope?
+19. Explain hoisting with one example using a variable and another using a function.
+20. Write a short paragraph explaining hoisting as if you were answering an interview question.
+Category 2: var hoisting — Questions 21–40
+Level: Beginner
+
+21. Predict the output:
+console.log(a);
+var a = 10;
+
+
+22. Predict the output:
+var a = 10;
+console.log(a);
+
+
+23. Predict the output:
+console.log(a);
+var a;
+
+
+24. Predict the output:
+var x;
+console.log(x);
+x = 20;
+console.log(x);
+
+
+25. Predict the output:
+console.log(a);
+var a = 5;
+var a = 15;
+console.log(a);
+
+
+26. Explain why accessing a var variable before its assignment produces undefined rather than a ReferenceError.
+27. Rewrite a simple var hoisting example using the simplified mental model.
+28. Does var allow redeclaration in the same scope? Demonstrate.
+29. Predict the output:
+var price = 100;
+var price = 200;
+console.log(price);
+
+
+30. Predict the output:
+var x = 1;
+console.log(x);
+var x = 2;
+console.log(x);
+var x = 3;
+console.log(x);
+
+
+31. Predict the output:
+function test() {
+  console.log(a);
+  var a = 10;
+}
+test();
+
+
+32. Predict the output:
+var a = 100;
+
+function test() {
+  var a;
+  console.log(a);
+  a = 200;
+}
+
+test();
+console.log(a);
+
+
+33. Predict the output:
+var name = "Chandan";
+
+function show() {
+  console.log(name);
+  var name = "Rahul";
+}
+
+show();
+
+
+34. Predict the output:
+var total = 50;
+
+function calculate() {
+  console.log(total);
+  total = 100;
+}
+
+calculate();
+console.log(total);
+
+
+35. Explain the difference between a declared-but-unassigned var variable and a variable that has never been declared.
+36. Identify the output or error:
+console.log(typeof score);
+var score = 90;
+
+
+37. Predict the output:
+var a = 10;
+
+function test() {
+  var a = 20;
+  console.log(a);
+}
+
+test();
+console.log(a);
+
+
+38. Write a program that demonstrates var hoisting inside a function.
+39. Write a program that demonstrates var redeclaration and reassignment.
+40. Debug a program where a developer incorrectly assumes var a = 10 is entirely moved to the top.
+Category 3: let, const, and the Temporal Dead Zone — Questions 41–60
+Level: Beginner to intermediate
+41. Are let and const hoisted in JavaScript? Explain accurately.
+42. What is the Temporal Dead Zone (TDZ)?
+43. Predict the output or error:
+console.log(a);
+let a = 10;
+
+
+44. Predict the output or error:
+console.log(a);
+const a = 20;
+
+
+45. Predict the output:
+let a = 10;
+console.log(a);
+
+
+46. Predict the output:
+const a = 10;
+console.log(a);
+
+
+47. Explain why let cannot be accessed before its declaration is evaluated.
+48. Explain why const cannot be accessed before its declaration is evaluated.
+49. Predict the output or error:
+let x;
+console.log(x);
+
+
+50. Predict the output or error:
+const x;
+console.log(x);
+
+
+51. Predict the output or error:
+{
+  console.log(a);
+  let a = 5;
+}
+
+
+52. Predict the output or error:
+{
+  console.log(a);
+  const a = 5;
+}
+
+
+53. Predict the output or error:
+let a = 10;
+let a = 20;
+console.log(a);
+
+
+54. Predict the output or error:
+const a = 10;
+const a = 20;
+console.log(a);
+
+
+55. Explain the difference between hoisting with var and hoisting with let.
+56. Explain the difference between hoisting with let and const.
+57. What happens if a let variable is accessed before initialization, even if it is inside a function?
+58. Predict the output or error:
+let x = 10;
+
+function test() {
+  console.log(x);
+  let x = 20;
+}
+
+test();
+
+
+59. Predict the output or error:
+const x = 10;
+
+function test() {
+  console.log(x);
+  const x = 20;
+}
+
+test();
+
+
+60. Write a program demonstrating the TDZ and explain which statement causes the error.
+Category 4: Function declaration hoisting — Questions 61–80
+Level: Beginner to intermediate
+61. What is a function declaration? Write an example.
+62. Can a function declaration be called before its definition? Demonstrate.
+63. Predict the output:
+greet();
+
+function greet() {
+  console.log("Hello");
+}
+
+
+64. Predict the output:
+add(2, 3);
+
+function add(a, b) {
+  console.log(a + b);
+}
+
+
+65. Predict the output:
+test();
+
+function test() {
+  console.log("First");
+}
+
+function test() {
+  console.log("Second");
+}
+
+
+66. Explain why function declarations can be called before their position in the code.
+67. Does a function declaration become available in the same way as a var variable? Explain.
+68. Predict the output:
+console.log(typeof greet);
+
+function greet() {
+  return "Hello";
+}
+
+
+69. Predict the output:
+function outer() {
+  inner();
+
+  function inner() {
+    console.log("Inside");
+  }
+}
+
+outer();
+
+
+70. Predict the output:
+outer();
+
+function outer() {
+  console.log("A");
+}
+
+function outer() {
+  console.log("B");
+}
+
+
+71. Create a function declaration named multiply and call it before its definition.
+72. Create a function declaration named getUser that returns an object and call it before its definition.
+73. Write a function declaration with parameters and demonstrate that hoisting does not remove the need to pass arguments.
+74. Predict the output:
+function test() {
+  console.log(typeof greet);
+
+  function greet() {
+    return "Hi";
+  }
+}
+
+test();
+
+
+75. Predict the output:
+function first() {
+  second();
+
+  function second() {
+    console.log("Second");
+  }
+}
+
+first();
+
+
+76. What is the difference between a function declaration and a function call?
+77. Does calling a function before its declaration mean the function executes before all other statements? Explain.
+78. Write an example showing a function declaration that uses a variable declared later.
+79. Debug a program where a developer mistakenly thinks a function declaration must always appear before its call.
+80. Write an interview-style answer explaining function declaration hoisting.
+Category 5: Function expressions and arrow functions — Questions 81–100
+Level: Intermediate
+81. What is a function expression?
+82. What is the difference between a function declaration and a function expression?
+83. Predict the output or error:
+greet();
+
+var greet = function () {
+  console.log("Hello");
+};
+
+
+84. Predict the output or error:
+greet();
+
+let greet = function () {
+  console.log("Hello");
+};
+
+
+85. Predict the output or error:
+greet();
+
+const greet = function () {
+  console.log("Hello");
+};
+
+
+86. Predict the output or error:
+console.log(greet);
+
+var greet = function () {
+  console.log("Hello");
+};
+
+
+87. Predict the output or error:
+console.log(greet);
+
+let greet = function () {
+  console.log("Hello");
+};
+
+
+88. Why can a var function-expression variable exist before assignment but still not be callable?
+89. What error can occur when calling a var function expression before its assignment? Explain why.
+90. Predict the output or error:
+var greet = function () {
+  console.log("Hello");
+};
+
+greet();
+
+
+91. Predict the output or error:
+sayHello();
+
+var sayHello = () => {
+  console.log("Hi");
+};
+
+
+92. Predict the output or error:
+sayHello();
+
+let sayHello = () => {
+  console.log("Hi");
+};
+
+
+93. Predict the output or error:
+var add = (a, b) => a + b;
+console.log(add(2, 3));
+
+
+94. Explain whether arrow functions are hoisted like function declarations.
+95. Explain how a var declaration containing an arrow function behaves before assignment.
+96. Explain how a const declaration containing an arrow function behaves before initialization.
+97. Predict the output or error:
+var run = function first() {
+  console.log("Run");
+};
+
+run();
+
+
+98. Predict the output or error:
+run();
+
+function run() {
+  console.log("Declaration");
+}
+
+var run = function () {
+  console.log("Expression");
+};
+
+run();
+
+
+99. Rewrite a function expression example as a function declaration and compare the behavior when called before its definition.
+100. Create a program containing one function declaration, one var function expression, and one arrow function. Test each before and after assignment.
+Category 6: Hoisting with objects, arrays, and classes — Questions 101–120
+Level: Intermediate to advanced
+
+Sir, these questions focus on objects and classes. Remember: an object literal itself is not a special kind of hoisted declaration; the variable holding it follows the rules of var, let, or const.
+
+101. Predict the output:
+console.log(user);
+var user = { name: "Chandan" };
+
+
+102. Predict the output or error:
+console.log(user);
+let user = { name: "Chandan" };
+
+
+103. Predict the output or error:
+console.log(user);
+const user = { name: "Chandan" };
+
+
+104. Predict the output:
+var employee = { salary: 30000 };
+console.log(employee.salary);
+
+
+105. Predict the output:
+console.log(employee);
+
+var employee = {
+  name: "Rahul",
+  salary: 40000
+};
+
+console.log(employee.salary);
+
+
+106. Predict the output or error:
+console.log(employee.salary);
+
+var employee = {
+  salary: 40000
+};
+
+
+107. Predict the output or error:
+console.log(products);
+
+var products = ["Pen", "Book", "Bag"];
+
+
+108. Predict the output or error:
+console.log(products.length);
+
+let products = ["Pen", "Book"];
+
+
+109. Explain whether an object's properties are hoisted separately from the variable that holds the object.
+110. Create an object using var, access the variable before assignment, and explain the result.
+111. Create an object using let and demonstrate what happens when you access it before initialization.
+112. Create an object using const. Explain how hoisting differs from modifying one of its properties after initialization.
+113. Predict the output:
+const user = { name: "A" };
+user.name = "B";
+console.log(user.name);
+
+
+114. Predict the output or error:
+console.log(typeof user);
+const user = { name: "A" };
+
+
+115. Predict the output or error:
+console.log(User);
+
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+
+116. Can a JavaScript class be used before its class declaration? Explain the relationship to the TDZ.
+117. Predict the output or error:
+class Animal {}
+
+const dog = new Animal();
+console.log(dog instanceof Animal);
+
+
+118. Explain the difference between class declaration behavior and function declaration behavior.
+119. Write an example that combines a hoisted function declaration and an object variable that is not initialized until later.
+120. Write a program using an object, an array, a function declaration, and a let variable. Identify each hoisting behavior.
+Category 7: Hoisting inside functions, blocks, and loops — Questions 121–140
+Level: Intermediate to advanced
+
+121. Predict the output:
+var x = 10;
+
+function test() {
+  console.log(x);
+  var x = 20;
+}
+
+test();
+
+
+122. Predict the output:
+var x = 10;
+
+function test() {
+  console.log(x);
+  let x = 20;
+}
+
+test();
+
+
+123. Predict the output:
+function test() {
+  console.log(a);
+  var a = 5;
+}
+
+test();
+
+
+124. Predict the output or error:
+function test() {
+  console.log(a);
+  const a = 5;
+}
+
+test();
+
+
+125. Predict the output:
+if (true) {
+  console.log(a);
+  var a = 10;
+}
+
+
+126. Predict the output or error:
+if (true) {
+  console.log(a);
+  let a = 10;
+}
+
+
+127. Predict the output or error:
+{
+  console.log(a);
+  const a = 10;
+}
+
+
+128. Explain how var and let behave differently when declared inside an if block.
+129. Predict the output:
+for (var i = 0; i < 1; i++) {
+  console.log(i);
+}
+
+console.log(i);
+
+
+130. Predict the output or error:
+for (let i = 0; i < 1; i++) {
+  console.log(i);
+}
+
+console.log(i);
+
+
+131. Write a loop example that demonstrates function-scoped var.
+132. Write a loop example that demonstrates block-scoped let.
+133. Explain why a let variable inside its block can be inaccessible before initialization.
+134. Predict the output:
+var x = 1;
+
+function outer() {
+  var x = 2;
+
+  function inner() {
+    console.log(x);
+    var x = 3;
+  }
+
+  inner();
+}
+
+outer();
+
+
+135. Predict the output or error:
+var x = 1;
+
+function outer() {
+  var x = 2;
+
+  function inner() {
+    console.log(x);
+    let x = 3;
+  }
+
+  inner();
+}
+
+outer();
+
+
+136. Write a function with two local variables declared at different positions. Demonstrate var hoisting.
+137. Write a function demonstrating the TDZ with a variable declared inside a nested block.
+138. Explain why a variable declared with var inside a function does not become global merely because it is hoisted.
+139. Create a program that combines a loop, an object, and var hoisting.
+140. Create a program that combines a nested function, a let variable, and a TDZ error. Explain the error.
+Category 8: Multiple-choice questions — Questions 141–160
+Level: Mixed
+
+141. What is hoisting?
+- A) Moving every statement to the top
+- B) JavaScript's declaration-processing behavior
+- C) Executing all functions immediately
+- D) Converting let into var
+142. Before its assignment, a local var variable is typically:
+- A) null
+- B) 0
+- C) undefined
+- D) Not declared
+143. Which can be called before its declaration in the same scope?
+- A) A function declaration
+- B) A const arrow function
+- C) A let function expression
+- D) Every function expression
+144. What happens when you access a let variable in its TDZ?
+- A) It returns undefined
+- B) It returns null
+- C) It throws a ReferenceError
+- D) It automatically initializes to zero
+145. What happens when a var function expression is called before assignment?
+- A) It always works
+- B) It may throw a TypeError
+- C) It always throws a syntax error
+- D) It returns null
+146. Which statement about const is correct?
+- A) It is never hoisted
+- B) It is initialized to undefined before its declaration
+- C) It cannot be accessed before initialization
+- D) It behaves exactly like var
+147. Which declaration allows redeclaration in the same scope?
+- A) let
+- B) const
+- C) var
+- D) All three
+148. What does the TDZ refer to?
+- A) The time before a variable is declared in the source text
+- B) The interval from entering the relevant scope until a lexical binding is initialized
+- C) A type of function
+- D) The end of a function
+149. Which is true about an object variable declared with const?
+- A) Its properties can never change
+- B) The binding cannot be reassigned, but object properties may change
+- C) It is automatically global
+- D) It is not hoisted
+150. What happens when a class declaration is accessed before initialization?
+- A) It behaves like a var
+- B) It is always undefined
+- C) It throws a ReferenceError
+- D) It becomes a function expression
+151. What is the output?
+console.log(typeof a);
+var a = 10;
+
+
+- A) "number"
+- B) "undefined"
+- C) ReferenceError
+- D) "object"
+152. What is the output or error?
+console.log(typeof a);
+let a = 10;
+
+
+- A) "undefined"
+- B) "number"
+- C) ReferenceError
+- D) "object"
+153. What is the output?
+test();
+
+function test() {
+  console.log("Hi");
+}
+
+
+- A) undefined
+- B) Hi
+- C) TypeError
+- D) ReferenceError
+154. What is the output or error?
+test();
+
+var test = function () {
+  console.log("Hi");
+};
+
+
+- A) Hi
+- B) undefined
+- C) TypeError
+- D) ReferenceError
+155. Which declaration is block-scoped?
+- A) var
+- B) let
+- C) Both var and let
+- D) Neither
+156. Does hoisting automatically assign the final value of a variable at the beginning?
+- A) Always
+- B) Only for var
+- C) No; assignments execute at their own positions
+- D) Only for objects
+157. Which one is a function declaration?
+- A) var f = function() {};
+- B) const f = () => {};
+- C) function f() {}
+- D) let f = null;
+158. Which statement about function expressions is correct?
+- A) The function expression is always available before assignment
+- B) The binding and function value have different initialization timing
+- C) Function expressions are always global
+- D) They cannot be assigned to variables
+159. Which declaration produces a syntax error if it has no initializer?
+- A) var x;
+- B) let x;
+- C) const x;
+- D) Both var x; and let x;
+160. Which statement best describes hoisting?
+- A) All declarations are initialized identically
+- B) All source code is physically rearranged
+- C) Different declaration types have different initialization and accessibility rules
+- D) Hoisting only applies to variables declared globally
+Category 9: Debugging and code correction — Questions 161–180
+Level: Intermediate to advanced
+
+161. Fix the following code so it prints 10 without producing an error:
+console.log(a);
+let a = 10;
+
+
+162. Fix the following code so greet() can run before the function's source position:
+greet();
+
+var greet = function () {
+  console.log("Hello");
+};
+
+
+163. Explain and fix the problem:
+console.log(user.name);
+var user = { name: "Chandan" };
+
+
+164. Fix the code so the value of total is initialized before it is used:
+function calculate() {
+  console.log(total);
+  var total = 100;
+}
+
+calculate();
+
+
+165. Correct the redeclaration error:
+let price = 100;
+let price = 200;
+console.log(price);
+
+
+166. Explain why the following fails and rewrite it correctly:
+console.log(a);
+const a = 10;
+
+
+167. Fix this code so it can create an instance of the class successfully:
+const user = new User();
+
+class User {}
+
+
+168. Debug the function expression:
+run();
+
+var run = function () {
+  console.log("Running");
+};
+
+
+169. A developer expects the following code to print 10. Explain the issue and fix it:
+function test() {
+  console.log(x);
+  var x = 10;
+}
+
+test();
+
+
+170. A developer expects typeof value to print "undefined". Explain the problem:
+console.log(typeof value);
+let value = 10;
+
+
+171. Fix this code so the const variable has a valid initializer:
+const count;
+count = 1;
+
+
+172. Correct the following code so getUser() is available when called before its definition:
+getUser();
+
+const getUser = () => ({ name: "Chandan" });
+
+
+173. Explain why the following output is not the same as calling a function declaration:
+var calculate = function () {
+  return 10;
+};
+
+console.log(calculate);
+
+
+174. Fix this code so the developer can use the variable in the block only after it is initialized:
+{
+  console.log(score);
+  let score = 100;
+}
+
+
+175. Explain why this code throws an error and rewrite it with correct declaration order:
+console.log(User.name);
+
+class User {
+  static name = "Chandan";
+}
+
+
+176. Debug a program containing a var variable and a same-named function declaration. Explain which binding/value is used.
+177. Debug a program where a variable declaration appears after a nested function call.
+178. Correct a program that confuses undefined with an undeclared variable.
+179. Write a program with three hoisting errors and fix each error.
+180. Create your own broken program involving var, let, const, and a function declaration. Explain and correct every issue.
+Category 10: Subjective, interview, and advanced challenges — Questions 181–200
+Level: Advanced
+181. Explain hoisting using a real-world analogy.
+182. Explain the difference between declaration instantiation and statement execution at a high level.
+183. Describe the important differences between hoisting behavior for var, let, and const.
+184. Explain why let and const can be described as hoisted even though they cannot be accessed before initialization.
+185. Explain the Temporal Dead Zone in technical terms and give a simple example.
+186. Compare function declarations, function expressions, and arrow functions in terms of availability before their source position.
+187. Explain the difference between a variable being in scope and being initialized.
+188. Explain why assignments are not moved to the beginning by hoisting.
+189. Describe how hoisting works inside a function compared with at the top level of a script.
+190. Explain how hoisting and lexical scope work together when a function contains a local variable with the same name as a global variable.
+191. Explain whether object literals have independent hoisting behavior or follow the declaration type of their binding.
+192. Explain the hoisting behavior of class declarations and compare it with function declarations.
+193. What does typeof return for an uninitialized var binding, and what happens for a lexical binding in the TDZ?
+194. Explain the difference between a ReferenceError caused by the TDZ and a TypeError caused by calling undefined.
+195. Predict the output or error and justify every line:
+var a = 10;
+
+function test() {
+  console.log(a);
+  var a = 20;
+
+  function show() {
+    console.log(a);
+  }
+
+  show();
+}
+
+test();
+
+
+196. Predict the output or error and explain the execution:
+var a = 1;
+
+function test() {
+  console.log(a);
+
+  if (true) {
+    let a = 2;
+    console.log(a);
+  }
+}
+
+test();
+
+
+197. Create a program where a function declaration, a var variable, and a let variable demonstrate three different hoisting behaviors. Explain each result.
+198. Create a program using an object, a class, and a function declaration to demonstrate their different availability rules.
+199. Design five interview questions about hoisting and write concise model answers for each.
+200. Final challenge: Create a JavaScript program that combines var, let, const, function declarations, function expressions, arrow functions, an object, and a class. Predict every output or error before running it, then explain each result using the correct hoisting rules.

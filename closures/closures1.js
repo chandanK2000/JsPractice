@@ -1,0 +1,1 @@
+console.log('----------clsoures example in javascript -----');

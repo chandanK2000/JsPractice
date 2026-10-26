@@ -1,0 +1,675 @@
+Category 1 — Scope fundamentals (Questions 1–20)
+Difficulty: Beginner
+1. What is scope in JavaScript? Write a simple example.
+2. Declare a global variable name and access it inside a function.
+3. Create a function with a local variable age. Try accessing it outside the function.
+4. Declare let city = "Delhi" globally and print it inside a function.
+5. Create a function with var message = "Hello". Print it inside the function.
+6. Create a function with let message = "Hello". Print it inside the function.
+7. Create a function with const message = "Hello". Print it inside the function.
+8. Declare let x = 10 globally and let x = 20 inside a function. Print both values in their respective scopes.
+9. Predict the output: let x = 10; function test() { let x = 20; console.log(x); } test(); console.log(x);
+10. Create a global variable count = 100. Write a function that declares a local variable count = 50.
+11. What happens when you access a local variable outside its function?
+12. Declare a variable using var inside an if block. Can you access it outside the block?
+13. Repeat Question 12 using let. What happens?
+14. Repeat Question 12 using const. What happens?
+15. Create a for loop using var i. Print i after the loop.
+16. Repeat Question 15 using let i. Print i after the loop.
+17. Create a block using { } and declare let score = 90 inside it. Try accessing score outside.
+18. Create a block using { } and declare var score = 90 inside it. Try accessing score outside.
+19. Demonstrate the difference between function scope and block scope.
+20. Write a program demonstrating global scope, function scope, and block scope together.
+Category 2 — Scope and lexical scope (Questions 21–40)
+Difficulty: Beginner to intermediate
+21. What is lexical scope? Explain with an example.
+22. Create an outer function containing a variable name and an inner function that prints it.
+23. Can an inner function access a variable declared in its outer function? Demonstrate.
+24. Can an outer function access a variable declared only inside its inner function? Test it.
+25. Create three nested functions and access a variable from the outermost function.
+26. Predict the output: let x = 5; function outer() { let x = 10; function inner() { console.log(x); } inner(); } outer();
+27. Modify Question 26 so the inner function prints the global x instead.
+28. Declare the same variable name in global, outer, and inner scopes. Print each value.
+29. What is variable shadowing? Demonstrate using let.
+30. Demonstrate variable shadowing using var inside a function.
+31. Predict the output: let a = 10; { let a = 20; console.log(a); } console.log(a);
+32. Predict the output: var a = 10; { var a = 20; } console.log(a);
+33. Create an arrow function that accesses a variable from its surrounding scope.
+34. Can a regular function access a variable declared in its caller's local scope? Test using two separate functions.
+35. Write a function that reads a global variable but does not modify it.
+36. Write a function that modifies a global variable. Show the value before and after calling it.
+37. Create a block-scoped variable inside an if statement and use it inside a nested block.
+38. Predict the output: let value = 1; function test() { console.log(value); let value = 2; } test();
+39. Explain why lexical scope depends on where a function is defined rather than where it is called.
+40. Write a program demonstrating lexical scope and variable shadowing together.
+Category 3 — Scope: intermediate and advanced (Questions 41–60)
+Difficulty: Intermediate
+41. Create two functions that each declare a local variable with the same name.
+42. Write a function that uses a global variable when no local variable with that name exists.
+43. Write a function that shadows a global variable without changing the global value.
+44. Predict the output: var x = 1; function test() { var x = 2; if (true) { var x = 3; } console.log(x); } test(); console.log(x);
+45. Predict the output: let x = 1; function test() { let x = 2; if (true) { let x = 3; console.log(x); } console.log(x); } test();
+46. Write a nested function that reads variables from two different outer scopes.
+47. Demonstrate how a block-scoped variable behaves inside a nested if statement.
+48. Predict the output: let a = 1; function one() { let b = 2; function two() { let c = 3; console.log(a, b, c); } two(); } one();
+49. Explain the difference between lexical scope and dynamic scope.
+50. Write a program that demonstrates global, function, block, and lexical scope.
+Category 4 — Hoisting fundamentals (Questions 51–70)
+Difficulty: Beginner
+51. What is hoisting in JavaScript? Write a definition and example.
+52. Predict the output: console.log(a); var a = 10;
+53. Predict the output: var a = 10; console.log(a);
+54. Predict the output: console.log(a); let a = 10;
+55. Predict the output: console.log(a); const a = 10;
+56. Explain the difference between hoisting with var and with let.
+57. Explain the difference between hoisting with let and const.
+58. Predict the output: var x; console.log(x);
+59. Predict the output: var x = 5; var x = 10; console.log(x);
+60. What happens when you access a let variable before its declaration?
+61. What is the Temporal Dead Zone (TDZ)?
+62. Identify the TDZ in a program using let.
+63. Identify the TDZ in a program using const.
+64. Predict the output: { console.log(a); let a = 5; }
+65. Predict the output: console.log(a); var a;
+66. Predict the output: var a = 1; console.log(a); var a = 2; console.log(a);
+67. Does JavaScript hoist variable declarations, assignments, or both? Demonstrate.
+68. Rewrite a var example using the simplified hoisting mental model.
+69. Does hoisting mean JavaScript literally moves every line of code to the top? Explain.
+70. Write three examples showing different behaviors of var, let, and const before initialization.
+Category 5 — Function hoisting and tricky cases (Questions 71–90)
+Difficulty: Intermediate
+71. Call a function declaration before its definition. What happens?
+72. Predict the output: greet(); function greet() { console.log("Hello"); }
+73. Create a function declaration named add and call it before its definition.
+74. Call a function expression before its assignment using var. Predict the error.
+75. Predict the output: console.log(greet); var greet = function() { console.log("Hello"); };
+76. Predict the output: greet(); var greet = function() { console.log("Hello"); };
+77. Predict the output: greet(); let greet = function() { console.log("Hello"); };
+78. Compare hoisting in a function declaration and a function expression.
+79. Predict the output: var x = 10; function test() { console.log(x); var x = 20; } test();
+80. Predict the output: let x = 10; function test() { console.log(x); let x = 20; } test();
+81. What happens when a function declaration is nested inside another function?
+82. Create an inner function declaration and call it before its definition inside the outer function.
+83. Predict the output: console.log(typeof a); var a = 10;
+84. Predict the output: console.log(typeof a); let a = 10;
+85. Explain why typeof does not prevent an error when accessing a lexical variable in the TDZ.
+86. Predict the output: var x = 1; function x() {} console.log(typeof x);
+87. Demonstrate how function declarations and variables with the same name can cause confusing results.
+88. Predict the output: function test() { console.log(a); var a = 10; } test();
+89. Predict the output: function test() { console.log(a); let a = 10; } test();
+90. Write a program containing a function declaration, a function expression, var, and let. Explain which can be accessed before their declarations and what happens.
+Category 6 — Closure fundamentals (Questions 91–110)
+Difficulty: Beginner
+91. What is a closure? Write a notebook definition.
+92. Create an outer function with name = "Chandan" and an inner function that prints it.
+93. Return an inner function from an outer function and execute it afterward.
+94. Predict the output: function outer() { let x = 10; return function() { console.log(x); }; } let result = outer(); result();
+95. Modify Question 94 so x starts at 50.
+96. Create a closure that remembers a person's name.
+97. Create a closure that remembers a user's age.
+98. Write a closure that adds two numbers using a value remembered from the outer function.
+99. Create a closure that remembers a greeting message and accepts a person's name as an argument.
+100. Predict the output: function outer() { let x = 5; return function() { x++; console.log(x); }; } let result = outer(); result(); result();
+101. Create a counter closure starting from 0.
+102. Modify the counter to start from 100.
+103. Create a closure that decreases a counter by one on each call.
+104. Create a closure that multiplies a remembered number by 2 each time it runs.
+105. Create a closure that remembers a product's price and returns it when called.
+106. Create a closure that stores a student's name and marks.
+107. Create a closure that remembers a company name and prints it.
+108. Explain what return inner does compared with return inner().
+109. Demonstrate that a closure can still access an outer variable after the outer function returns.
+110. Write a closure example and explain exactly which variable the inner function remembers.
+Category 7 — Closure: state and independent environments (Questions 111–130)
+Difficulty: Intermediate
+111. Create a counter closure and call it five times.
+112. Create two independent counters using the same counter function.
+113. Predict the output: function outer() { let count = 0; return function() { count++; console.log(count); }; } let a = outer(); let b = outer(); a(); a(); b();
+114. Modify Question 113 so that you call b() twice before calling a().
+115. Create two closures that remember different names.
+116. Create a closure that remembers a starting number and adds a user-provided number to it.
+117. Create a function createMultiplier(n) that returns a function multiplying an argument by n.
+118. Use createMultiplier(2) and createMultiplier(5) to create two different multiplier functions.
+119. Create a createGreeter(greeting) function that returns a personalized greeting function.
+120. Create a closure that stores a bank balance and provides a function to deposit money.
+121. Extend Question 120 with a withdrawal function.
+122. Create a closure that keeps a score and increases it by a specified amount.
+123. Create a closure that stores a password and checks a provided password without exposing the stored value directly.
+124. Create a closure that remembers a discount percentage and calculates discounted prices.
+125. Predict the output: function create() { let x = 1; return () => ++x; } let a = create(); let b = create(); console.log(a(), b(), a());
+126. Explain why separate calls to the same outer function create separate closure environments.
+127. Create a closure with getValue() and setValue() functions that share the same variable.
+128. Create a closure that keeps track of how many times a function is called.
+129. Create a closure that remembers a list of names and allows another name to be added.
+130. Explain how a closure can keep a variable private from direct outside access.
+Category 8 — Closure with loops, callbacks, and functions (Questions 131–150)
+Difficulty: Intermediate to advanced
+131. Predict the output: for (var i = 1; i <= 3; i++) { setTimeout(() => console.log(i), 0); }
+132. Modify Question 131 using let so the callbacks print 1, 2, and 3.
+133. Explain why callbacks inside a loop using var can share the same variable.
+134. Solve the loop problem using an IIFE and var.
+135. Write a loop that creates three functions and stores them in an array. Each function should print its own index.
+136. Predict the output: function make() { let x = 10; return () => x * 2; } console.log(make()());
+137. Create a closure that returns a function to calculate the square of a number.
+138. Create a closure that remembers a number and returns functions to add, subtract, and multiply it.
+139. Pass a closure as a callback to another function.
+140. Create a function runCallback(callback) that executes a closure supplied to it.
+141. Create a closure that remembers a user's role and returns whether the user is an admin.
+142. Create a closure that generates sequential unique IDs.
+143. Create a closure that generates names such as User1, User2, and User3.
+144. Predict the output: function outer() { let count = 0; return () => ++count; } let fn = outer(); console.log(fn()); console.log(fn()); console.log(fn());
+145. Create a closure that remembers a configuration object.
+146. Create a closure that returns different messages depending on a remembered status.
+147. Write a closure that caches the result of a calculation.
+148. Explain the relationship between lexical scope and closure.
+149. Explain how closures are used in event handlers and callbacks.
+150. Write a practical example combining a loop, a callback, and closure.
+Category 9 — Advanced scope, hoisting, and closure output questions (Questions 151–175)
+Difficulty: Advanced
+151. Predict the output: var x = 10; function test() { console.log(x); var x = 20; } test();
+152. Predict the output: let x = 10; function test() { console.log(x); let x = 20; } test();
+153. Predict the output: function outer() { var x = 1; function inner() { console.log(x); var x = 2; } inner(); } outer();
+154. Predict the output: function outer() { let x = 1; function inner() { console.log(x); let x = 2; } inner(); } outer();
+155. Predict the output: let x = 10; function outer() { return function() { console.log(x); }; } let fn = outer(); x = 20; fn();
+156. Predict the output: function outer() { let x = 10; return () => x; } let fn = outer(); console.log(fn());
+157. Predict the output: function outer() { let x = 10; return () => ++x; } let fn = outer(); console.log(fn(), fn(), fn());
+158. Predict the output: function make() { let count = 0; return { inc: () => ++count, get: () => count }; } let c = make(); console.log(c.inc(), c.get(), c.inc());
+159. Predict the output: let a = 1; function outer() { let a = 2; return function() { console.log(a); }; } let fn = outer(); fn();
+160. Predict the output: var a = 1; function test() { console.log(a); if (true) { let a = 2; } } test();
+161. Explain how variable shadowing interacts with closures.
+162. Create nested closures where the innermost function accesses variables from both outer functions.
+163. Create a closure that retains access to a variable which is updated by another function sharing that variable.
+164. Create two functions that share a private variable through closure.
+165. Demonstrate that two closures returned from the same outer call can share one variable.
+166. Compare the variable environments in let a = outer(); let b = outer(); and two functions returned from one call to outer().
+167. Predict the output: function outer() { let x = 1; return [() => ++x, () => ++x]; } let [a, b] = outer(); console.log(a(), b(), a());
+168. Predict the output: function outer() { let x = 1; return function inner() { let x = 2; return () => x; }; } console.log(outer()());
+169. Explain the difference between returning a function and immediately invoking that function.
+170. Demonstrate hoisting and closure in the same program.
+171. Demonstrate the TDZ inside a function that also contains a closure.
+172. Create a function declaration that returns a closure and call the returned function before the declaration's position.
+173. Write a closure that updates a variable while a separate global variable has the same name.
+174. Create a nested closure with three scopes and demonstrate variable shadowing.
+175. Explain what can keep an outer function's lexical environment reachable and when that environment may eventually be eligible for garbage collection.
+Category 10 — Real-world and interview-level challenges (Questions 176–200)
+Difficulty: Intermediate to advanced
+176. Build a counter using closure with increment(), decrement(), and getCount().
+177. Build a private bank balance using closure with deposit(), withdraw(), and getBalance().
+178. Build a score tracker that supports adding points and resetting the score.
+179. Create a function factory that returns a calculator configured for addition or multiplication.
+180. Create a createUser(name, role) function that returns a closure-based permission checker.
+181. Build a simple rate limiter that allows a function to run only a limited number of times.
+182. Create a closure that remembers the number of login attempts.
+183. Create a function that remembers the last value passed to it.
+184. Implement a simple memoization function that caches results for repeated inputs.
+185. Create a closure that generates sequential invoice numbers.
+186. Build a private shopping-cart module with addItem(), removeItem(), and getItems().
+187. Create a function factory for applying different tax percentages to prices.
+188. Create a closure-based timer state that tracks elapsed increments each time a function is called.
+189. Build a function that returns a private settings object with getter and setter methods.
+190. Create a closure that tracks how many times each named function has been called.
+191. Fix a loop with callbacks that incorrectly prints the same value because of var.
+192. Debug a ReferenceError caused by accessing a let variable inside the TDZ.
+193. Debug a TypeError caused by calling a var function expression before its assignment.
+194. Given a nested-function program, identify each variable's scope and which function can access it.
+195. Given a hoisting example, predict the output or error and explain the execution order.
+196. Given a closure example, draw the separate lexical environments for two calls to the outer function.
+197. Refactor a global counter into a closure so outside code cannot directly modify its internal variable.
+198. Create a module using closures that exposes only selected public methods.
+199. Build a small real-world example that uses scope, hoisting, and closures together. Explain each part.
+200. Final challenge: Build a closure-based account manager with private balance, deposit, withdrawal, transaction count, and balance retrieval. Validate invalid amounts and insufficient funds.
+
+How to practise these 200 questions, sir
+I recommend solving them in this order:
+Day / session	Questions	Focus
+Session 1	1–20	Scope basics
+Session 2	21–50	Lexical scope and shadowing
+Session 3	51–70	Hoisting fundamentals
+Session 4	71–90	Function hoisting and TDZ
+Session 5	91–110	Closure basics
+Session 6	111–130	Independent closures and private state
+Session 7	131–150	Loops, callbacks, and closures
+Session 8	151–175	Advanced output questions
+Session 9	176–190	Real-world applications
+Session 10	191–200	Debugging and interview challenges
+
+You don't have to finish everything in one day, sir. Focus on understanding the output and explaining why it happens.
+
+Your first task: Start with Question 1 and solve it in JavaScript. Send me your code, and I'll check your logic, correct any mistakes, and explain them before we move to Question 2. We will go one by one, without skipping questions or repeating them unnecessarily. 💪
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+do one things sir only give scopes realted 100 questions sir  with every angles sir
+
+
+
+
+
+
+
+
+
+
+
+
+
+Yes sir! 💯 Let's focus only on JavaScript Scope for now. We will keep Hoisting and Closure as separate topics for later practice.
+
+I've prepared 100 JavaScript Scope questions, covering all important angles from beginner to advanced, including output prediction, debugging, coding exercises, nested functions, lexical scope, variable shadowing, and interview questions.
+JavaScript Scope — 100 Practice Questions
+Your scope practice roadmap
+100
+Questions
+
+10
+Categories
+
+3
+Difficulty levels
+
+
+Beginner → Intermediate → Advanced
+
+Category 1: Scope fundamentals (1–10)
+Level: Beginner
+1. What is scope in JavaScript? Write its definition with an example.
+2. What are the different types of scope in JavaScript?
+3. Declare a global variable name = "Chandan" and access it inside a function.
+4. Declare a local variable age = 25 inside a function. Try accessing it outside the function.
+5. Declare a variable using var inside a function and print it inside and outside the function.
+6. Repeat Question 5 using let.
+7. Repeat Question 5 using const.
+8. Create a global variable city = "Delhi" and print it from two different functions.
+9. Create two functions that each declare a local variable named message with different values.
+10. Write a program demonstrating global scope and function scope.
+Category 2: Global scope and function scope (11–20)
+Level: Beginner
+11. What is global scope? Give an example.
+12. What is function scope? Give an example.
+13. Declare var score = 100 globally and var score = 50 inside a function. Print both values.
+14. Repeat Question 13 using let.
+15. Repeat Question 13 using const.
+16. Write a function that reads a global variable without modifying it.
+17. Write a function that changes a global variable. Print the value before and after calling it.
+18. Create three functions that access the same global variable.
+19. Can two different functions have local variables with the same name? Demonstrate.
+20. Write a program containing one global variable and three function-local variables. Identify each variable's scope.
+Category 3: Block scope and var, let, const (21–30)
+Level: Beginner to intermediate
+21. What is block scope in JavaScript?
+22. Declare var x = 10 inside an if block and try accessing it outside.
+23. Repeat Question 22 using let.
+24. Repeat Question 22 using const.
+25. Create a block using {} and declare let name = "Chandan" inside it. Access it inside and outside the block.
+26. Repeat Question 25 using var.
+27. Declare const PI = 3.14 inside a block and try accessing it outside.
+28. Create nested blocks and declare a different let variable in each block.
+29. Write a for loop using var i. Print i after the loop.
+30. Repeat Question 29 using let i. Explain the difference.
+Category 4: Lexical scope and nested functions (31–40)
+Level: Beginner to intermediate
+31. What is lexical scope? Write a definition and example.
+32. Create an outer function with a variable name and an inner function that prints it.
+33. Create three nested functions and access a variable from the outermost function.
+34. Can an inner function access variables from its outer function? Demonstrate.
+35. Can an outer function directly access a variable declared only inside its inner function? Test it.
+36. Declare a in the global scope, b in an outer function, and c in an inner function. Print all three inside the inner function.
+37. Write two separate functions where one tries to access the other function's local variable.
+38. Create nested arrow functions that access variables from their surrounding scopes.
+39. Demonstrate that a function's lexical scope depends on where it is defined, not where it is called.
+40. Write a program demonstrating global scope, function scope, block scope, and lexical scope together.
+Category 5: Variable shadowing (41–50)
+Level: Intermediate
+41. What is variable shadowing? Explain with an example.
+42. Declare let x = 10 globally and another let x = 20 inside a function. Print both values.
+43. Create three nested scopes that declare a variable named value with different values.
+44. Predict the output:
+let x = 10;
+
+function test() {
+  let x = 20;
+  console.log(x);
+}
+
+test();
+console.log(x);
+
+
+45. Predict the output:
+let name = "Global";
+
+function outer() {
+  let name = "Outer";
+
+  function inner() {
+    let name = "Inner";
+    console.log(name);
+  }
+
+  inner();
+  console.log(name);
+}
+
+outer();
+console.log(name);
+
+
+46. Demonstrate variable shadowing using var.
+47. Demonstrate variable shadowing using let in nested blocks.
+48. What happens when you declare let x in a nested block where an outer let x already exists?
+49. Can you redeclare a let variable in the same scope? Test and explain.
+50. Explain the difference between variable shadowing and variable reassignment with examples.
+Category 6: Scope and output prediction (51–60)
+Level: Intermediate
+
+51. Predict the output:
+let x = 5;
+
+function test() {
+  console.log(x);
+}
+
+test();
+
+
+52. Predict the output:
+let x = 5;
+
+function test() {
+  let x = 10;
+  console.log(x);
+}
+
+test();
+console.log(x);
+
+
+53. Predict the output:
+var a = 1;
+
+if (true) {
+  var a = 2;
+}
+
+console.log(a);
+
+
+54. Predict the output:
+let a = 1;
+
+if (true) {
+  let a = 2;
+}
+
+console.log(a);
+
+
+55. Predict the output:
+let x = 10;
+
+function outer() {
+  let y = 20;
+
+  function inner() {
+    console.log(x + y);
+  }
+
+  inner();
+}
+
+outer();
+
+
+56. Predict the output:
+let x = 10;
+
+function outer() {
+  let x = 20;
+
+  function inner() {
+    console.log(x);
+  }
+
+  inner();
+}
+
+outer();
+
+
+57. Predict the output:
+let a = 100;
+
+function first() {
+  let a = 200;
+
+  function second() {
+    console.log(a);
+  }
+
+  second();
+}
+
+first();
+console.log(a);
+
+
+58. Predict the output:
+let value = 10;
+
+{
+  let value = 20;
+
+  {
+    let value = 30;
+    console.log(value);
+  }
+
+  console.log(value);
+}
+
+console.log(value);
+
+
+59. Predict the output:
+var x = 10;
+
+function first() {
+  var x = 20;
+
+  function second() {
+    var x = 30;
+    console.log(x);
+  }
+
+  second();
+  console.log(x);
+}
+
+first();
+console.log(x);
+
+
+60. Write your own program with four variables across three nested scopes. Predict the output before running it.
+Category 7: Scope debugging and error identification (61–70)
+Level: Intermediate
+
+61. Find and explain the scope error:
+function test() {
+  let message = "Hello";
+}
+
+console.log(message);
+
+
+62. Correct this code so result can be accessed outside the if block:
+if (true) {
+  let result = 100;
+}
+
+console.log(result);
+
+
+63. Explain why this code fails:
+function outer() {
+  function inner() {
+    let secret = "ABC";
+  }
+
+  console.log(secret);
+}
+
+outer();
+
+
+64. Fix the following code so both functions can access the required value without using a global variable:
+function first() {
+  let total = 500;
+}
+
+function second() {
+  console.log(total);
+}
+
+first();
+second();
+
+
+65. Identify the scope of every variable:
+let a = 1;
+
+function test() {
+  let b = 2;
+
+  if (true) {
+    let c = 3;
+    console.log(a, b, c);
+  }
+}
+
+
+66. Correct this code so the two blocks can have independent variables named score:
+{
+  let score = 10;
+}
+
+{
+  let score = 20;
+}
+
+
+67. Explain why this code produces an error and correct it:
+let count = 10;
+let count = 20;
+
+
+68. Fix the code so name inside the function does not accidentally change the global name:
+var name = "Global";
+
+function test() {
+  name = "Local";
+}
+
+test();
+console.log(name);
+
+
+69. Find the problem in this code and explain how scope affects it:
+function calculate() {
+  let total = 100;
+}
+
+function display() {
+  console.log(total);
+}
+
+
+70. Debug a program of your own that produces a ReferenceError because a variable is outside its accessible scope.
+Category 8: Scope with loops, conditions, and callbacks (71–80)
+Level: Intermediate to advanced
+
+71. Predict the output:
+for (var i = 0; i < 3; i++) {
+  console.log(i);
+}
+
+console.log(i);
+
+
+72. Repeat Question 71 using let. Explain what happens after the loop.
+73. Declare a variable inside an if block using const. Try accessing it outside.
+74. Create nested if blocks with variables named x and print the values from each scope.
+75. Predict the output:
+let x = 1;
+
+if (true) {
+  let x = 2;
+
+  if (true) {
+    let x = 3;
+    console.log(x);
+  }
+
+  console.log(x);
+}
+
+console.log(x);
+
+
+76. Create a loop with let i and store each loop value in an array.
+77. Create a loop with var i and explain the variable's scope after the loop.
+78. Write a function inside an if block that accesses a variable declared in an outer scope.
+79. Explain which variables are accessible inside a callback function defined within another function.
+80. Write a practical example using a loop, an if block, and a function. Identify all scopes.
+Category 9: Advanced scope concepts (81–90)
+Level: Advanced
+81. Explain the difference between lexical scope and dynamic scope.
+82. What is the scope chain? Demonstrate it using three nested functions.
+83. Explain how JavaScript searches for a variable when it is referenced inside a nested function.
+84. What happens when a variable cannot be found anywhere in the scope chain?
+85. Predict the output:
+let x = "Global";
+
+function outer() {
+  let y = "Outer";
+
+  function inner() {
+    console.log(x, y);
+  }
+
+  return inner;
+}
+
+let fn = outer();
+fn();
+
+
+86. Explain why a function cannot directly access another function's local variables.
+87. Explain how lexical scope differs from the this keyword's behavior in regular functions.
+88. Compare var, let, and const regarding function scope, block scope, and redeclaration.
+89. Explain how modules provide scope isolation in JavaScript.
+90. Create a nested-function program and draw its scope chain, showing which variables are accessible at each level.
+Category 10: Real-world and interview challenges (91–100)
+Level: Intermediate to advanced
+91. Create a student-details function with local variables for name, age, and marks. Keep them inaccessible outside the function.
+92. Create two employee functions with independent local variables for name and salary.
+93. Build a shopping-cart function that uses local variables for items and total price.
+94. Create a function that calculates tax using a locally declared tax rate.
+95. Write a program that uses block scope to prevent temporary variables from leaking outside an if block.
+96. Refactor a program that uses too many global variables so it uses local variables instead.
+97. Create a nested function that calculates an employee's bonus using values from the outer function.
+98. Given a complex program, label every variable as global, function-scoped, or block-scoped.
+99. Write an interview-style example that demonstrates lexical scope, shadowing, and the scope chain together.
+100. Final challenge: Build a small employee salary calculator using functions and proper scope. Keep employee data local, calculate salary and bonus in nested functions, and explain why each variable is accessible where it is used.

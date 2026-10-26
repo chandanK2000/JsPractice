@@ -1,0 +1,675 @@
+Part 1: Beginner level — Questions 1–60
+Category 1: Closure fundamentals (1–15)
+1. What is a closure in JavaScript? Write the definition in your own words.
+2. Why do we use closures in JavaScript?
+3. What is the relationship between closures and lexical scope?
+4. What is an outer function and an inner function?
+5. Can an inner function access variables declared in its outer function?
+6. Can an outer function access variables declared inside its inner function?
+7. What happens when an inner function is returned from an outer function?
+8. Does a closure retain access to outer variables after the outer function finishes executing?
+9. Does a closure remember only the initial value of a variable, or can that value change?
+10. Is every nested function automatically a closure?
+11. Can a function access variables from multiple outer scopes?
+12. What is the difference between a closure and a normal function?
+13. Does a closure require the return keyword?
+14. Can closures be created without explicitly assigning an inner function to a variable?
+15. Give three real-world uses of closures.
+Category 2: Basic closure coding (16–30)
+16. Create an outer function with a variable name = "Chandan" and an inner function that prints it.
+17. Create a function that returns an inner function which prints "Hello JavaScript".
+18. Create a closure that remembers a user's age.
+19. Create a closure that stores a city name and displays it when called.
+20. Create a closure that stores a number and prints it each time.
+21. Create a function that returns an inner function which adds two numbers.
+22. Create a closure that remembers a product's name and price.
+23. Create a closure that stores a student's name and marks.
+24. Create a closure that remembers a greeting message.
+25. Create a closure that returns the square of a stored number.
+26. Create a closure that stores a company name and displays it.
+27. Create a closure that remembers a username passed as an argument.
+28. Create a closure that stores a message and returns it on demand.
+29. Create a closure that stores two numbers and returns their sum.
+30. Create a closure that remembers a value passed to the outer function.
+Category 3: Variables and changing values (31–45)
+31. Create a closure that increments a counter by one.
+32. Create a closure that decrements a counter by one.
+33. Create a closure that increases a number by five each time.
+34. Create a closure that multiplies a stored number by two each time.
+35. Create a closure that resets its counter to zero.
+36. Create a closure that stores a score and increases it after every correct answer.
+37. Create a closure that stores a balance and adds a deposit amount.
+38. Create a closure that stores a balance and subtracts a withdrawal amount.
+39. Create a closure that changes a stored username.
+40. Create a closure that updates a stored product price.
+41. Create a closure that changes a message from "Hello" to "Welcome".
+42. Create a closure that stores a boolean and toggles it each time.
+43. Create a closure that tracks how many times a function is called.
+44. Create a closure that stores a number and doubles it only when called.
+45. Create a closure with getter and setter functions for a private variable.
+Category 4: Beginner output prediction (46–60)
+For each question, write the exact output before running the code.
+
+46. Predict the output:
+function outer() {
+  let x = 10;
+
+  return function inner() {
+    console.log(x);
+  };
+}
+
+let result = outer();
+result();
+
+
+47. Predict the output:
+function outer() {
+  let count = 0;
+
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+
+let fn = outer();
+fn();
+fn();
+fn();
+
+
+48. Predict the output:
+function outer() {
+  let x = 5;
+
+  return function () {
+    x += 2;
+    console.log(x);
+  };
+}
+
+let fn = outer();
+fn();
+fn();
+
+
+49. Predict the output:
+function outer() {
+  let name = "Ram";
+
+  return function () {
+    console.log(name);
+  };
+}
+
+let fn = outer();
+fn();
+
+
+50. Predict the output:
+function outer() {
+  let x = 100;
+
+  return function () {
+    console.log(x);
+  };
+}
+
+let fn = outer();
+fn();
+fn();
+
+
+51. Predict the output:
+function outer() {
+  let x = 1;
+
+  return function () {
+    x++;
+    console.log(x);
+  };
+}
+
+let a = outer();
+let b = outer();
+
+a();
+b();
+a();
+
+
+52. Predict the output:
+function outer() {
+  let x = 10;
+
+  return function () {
+    x += 10;
+    return x;
+  };
+}
+
+let fn = outer();
+console.log(fn());
+console.log(fn());
+
+
+53. Predict the output:
+function outer(x) {
+  return function () {
+    console.log(x);
+  };
+}
+
+let fn = outer(20);
+fn();
+
+
+54. Predict the output:
+function outer() {
+  let x = 5;
+
+  function inner() {
+    x = 15;
+  }
+
+  inner();
+  console.log(x);
+}
+
+outer();
+
+
+55. Predict the output:
+function outer() {
+  let x = 10;
+
+  return function () {
+    let x = 20;
+    console.log(x);
+  };
+}
+
+outer()();
+
+
+56. Predict the output:
+function outer() {
+  let x = 10;
+
+  return function () {
+    console.log(x);
+    x = 30;
+  };
+}
+
+let fn = outer();
+fn();
+fn();
+
+
+57. Predict the output:
+function outer() {
+  let count = 0;
+
+  return function () {
+    console.log(count++);
+  };
+}
+
+let fn = outer();
+fn();
+fn();
+
+
+58. Predict the output:
+function outer() {
+  let x = 2;
+
+  return function () {
+    return x * x;
+  };
+}
+
+let fn = outer();
+console.log(fn());
+
+
+59. Predict the output:
+function outer() {
+  let value = "A";
+
+  return function () {
+    console.log(value);
+  };
+}
+
+let fn = outer();
+fn();
+
+
+60. Predict the output:
+function outer() {
+  let x = 1;
+
+  return function () {
+    x += 2;
+    console.log(x);
+  };
+}
+
+let fn = outer();
+fn();
+fn();
+fn();
+
+
+
+Part 2: Medium level — Questions 61–150
+Category 5: Multiple closures and independent state (61–75)
+61. Create two closures using the same outer function and demonstrate that their counters are independent.
+62. Predict the output:
+function outer() {
+  let count = 0;
+  return () => console.log(++count);
+}
+
+let a = outer();
+let b = outer();
+
+a();
+a();
+b();
+a();
+b();
+
+
+63. Create two closures that store different usernames.
+64. Create two independent score trackers.
+65. Create a closure that creates a new counter whenever the outer function is called.
+66. Create a closure that tracks login attempts independently for each user.
+67. Create a closure that stores separate balances for two accounts.
+68. Predict what happens when two returned functions share the same outer variable.
+69. Create two inner functions that read and update the same variable.
+70. Create two inner functions that each have their own local variable but share an outer variable.
+71. Write a closure that returns increment and decrement methods.
+72. Write a closure that returns getValue, setValue, and reset methods.
+73. Create two closures from the same factory function with different initial values.
+74. Predict the output when one closure updates a value and another closure reads it.
+75. Explain the difference between shared state and independent state in closures.
+Category 6: Closure with parameters, return values, and functions (76–90)
+76. Write a closure that accepts an initial number and later adds another number.
+77. Write a function that returns a multiplier closure, such as multiplyBy(5).
+78. Write a function that returns an adder closure, such as addBy(10).
+79. Create a closure that remembers a discount percentage and calculates a discounted price.
+80. Create a closure that remembers a tax rate and calculates tax on different prices.
+81. Create a closure that remembers a student's marks and returns whether they passed.
+82. Create a closure that remembers a minimum age and checks whether a person qualifies.
+83. Create a closure that remembers a message and accepts a recipient's name.
+84. Create a closure that remembers a prefix and adds it to different strings.
+85. Create a closure that remembers a suffix and appends it to different strings.
+86. Create a closure that accepts an array and returns a function to search for an element.
+87. Create a closure that remembers a number and returns a function to compare other numbers against it.
+88. Create a closure that remembers a starting value and adds a configurable step.
+89. Create a closure that remembers a currency code and formats different amounts.
+90. Explain how arguments passed to an outer function remain accessible to its returned inner function.
+Category 7: Objects and closures (91–105)
+91. Create a closure that stores an employee object containing name and salary.
+92. Create a closure that returns an employee's name without exposing the entire object.
+93. Create a closure that privately stores an employee's salary and provides a getter.
+94. Create a closure that updates an employee's salary.
+95. Create a closure that returns an object with getName() and getAge() methods.
+96. Create a closure that privately stores a bank account object.
+97. Create a closure that allows deposits and withdrawals on a private account.
+98. Create a closure that returns a product object with methods to update and read its price.
+99. Create a closure that stores an object and updates one of its properties.
+100. Predict the output when two closures reference the same object.
+101. Explain the difference between closing over an object variable and copying an object.
+102. Create a closure that stores a configuration object and exposes selected settings.
+103. Create a closure that prevents direct access to a private object property through its public API.
+104. Create a closure that counts how many times an object's method is called.
+105. Explain how closures can provide encapsulation for objects.
+Category 8: Arrays and nested data with closures (106–120)
+106. Create a closure that remembers an array of numbers and returns the array.
+107. Create a closure that adds elements to a private array.
+108. Create a closure that removes an element from a private array.
+109. Create a closure that returns the current length of a private array.
+110. Create a closure that stores a list of student names and searches for a name.
+111. Create a closure that stores marks and returns their average.
+112. Create a closure that privately stores a shopping cart array.
+113. Create a shopping-cart closure with addItem, removeItem, and getItems.
+114. Create a closure that stores an array of employee objects and searches by employee ID.
+115. Create a closure that updates a nested property, such as employee.address.city.
+116. Predict the output when a closure retains a reference to an array that is later modified.
+117. Explain why mutating an array differs from reassigning a variable that references an array.
+118. Create a closure that stores a nested object containing company employees.
+119. Create a closure that counts occurrences of each item in a private array.
+120. Create a closure that exposes a safe copy of a private array instead of the original array.
+Category 9: Loops, callbacks, and timers (121–135)
+121. Explain the difference between using var and let in a loop that creates closures.
+122. Predict the output:
+for (var i = 1; i <= 3; i++) {
+  setTimeout(() => console.log(i), 100);
+}
+
+
+123. Rewrite Question 122 using let so that the output is 1, 2, 3.
+124. Fix Question 122 using an IIFE.
+125. Explain how an IIFE can create a separate scope for each loop iteration.
+126. Predict the output:
+for (let i = 1; i <= 3; i++) {
+  setTimeout(() => console.log(i), 100);
+}
+
+
+127. Create an array of functions that each return a different number from a loop.
+128. Explain why callbacks can access variables from the scope where they were created.
+129. Create a closure that remembers a button click count.
+130. Write a closure that delays printing a message using setTimeout.
+131. Create a closure that tracks how many times a callback executes.
+132. Predict the output when a callback reads an outer variable after that variable changes.
+133. Create a closure that remembers a filter condition for an array.
+134. Write a closure-based event handler that remembers a user's ID.
+135. Explain the difference between capturing a variable and capturing its value in JavaScript closures.
+Category 10: Debugging and code correction (136–150)
+136. Find and fix the bug:
+function counter() {
+  let count = 0;
+  return count++;
+}
+
+let fn = counter();
+console.log(fn);
+console.log(fn);
+
+
+137. Fix the code so the returned function can access message.
+138. Fix a closure that always prints the same loop variable when different values are expected.
+139. Correct a counter that resets to zero every time the returned function runs.
+140. Find the problem when a returned inner function is called before it is assigned.
+141. Correct a closure that accidentally shadows its outer variable.
+142. Fix a getter that returns undefined because it doesn't return the stored value.
+143. Correct a closure that changes a variable but doesn't preserve the change between calls.
+144. Find the issue when two supposedly independent counters affect each other.
+145. Fix a closure that exposes its private array directly and allows unwanted external mutation.
+146. Correct a closure-based bank account so that withdrawals cannot exceed the balance.
+147. Debug a closure that uses an outer variable which was never initialized.
+148. Fix a function factory that returns the wrong function.
+149. Explain why the following produces a TypeError and correct it:
+function outer() {
+  let fn;
+  fn();
+}
+outer();
+
+
+150. Write a short debugging checklist for closure-related errors.
+
+Part 3: Advanced level — Questions 151–250
+Category 11: Advanced output prediction (151–165)
+151. Predict the output:
+function outer() {
+  let x = 1;
+
+  return {
+    first() {
+      return ++x;
+    },
+    second() {
+      return ++x;
+    }
+  };
+}
+
+const obj = outer();
+console.log(obj.first());
+console.log(obj.second());
+console.log(obj.first());
+
+
+152. Predict the output:
+function outer() {
+  let x = 10;
+
+  return function inner(y) {
+    x += y;
+    return x;
+  };
+}
+
+const fn = outer();
+console.log(fn(2));
+console.log(fn(3));
+console.log(fn(-1));
+
+
+153. Predict the output:
+function outer() {
+  let value = 1;
+
+  function a() {
+    value += 2;
+  }
+
+  function b() {
+    value *= 3;
+  }
+
+  return { a, b, getValue: () => value };
+}
+
+const obj = outer();
+obj.a();
+obj.b();
+console.log(obj.getValue());
+
+
+154. Predict the output when a closure returns another closure that modifies the same outer variable.
+155. Predict the output when an inner closure shadows a variable from an outer closure.
+156. Predict the output when an outer function is called twice but only one returned function is invoked repeatedly.
+157. Predict the output when two methods returned by one closure modify the same private variable.
+158. Predict the output when a closure reads an object property after the property has changed.
+159. Predict the output when a closure returns a function that references a mutable array.
+160. Predict the output when one returned closure changes a value used by another returned closure.
+161. Predict the output of a closure nested inside three functions.
+162. Predict the output when a closure captures a parameter and a local variable with the same name.
+163. Predict the output when a closure's outer variable is reassigned to a new object.
+164. Predict the output when two closures share a variable but have different local variables.
+165. Write your own tricky closure example and explain its output step by step.
+Category 12: Closures with this, methods, and objects (166–180)
+166. Explain why this inside a closure may behave differently from an outer method's this.
+167. Predict the output:
+const user = {
+  name: "Chandan",
+
+  greet() {
+    return () => console.log(this.name);
+  }
+};
+
+const fn = user.greet();
+fn();
+
+
+168. Rewrite a normal nested function so it correctly accesses the outer object's this.
+169. Explain how an arrow function captures the surrounding this.
+170. What happens to this when a returned normal function is called as a standalone function?
+171. Create a closure-based object that exposes methods while keeping internal data private.
+172. Create a closure that returns an object with a method using a stored employee ID.
+173. Explain the difference between a closure and JavaScript's #private class fields.
+174. Create a closure-based factory for employee objects.
+175. Create a closure that returns a method which updates an object's nested property.
+176. Create two objects using a closure factory and show that their private values are independent.
+177. Predict the output when an object method returns an arrow function that uses this.
+178. Debug an object method whose returned callback loses the intended this value.
+179. Explain whether a closure copies the object it references.
+180. Compare closure-based encapsulation with prototype-based methods.
+Category 13: Closures, asynchronous JavaScript, and promises (181–195)
+181. Explain how closures work inside setTimeout.
+182. Predict the output when a closure reads a variable changed before a timer runs.
+183. Create a closure that returns a promise using a stored message.
+184. Create a function that remembers a request ID inside a promise callback.
+185. Explain how closures help preserve data across asynchronous operations.
+186. Predict the output when two asynchronous callbacks share one variable.
+187. Write a closure that retries a task and remembers the number of attempts.
+188. Create a closure that tracks the status of an asynchronous operation.
+189. Explain how closures are used in event listeners.
+190. Write a closure that debounces a function call.
+191. Write a closure that throttles a function call.
+192. Create a closure-based delay function that accepts a duration.
+193. Predict what happens if a closure is used inside an async function and reads a variable after an await.
+194. Explain how closures can retain request data while a fetch call is pending.
+195. Identify a possible memory issue when long-lived callbacks retain large objects.
+Category 14: Real-world closure coding challenges (196–210)
+196. Build a private counter with increment, decrement, getCount, and reset.
+197. Build a bank account with a private balance, deposit, withdrawal, and balance-checking methods.
+198. Build a login-attempt tracker that locks an account after five failed attempts.
+199. Build a shopping cart with private items, quantity updates, and total calculation.
+200. Build a student result manager that privately stores marks and calculates total and average.
+201. Build a discount calculator that remembers a discount percentage.
+202. Build a rate limiter that permits a function to run only a specified number of times.
+203. Build a unique ID generator using a closure.
+204. Build a function that generates sequential invoice numbers.
+205. Build a private settings manager with get, set, and reset.
+206. Build a closure-based cache that stores results for repeated inputs.
+207. Build a function factory that generates validators for different minimum lengths.
+208. Build a closure that tracks API request counts by endpoint.
+209. Build a notification manager that privately stores notification messages.
+210. Build a task manager that privately stores tasks and exposes only approved operations.
+Category 15: Closures, memory, and advanced concepts (211–225)
+211. Explain how a closure can keep a variable reachable after its outer function returns.
+212. Does a closure necessarily cause a memory leak? Explain.
+213. Explain what can happen when a long-lived event listener retains a closure.
+214. Give an example of removing an event listener to release an unnecessary reference.
+215. Explain how garbage collection relates to variables referenced by closures.
+216. Can a closure access an outer variable that is no longer needed by other code? Explain.
+217. Explain the difference between a lexical environment and a closure.
+218. Describe how closures preserve access to lexical bindings.
+219. Explain why a closure is not simply a snapshot of all outer variables.
+220. Describe the difference between a closure's access to a variable and the value that variable currently holds.
+221. Explain how closures support data privacy without classes.
+222. Discuss the trade-offs between closure-based private state and class-based objects.
+223. Explain why creating many closures may have memory and performance implications in some applications.
+224. Describe a situation where using a closure would be unnecessary or less readable.
+225. Explain how you would investigate a suspected memory leak involving closures.
+Category 16: Advanced multiple-choice questions (226–235)
+226. Which statement best describes a closure?
+- A. A function that always runs immediately
+- B. A function that retains access to its lexical environment
+- C. A variable declared with const
+- D. A function that can only return numbers
+227. What does the following print?
+function outer() {
+  let x = 5;
+  return () => x++;
+}
+
+const fn = outer();
+console.log(fn());
+console.log(fn());
+
+
+- A. 5, 5
+- B. 6, 7
+- C. 5, 6
+- D. undefined, undefined
+228. Two closures are created by separate calls to the same factory function. What is generally true about their local state?
+- A. They must share the same state
+- B. Each call creates its own local bindings
+- C. Both variables become global
+- D. Neither can update its variables
+229. Which technique can help create a separate binding for each iteration of a loop?
+- A. Using let in the loop declaration
+- B. Using console.log
+- C. Removing the loop condition
+- D. Replacing every function with a string
+230. What happens when a closure updates a variable from its outer lexical scope?
+- A. Only a copy changes
+- B. The outer binding is updated
+- C. The variable becomes constant
+- D. The outer function runs again automatically
+231. Which is a common use of closures?
+- A. Data encapsulation
+- B. Replacing every JavaScript object
+- C. Automatically converting strings to numbers
+- D. Preventing all asynchronous code
+232. Why might a closure retain more memory than expected?
+- A. It can keep references to objects reachable
+- B. It always copies the entire program
+- C. It disables garbage collection globally
+- D. It permanently stores every function ever called
+233. What is the main difference between a closure and this?
+- A. They are exactly the same
+- B. A closure concerns lexical access; this is determined by the applicable function-call rules
+- C. this is always a closure variable
+- D. Closures only work with arrow functions
+234. What is a possible advantage of a closure-based counter?
+- A. It can hide the counter variable from direct external access
+- B. It automatically saves the counter to a database
+- C. It makes all counters share the same value
+- D. It prevents every possible programming error
+235. Which statement about closures and object references is correct?
+- A. Closures always clone referenced objects
+- B. Closures can retain access to a variable that references a mutable object
+- C. Closures make objects immutable
+- D. Closures cannot reference arrays
+Category 17: Subjective and interview questions (236–245)
+236. Explain closures to a beginner using a real-world example.
+237. Explain how closures differ from scope and hoisting.
+238. Describe the lifecycle of an outer function and its returned inner function.
+239. Explain why closures are useful for creating private variables.
+240. Describe a practical project feature where you would use closures.
+241. Compare closures with global variables. What are the advantages and disadvantages of each?
+242. Explain how closures can help implement a module pattern.
+243. Describe the relationship between closures and higher-order functions.
+244. Explain how you would teach closures to someone who understands functions but not lexical scope.
+245. Give an interview-ready answer to: “What are closures, and where have you used them?”
+Category 18: Final mixed challenges (246–250)
+246. Coding challenge: Build a closure-based inventory manager with private stock, methods to add and sell items, and a method to retrieve current stock. Prevent selling more than the available stock.
+247. Output prediction: Find the exact output and explain why:
+function createTracker(start) {
+  let value = start;
+
+  return {
+    increase(amount) {
+      value += amount;
+    },
+    decrease(amount) {
+      value -= amount;
+    },
+    getValue() {
+      return value;
+    }
+  };
+}
+
+const a = createTracker(10);
+const b = createTracker(100);
+
+a.increase(5);
+b.decrease(20);
+a.increase(2);
+
+console.log(a.getValue());
+console.log(b.getValue());
+
+
+248. Debugging challenge: Correct this code so each returned function prints its own number:
+function createFunctions() {
+  const functions = [];
+
+  for (var i = 1; i <= 3; i++) {
+    functions.push(() => console.log(i));
+  }
+
+  return functions;
+}
+
+const functions = createFunctions();
+functions[0]();
+functions[1]();
+functions[2]();
+
+
+249. Design challenge: Create a closure-based user settings manager. It should store a private settings object, support reading and updating individual settings, reject unknown setting names, and return a safe copy of the current settings.
+250. Final interview challenge: Explain closures in your own words, predict the output of a closure involving nested functions and mutable state, write a closure-based counter, and describe one real-world use case. Complete all four parts without looking at your notes.
