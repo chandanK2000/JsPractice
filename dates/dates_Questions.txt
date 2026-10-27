@@ -1,0 +1,1056 @@
+
+===================JavaScript dates Object==============
+
+JavaScript Date Object — 300 Practice Questions
+
+Level 1: Absolute Beginner — Date Fundamentals (1–40)
+
+
+Creating Dates
+
+1.Create a Date object representing the current date and time.
+
+2.Create a Date object for 5 November 1899.
+
+3.Create a Date object for 1 January 2025 using numeric arguments.
+
+4.Create a Date object using an ISO date string.
+
+5.Create a Date object representing 25 December 2024.
+
+6.Create a Date object representing 15 August 1947.
+
+7.Create a Date object representing 29 February 2024.
+
+8. Create a Date object for 31 December 2025 at 23:59:59.
+
+9.Create a Date object using a timestamp of zero.
+
+10.Create two Date objects representing different dates.
+
+-----------------------------------------------------------------
+
+Understanding Date Values
+
+11.Print a Date object using console.log().
+
+12.Convert a Date object into a readable string using toString().
+
+13.Convert a Date object into a date-only string using toDateString().
+
+14.Convert a Date object into a time-only string using toTimeString().
+
+15.Convert a Date object into an ISO string using toISOString().
+
+16.Convert a Date object into a UTC string using toUTCString().
+
+17.Extract the year from the current date.
+
+18.Extract the month from the current date.
+
+19.Extract the day of the month.
+
+20.Extract the day of the week.
+
+
+-------------------------------------------------------------------
+
+Basic Getter Methods
+
+21.Extract the current hour.
+
+22.Extract the current minute.
+
+23.Extract the current second.
+
+24.Extract the current millisecond.
+
+25.Extract the timestamp using getTime().
+
+
+
+Print all date and time components separately.
+
+Display the current date in DD-MM-YYYY format.
+
+Display the current date in YYYY-MM-DD format.
+
+Display the current time in HH:MM:SS format.
+
+Display the current date and time in one string.
+
+Basic Date Knowledge
+
+Explain through code why getMonth() returns a value from 0 to 11.
+
+Print the month name instead of its numeric value.
+
+Print the weekday name instead of its numeric value.
+
+Create a Date object for the first day of the current month.
+
+Create a Date object for the last day of the current month.
+
+Display the current year, month, and day in one object.
+
+Check whether a Date object is an instance of Date.
+
+Check whether two Date variables reference the same object.
+
+Create a copy of an existing Date object.
+
+Demonstrate how modifying a copied Date differs from modifying the original.
+
+Level 2: Beginner to Intermediate — Getters, Setters and Logic (41–90)
+
+Getter Methods
+
+Use getFullYear() to retrieve a four-digit year.
+
+Use getMonth() to retrieve the month index.
+
+Use getDate() to retrieve the day of the month.
+
+Use getDay() to retrieve the weekday index.
+
+Use getHours() to retrieve the hour in local time.
+
+Use getMinutes() to retrieve the minutes.
+
+Use getSeconds() to retrieve the seconds.
+
+Use getMilliseconds() to retrieve the milliseconds.
+
+Use getTime() to retrieve the timestamp.
+
+Use getTimezoneOffset() to retrieve the local UTC offset in minutes.
+
+Setter Methods
+
+Change the year of a Date object using setFullYear().
+
+Change the month using setMonth().
+
+Change the day of the month using setDate().
+
+Change the hour using setHours().
+
+Change the minutes using setMinutes().
+
+Change the seconds using setSeconds().
+
+Change the milliseconds using setMilliseconds().
+
+Change a Date object's timestamp using setTime().
+
+Set the year, month, and day sequentially.
+
+Set hours, minutes, seconds, and milliseconds in a single call to setHours().
+
+Date Manipulation
+
+Add one day to a given date.
+
+Subtract one day from a given date.
+
+Add seven days to a given date.
+
+Add 30 days to a given date.
+
+Add one month to a given date.
+
+Subtract three months from a given date.
+
+Add one year to a given date.
+
+Subtract five years from a given date.
+
+Set a date to the first day of its month.
+
+Set a date to the last day of its month.
+
+Date Comparisons
+
+Check whether one date occurs before another.
+
+Check whether one date occurs after another.
+
+Check whether two Date objects represent the same instant.
+
+Find the earlier of two dates.
+
+Find the later of two dates.
+
+Sort an array of Date objects in ascending order.
+
+Sort an array of Date objects in descending order.
+
+Find the oldest date in an array.
+
+Find the most recent date in an array.
+
+Check whether a given date is in the past.
+
+Intermediate Logic
+
+Check whether a given date is in the future.
+
+Check whether a date is today.
+
+Check whether two dates fall on the same calendar day.
+
+Check whether a given date falls on a weekend.
+
+Check whether a given date falls on a weekday.
+
+Calculate the number of milliseconds between two dates.
+
+Convert a millisecond difference into seconds.
+
+Convert a millisecond difference into minutes and hours.
+
+Calculate the age in years from a birth date.
+
+Determine whether a date falls in the current month and year.
+
+Level 3: Intermediate — Calendar and Real-World Scenarios (91–145)
+
+Calendar Logic
+
+Write a function to check whether a year is a leap year.
+
+Find the number of days in a given year.
+
+Find the number of days in a given month.
+
+Find the first weekday of a given month.
+
+Find the last weekday of a given month.
+
+Generate all dates in a given month.
+
+Generate a calendar for a specified month and year.
+
+Find the first Monday of a given month.
+
+Find the last Sunday of a given month.
+
+Find the date of the next Monday from a given date.
+
+Leap Years and Month Boundaries
+
+Determine whether 1900 is a leap year.
+
+Determine whether 2000 is a leap year.
+
+Determine whether 2100 is a leap year.
+
+Handle 29 February when adding one year to a date.
+
+Find the last day of February for a specified year.
+
+Calculate the days remaining until the end of the year.
+
+Find the day number of a date within its year.
+
+Find how many days have elapsed since the start of the year.
+
+Find the number of weeks between two dates.
+
+Determine whether a year contains 52 or 53 ISO weeks.
+
+Formatting Dates
+
+Format a date as DD/MM/YYYY.
+
+Format a date as MM/DD/YYYY.
+
+Format a date as YYYY-MM-DD.
+
+Format a date as DD-MMM-YYYY.
+
+Format a date as Monday, 27 October 2025.
+
+Format a date using toLocaleDateString().
+
+Format a time using toLocaleTimeString().
+
+Format date and time using toLocaleString().
+
+Display dates using the Indian English locale.
+
+Display the same date using Indian English, British English, and American English locales.
+
+Date Differences
+
+Calculate the exact millisecond difference between two timestamps.
+
+Calculate the number of complete days between two dates.
+
+Calculate the number of hours between two dates.
+
+Calculate the number of minutes between two dates.
+
+Calculate the number of seconds between two dates.
+
+Calculate the number of calendar days between two dates.
+
+Calculate the number of full months between two dates.
+
+Calculate the number of complete years between two dates.
+
+Calculate the number of working days between two dates, excluding weekends.
+
+Calculate the number of working days between two dates, excluding weekends and supplied holidays.
+
+Practical Date Functions
+
+Write a function that returns the start of a day.
+
+Write a function that returns the end of a day.
+
+Write a function that returns the start of a month.
+
+Write a function that returns the end of a month.
+
+Write a function that returns the start of a year.
+
+Write a function that returns the end of a year.
+
+Write a function that adds a specified number of days to a date.
+
+Write a function that subtracts a specified number of days from a date.
+
+Write a function that returns the date of the previous weekday.
+
+Write a function that returns the next working day.
+
+Write a function that checks whether a date is within a given range.
+
+Write a function that checks whether a date range overlaps another range.
+
+Write a function that returns all dates between two given dates.
+
+Write a function that groups an array of records by calendar date.
+
+Write a function that removes duplicate calendar dates from an array.
+
+Level 4: Advanced — UTC, Time Zones, Parsing and Edge Cases (146–200)
+
+UTC Methods
+
+Explain the difference between getHours() and getUTCHours() using code.
+
+Compare getFullYear() and getUTCFullYear().
+
+Compare getMonth() and getUTCMonth().
+
+Compare getDate() and getUTCDate().
+
+Compare getDay() and getUTCDay().
+
+Use setUTCFullYear() to change the UTC year.
+
+Use setUTCMonth() to change the UTC month.
+
+Use setUTCDate() to change the UTC day.
+
+Use setUTCHours() to change the UTC time.
+
+Use setUTCMinutes(), setUTCSeconds(), and setUTCMilliseconds().
+
+UTC and Time Zones
+
+Explain why getTimezoneOffset() returns a negative number for India.
+
+Convert a local Date object's time into a UTC string.
+
+Convert a UTC ISO string into a Date object.
+
+Compare two ISO timestamps representing the same instant with different offsets.
+
+Explain the difference between a timestamp and a formatted date string.
+
+Demonstrate why a Date object does not store a named time zone.
+
+Format a date in the Asia/Kolkata time zone using Intl.DateTimeFormat.
+
+Format the same instant in Asia/Kolkata, Europe/London, and America/New_York.
+
+Display a date in 12-hour format with AM/PM.
+
+Display a date in 24-hour format.
+
+Explain how daylight saving time affects local date arithmetic.
+
+Demonstrate why adding 24 hours may differ from moving to the next local calendar day across a daylight saving transition.
+
+Explain the difference between UTC and GMT in practical programming.
+
+Explain why storing timestamps consistently in UTC can help distributed applications.
+
+Convert a timestamp into an ISO string.
+
+Parsing and Validation
+
+Parse an ISO date string using new Date().
+
+Explain why non-standard date strings can produce inconsistent results.
+
+Check whether a Date object is valid.
+
+Use Number.isNaN(date.getTime()) to validate a date.
+
+Detect an invalid date created from an incorrect string.
+
+Write a function that accepts a date string and rejects invalid dates.
+
+Validate a date entered as DD-MM-YYYY.
+
+Validate a date entered as YYYY-MM-DD.
+
+Reject impossible dates such as 31 February.
+
+Validate a date range where the end must not precede the start.
+
+Demonstrate automatic date rollover when constructing a date with an out-of-range day.
+
+Demonstrate how setMonth() can overflow when the current day does not exist in the target month.
+
+Write a safe function to add calendar months while clamping to the last valid day.
+
+Compare the behavior of new Date(year, monthIndex, day) and new Date(dateString).
+
+Explain why parsing a date-only ISO string may display the previous day in some local time zones.
+
+Advanced Date Handling
+
+Explain the difference between a local date-time string and a UTC ISO string.
+
+Convert a Date object into Unix time in seconds.
+
+Convert Unix time in seconds into a Date object.
+
+Explain the difference between Unix seconds and JavaScript milliseconds.
+
+Calculate the time remaining until a specified future timestamp.
+
+Write a countdown function that calculates days, hours, minutes, and seconds remaining.
+
+Explain why Date.now() is useful when only the current timestamp is required.
+
+Compare two timestamps without creating additional Date objects.
+
+Demonstrate why mutating a Date object can cause unexpected side effects.
+
+Write an immutable date-addition function that does not modify the input Date.
+
+Explain the limitations of representing dates far outside the normal application range.
+
+Explain the JavaScript Date object's supported timestamp range.
+
+Compare toISOString() with toLocaleString().
+
+Explain why a birthday is often better represented as a calendar date than as a timestamp.
+
+Explain when a dedicated date-time library or Temporal API may be useful.
+
+Level 5: Senior-Level Scenarios and Debugging (201–250)
+
+Bugs and Interview Challenges
+
+Debug a function that incorrectly calculates a person's age.
+
+Debug a function that returns the wrong month name.
+
+Fix a date formatter that produces 5/1/2025 instead of 05/01/2025.
+
+Debug a countdown that becomes negative after the target date.
+
+Fix a function that adds one month and unexpectedly skips into the following month.
+
+Explain why comparing two Date objects using === may return false even when their timestamps match.
+
+Fix a date-range function that incorrectly includes the next day's midnight.
+
+Debug a report that shows different dates on the frontend and backend.
+
+Debug a timestamp that is multiplied or divided by 1,000 incorrectly.
+
+Fix an application that interprets 05/06/2025 ambiguously.
+
+Debug a form that sends a local date-time to the backend but stores it as UTC.
+
+Explain why an invalid date can still be an instance of Date.
+
+Fix a date filter that excludes records created late at night.
+
+Debug a function that incorrectly treats leap years.
+
+Fix an algorithm that counts weekends incorrectly across month boundaries.
+
+Explain why subtracting two timestamps and dividing by 86,400,000 may not equal the number of local calendar days.
+
+Fix an application that mutates a shared Date object in multiple functions.
+
+Debug a sorting function that compares formatted date strings instead of timestamps.
+
+Explain why Date.now() is not guaranteed to be a monotonic clock for measuring elapsed time.
+
+Write a robust date-parsing utility with clear error handling.
+
+Production Scenarios
+
+Design a consistent timestamp strategy for a multi-region application.
+
+Design a date filter for database records that includes the entire selected day.
+
+Design a safe date-range API using an inclusive start and exclusive end.
+
+Explain how to store event timestamps consistently in a database.
+
+Explain why the user's time zone may differ from the server's time zone.
+
+Design a date formatter that supports multiple locales.
+
+Design an audit-log display that shows both local time and UTC.
+
+Handle a scheduled job that must run at 9 AM in India regardless of the server's time zone.
+
+Explain how recurring events differ from fixed UTC timestamps.
+
+Design a recurring monthly invoice date when the billing day is the 31st.
+
+Handle an invoice due date that falls on a weekend or holiday.
+
+Calculate an employee's working duration across midnight.
+
+Calculate a warehouse shift that starts at 10 PM and ends at 6 AM the next day.
+
+Determine whether a reservation overlaps an existing booking.
+
+Design a report that groups transactions by the user's local calendar day.
+
+Explain how daylight saving changes can affect meeting schedules.
+
+Design a reliable expiration check for a temporary access link.
+
+Explain how clock skew between servers can affect time-sensitive operations.
+
+Write tests for dates around leap days and year boundaries.
+
+Write tests for date logic across multiple time zones.
+
+Advanced Problem Solving
+
+Implement a function that returns the age in years, months, and days.
+
+Implement a function that calculates the next occurrence of a recurring date.
+
+Implement a function that returns the next business day while skipping holidays.
+
+Implement a function that merges overlapping date ranges.
+
+Implement a function that finds gaps between date ranges.
+
+Implement a function that detects duplicate appointments for the same resource.
+
+Implement a function that generates recurring dates every two weeks.
+
+Implement a function that calculates the number of weekdays between two dates efficiently.
+
+Implement a function that converts date values into a consistent API representation.
+
+Design a date utility module with validation, formatting, comparison, arithmetic, and test coverage.
+
+Level 6: Mini-Applications and Real Projects (251–300)
+
+Project 1: Digital Clock (251–255)
+
+Build a digital clock that displays the current time and updates every second.
+
+Add both 12-hour and 24-hour display modes.
+
+Display the current date and weekday alongside the clock.
+
+Add a button that switches between local time and UTC.
+
+Add a selectable time zone using Intl.DateTimeFormat.
+
+Project 2: Age Calculator (256–260)
+
+Build an age calculator that accepts a date of birth.
+
+Display the person's age in years, months, and days.
+
+Validate the input and reject future birth dates.
+
+Display the number of days until the next birthday.
+
+Handle people born on 29 February correctly according to a chosen birthday policy.
+
+Project 3: Countdown and Stopwatch (261–265)
+
+Build a countdown timer for a user-selected target date and time.
+
+Display the remaining days, hours, minutes, and seconds.
+
+Show a message when the countdown finishes.
+
+Build a stopwatch with start, pause, reset, and elapsed-time display.
+
+Improve the stopwatch so its measurement is not based solely on counting timer callbacks.
+
+Project 4: Calendar Application (266–270)
+
+Build a monthly calendar using JavaScript Date methods.
+
+Add previous-month and next-month navigation.
+
+Highlight today's date.
+
+Allow users to add events to individual calendar days.
+
+Highlight weekends and user-supplied holidays.
+
+Project 5: Task and Reminder Manager (271–275)
+
+Build a task manager with a task title, creation date, and due date.
+
+Mark tasks as overdue when their due dates have passed.
+
+Display tasks due today, tomorrow, and later.
+
+Sort tasks by due date and identify tasks with approaching deadlines.
+
+Add recurring reminders for daily, weekly, and monthly tasks.
+
+Project 6: Warehouse Management Date Module (276–280)
+
+Build an invoice due-date calculator for your Warehouse Management System.
+
+Calculate monthly warehouse rent due dates while handling month-end billing.
+
+Display invoice creation time and due date in the user's selected time zone.
+
+Build a report that filters invoices by a selected date range without excluding records at the end of the range.
+
+Build a reminder system that identifies invoices overdue by 1, 7, 15, or 30 calendar days.
+
+Project 7: Booking and Shift Scheduler (281–285)
+
+Build a booking form that rejects invalid start and end dates.
+
+Detect overlapping reservations for the same warehouse resource.
+
+Build a warehouse employee shift calculator for overnight shifts.
+
+Display shift duration correctly when the shift crosses midnight.
+
+Build a weekly schedule that supports recurring shifts and exception dates.
+
+Project 8: Analytics and Reporting (286–290)
+
+Build a daily transaction report grouped by calendar date.
+
+Build a monthly report that displays totals for every month, including months with zero transactions.
+
+Calculate the number of active days between a user's registration date and the current date.
+
+Build a chart-ready dataset grouped by day, week, and month.
+
+Build a date-range comparison report that compares this month with the previous month.
+
+Project 9: Advanced Utility Library (291–295)
+
+Create a reusable date utility module with functions for validation, formatting, and arithmetic.
+
+Add safe month and year addition that handles month-end dates.
+
+Add locale-aware formatting with configurable time zones.
+
+Add unit tests for leap years, invalid dates, month boundaries, and daylight saving transitions.
+
+Document the module's assumptions about UTC, local time, date-only values, and timestamps.
+
+Project 10: Production-Style Date Service (296–300)
+
+Design a Node.js date service that validates incoming API date values and returns consistent responses.
+
+Implement invoice-expiration checks using server-side timestamps and clearly defined time-zone rules.
+
+Build a reporting endpoint that accepts start and end dates, validates them, and queries a database using a half-open time interval.
+
+Build an event scheduling service that supports one-time events and recurring calendar events in a named time zone.
+
+Build a complete date-driven dashboard that includes a digital clock, calendar, reminders, overdue invoices, date filters, and a time-zone selector.
+
+
+======================================================================================
+
+***************JavaScript Date Object — Objective Questions**********
+
+MCQ Test — 30 Questions
+0/30 answered
+
+Choose one answer per question. Your score will appear after you submit.
+1. What does `new Date()` return?
+
+A. A string
+
+B. A Date object representing the current date and time
+
+C. A timestamp number
+
+D. An array
+
+
+
+2. Which method returns the year?
+
+A. getYear()
+
+B. getFullYear()
+
+C. getDate()
+
+D. getMonthYear()
+
+
+
+3. What is the month index for January?
+
+A. 1
+
+B. 12
+
+C. 0
+
+D. -1
+
+
+
+4. What does `getDate()` return?
+
+A. Day of the week
+
+B. Day of the month
+
+C. Month index
+
+D. Year
+
+
+
+5. What does `getDay()` return?
+
+A. Day of the month
+
+B. Week number
+
+C. Day of the week, from 0 to 6
+
+D. Month index
+
+
+
+6. What is the month index for December?
+
+A. 10
+
+B. 11
+
+C. 12
+
+D. 0
+
+
+
+7. What does `Date.now()` return?
+
+A. A Date object
+
+B. Current year
+
+C. Current timestamp in milliseconds
+
+D. Current month
+
+
+
+8. What does `new Date(0)` represent?
+
+A. Current date
+
+B. 1 January 2000
+
+C. The Unix epoch instant
+
+D. An invalid date
+
+
+
+9. Which method returns a date as an ISO-formatted string?
+
+A. toISOString()
+
+B. toDateString()
+
+C. getISOString()
+
+D. toUTCDate()
+
+
+
+10. Which method gets the hour in local time?
+
+A. getUTCHours()
+
+B. getHours()
+
+C. getTime()
+
+D. getMinutes()
+
+
+
+11. What is the result of `new Date().getMonth() + 1`?
+
+A. Always 12
+
+B. A one-based month number from 1 to 12
+
+C. The day
+
+D. The year
+
+
+
+12. Which method returns milliseconds since the epoch for a Date object?
+
+A. getMilliseconds()
+
+B. getTime()
+
+C. getSeconds()
+
+D. valueOfMonth()
+
+
+
+13. What does `getMilliseconds()` return?
+
+A. Milliseconds since 1970
+
+B. The millisecond component, 0–999
+
+C. Seconds multiplied by 1000
+
+D. Current timestamp
+
+
+
+14. Which method changes the month of a Date object using local time?
+
+A. changeMonth()
+
+B. setMonth()
+
+C. updateMonth()
+
+D. setUTCMonthOnly()
+
+
+
+15. What does `getTimezoneOffset()` return?
+
+A. A time-zone name
+
+B. Offset in minutes using UTC minus local time
+
+C. Offset in seconds
+
+D. The current hour
+
+
+
+16. Which method returns the UTC hour?
+
+A. getHoursUTC()
+
+B. getUTCHours()
+
+C. getUTCDate()
+
+D. toUTCHours()
+
+
+
+17. What is the result of `new Date('invalid').getTime()`?
+
+A. 0
+
+B. NaN
+
+C. null
+
+D. undefined
+
+
+
+18. How can you check whether a Date object is valid?
+
+A. date.isValid()
+
+B. date.getTime() !== null
+
+C. !Number.isNaN(date.getTime())
+
+D. date !== undefined
+
+
+
+19. Which comparison correctly checks whether date `a` is earlier than date `b`?
+
+A. a.getTime() < b.getTime()
+
+B. a === b
+
+C. a.getDate() < b.getDate()
+
+D. a.getMonth() < b.getMonth()
+
+
+
+20. What does `setTime(1000)` do?
+
+A. Sets the seconds to 1000
+
+B. Sets the timestamp to 1000 milliseconds after the epoch
+
+C. Sets the year to 1000
+
+D. Sets the time zone
+
+
+
+21. What does `toUTCString()` produce?
+
+A. A local date string
+
+B. A UTC-formatted string
+
+C. A number
+
+D. A time-zone offset
+
+
+
+22. What is the month index for November?
+
+A. 11
+
+B. 10
+
+C. 9
+
+D. 12
+
+
+
+23. Which creates a Date for 5 November 2026 using numeric arguments?
+
+A. new Date(2026, 10, 5)
+
+B. new Date(2026, 11, 5)
+
+C. new Date(5, 10, 2026)
+
+D. Date(2026, 10, 5)
+
+
+
+24. What does `new Date().getFullYear()` return in 2026?
+
+A. 26
+
+B. 2025
+
+C. 2026
+
+D. The month
+
+
+
+25. Which statement about `===` and two Date objects is correct?
+
+A. It compares their timestamps automatically
+
+B. It compares whether they are the same object reference
+
+C. It always returns true for equal dates
+
+D. It compares only their years
+
+
+
+26. What does `setDate(0)` do?
+
+A. Sets the date to the first day of the month
+
+B. Moves to the last day of the previous month
+
+C. Invalidates the date
+
+D. Sets the day of the week to Sunday
+
+
+
+27. Which method returns the local minutes?
+
+A. getUTCMinutes()
+
+B. getMinutes()
+
+C. getTime()
+
+D. getSeconds()
+
+
+
+28. What does the `Z` at the end of an ISO date-time such as `2026-10-27T10:00:00.000Z` indicate?
+
+A. Zero milliseconds
+
+B. UTC
+
+C. A named local time zone
+
+D. Invalid date
+
+
+
+29. How many milliseconds are in one second?
+
+A. 100
+
+B. 1000
+
+C. 60
+
+D. 10000
+
+
+
+30. What is a common issue with `setMonth()` when the date is the 31st?
+
+A. It always throws an error
+
+B. It can overflow into the following month
+
+C. It always sets the month to January
+
+D. It converts the date to UTC
+
+
+Submit Answers
