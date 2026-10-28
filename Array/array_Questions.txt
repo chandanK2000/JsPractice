@@ -1,0 +1,777 @@
+
+--------------------------------------------------
+Level 1 — Array fundamentals (Questions 1–40)
+
+1. Create an array containing five numbers.
+
+2. Create an array containing five student names.
+
+3. Create an array containing numbers, strings, and booleans.
+
+4. Print an entire array.
+
+5. Print the first element of an array.
+
+6. Print the last element of an array.
+
+7. Access the third element using its index.
+
+8. Print every element using a for loop.
+
+9. Print every element using a while loop.
+
+10. Print every element using a do...while loop.
+
+11. Print array elements in reverse order.
+
+12. Print elements at even indexes.
+
+13. Print elements at odd indexes.
+
+14. Find the length of an array.
+
+15. Add an element at the end without using push().
+
+16. Add an element at the beginning without using unshift().
+
+17. Remove the last element without using pop().
+
+18. Remove the first element without using shift().
+
+19. Update the second element.
+
+20. Replace the last element.
+21. Create an empty array and add five values.
+
+22. Declare an array using const and modify its elements.
+
+23. Explain why a const array can still be modified.
+
+24. Create an array using new Array().
+
+25. Compare [] with new Array(5).
+
+26. Create an array using Array.of(5).
+
+27. Compare Array.of(5) and Array(5).
+
+28. Check whether a variable is an array.
+
+29. Use Array.isArray() on an array, object, and string.
+
+30. Create a copy of an array using the spread operator.
+
+31. Copy an array using slice().
+
+32. Explain the difference between copying an array and assigning its reference.
+
+33. Swap the first and last elements.
+
+34. Find the middle element of an odd-length array.
+
+35. Find the middle two elements of an even-length array.
+
+36. Access the last element using at(-1).
+
+37. Access the second-last element using at(-2).
+
+38. Iterate over an array using for...of.
+
+39. Iterate over an array using for...in.
+
+40. Compare for, for...of, and forEach().
+
+----------------------------------------------------------------------
+Level 2 — Basic array programs (Questions 41–80)
+
+41. Find the sum of all elements.
+
+42. Find the average of all elements.
+
+43. Find the largest element without using Math.max().
+
+44. Find the smallest element without using Math.min().
+
+45. Count even numbers.
+
+46. Count odd numbers.
+
+47. Count positive numbers.
+
+48. Count negative numbers.
+
+49. Count zeros.
+
+50. Calculate the sum of even elements.
+
+51. Calculate the sum of odd elements.
+
+52. Find the product of all elements.
+
+53. Count elements greater than 10.
+
+54. Print elements greater than a given number.
+
+55. Print elements smaller than the average.
+
+56. Create a new array containing squares of all numbers.
+
+57. Create a new array containing cubes of all numbers.
+
+58. Double every element without using map().
+
+59. Replace every negative number with zero.
+
+60. Replace every zero with 100.
+
+61. Copy all elements into another array using a loop.
+
+Q61 Move all zeros to the end of the array, while keeping the order of the other elements unchanged.
+
+62. Reverse an array without using reverse().
+
+63. Compare two arrays element by element.
+
+64. Check whether two arrays contain the same values in the same order.
+
+65. Find the first occurrence of a target using a loop.
+
+66. Find the last occurrence of a target using a loop.
+
+67. Count how many times a target occurs.
+
+68. Find all indexes of a given element.
+
+69. Check whether an array is empty.
+
+70. Find the second element without directly using [1].
+
+71. Find the second-largest element.
+
+72. Find the second-smallest element.
+
+73. Find the sum of the first and last elements.
+
+74. Swap two elements using a temporary variable.
+
+75. Swap two elements using destructuring.
+
+76. Move all zeros to the end.
+
+77. Separate even and odd numbers into two arrays.
+
+78. Separate positive and negative numbers into two arrays.
+
+79. Create an array containing only unique values using loops.
+
+80. Find the difference between the largest and smallest elements.
+
+----------------------------------------------------------------------
+
+Level 3 — Array methods: creation, access and modification (Questions 81–120)
+
+81. Create an array using Array.from().
+
+82. Convert a string into an array using Array.from().
+
+83. Generate an array of numbers from 1 to 10 using Array.from().
+
+84. Use Array.from() with a mapping function to square numbers.
+
+85. Create an array using Array.of() with multiple arguments.
+
+86. Inspect the constructor property of an array.
+
+87. Check the relationship between an array and Array.prototype.
+
+88. Explain how Array.prototype enables shared array methods.
+
+89. Use length to add elements by assigning beyond the end.
+
+90. Shorten an array by changing length.
+
+91. Use at() with positive and negative indexes.
+
+92. Join two arrays using concat().
+
+93. Concatenate three arrays.
+
+94. Explain why concat() does not normally change the original array.
+
+95. Use push() to add multiple elements.
+
+96. Capture the return value of push().
+
+97. Use pop() and capture the removed element.
+
+98. Use shift() and capture the removed element.
+
+99. Use unshift() to add multiple elements.
+
+100. Compare the return values of push() and pop().
+
+101. Insert an element at a particular index using splice().
+
+102. Remove one element using splice().
+
+103. Remove multiple elements using splice().
+
+104. Replace elements using splice().
+
+105. Insert elements without deleting anything.
+
+106. Explain the difference between slice() and splice().
+
+107. Extract the first three elements using slice().
+
+108. Extract the last three elements using slice().
+
+109. Use negative indexes with slice().
+
+110. Make a shallow copy using slice().
+
+111. Reverse an array using reverse().
+
+112. Explain how reverse() affects the original array.
+
+113. Use toReversed() without changing the original array.
+
+114. Sort numbers in ascending order using sort().
+
+115. Sort numbers in descending order using sort().
+
+116. Explain why [1, 20, 3].sort() may produce an unexpected numeric order.
+
+117. Sort numbers using a comparison callback.
+
+118. Sort strings alphabetically.
+
+119. Sort strings without regard to letter case.
+
+120. Compare sort() with toSorted().
+
+----------------------------------------------------------------------
+
+Level 4 — Searching, testing and iteration (Questions 121–160)
+
+121. Check for a value using includes().
+122. Use includes() with a starting index.
+123. Find an element's index using indexOf().
+124. Find the last matching index using lastIndexOf().
+125. Explain why indexOf() returns -1 when no match exists.
+126. Find the first even number using find().
+127. Find the first number greater than 50 using find().
+128. Find the first student's name beginning with A.
+129. Use findIndex() to locate an element.
+130. Use findLast() to find the last matching element.
+131. Use findLastIndex() to find the last matching index.
+132. Compare find() with filter().
+133. Check whether every number is positive using every().
+134. Check whether every student has passed using every().
+135. Check whether at least one number is negative using some().
+136. Check whether any student scored above 90.
+137. Compare every() with some().
+138. Use filter() to select even numbers.
+139. Filter numbers greater than the average.
+140. Filter strings longer than five characters.
+141. Filter active users from an array of objects.
+142. Use map() to double each number.
+143. Use map() to extract student names from objects.
+144. Use map() to calculate prices after a discount.
+145. Compare map() with forEach().
+146. Use forEach() to print each element.
+147. Calculate a sum using forEach().
+148. Explain why forEach() returns undefined.
+149. Use keys() to iterate over array indexes.
+150. Use entries() to print indexes and values.
+151. Convert the iterator from keys() into an array.
+152. Convert the iterator from entries() into an array.
+153. Use join() to combine names with commas.
+154. Join numbers using a hyphen separator.
+155. Convert an array into a comma-separated string using toString().
+156. Compare join() with toString().
+157. Use valueOf() and inspect the returned value.
+158. Determine whether valueOf() creates a separate copy.
+159. Use flat() on a nested array.
+160. Flatten an array containing three levels of nesting.
+
+----------------------------------------------------------------------
+
+Level 5 — Advanced array methods (Questions 161–200)
+
+161. Use flat(2) on a nested array.
+162. Flatten an array completely using flat(Infinity).
+163. Explain how flat() handles sparse array slots.
+164. Use flatMap() to double each number and flatten one level.
+165. Split each sentence into words using flatMap().
+166. Compare map().flat() with flatMap().
+167. Calculate the sum using reduce().
+168. Calculate the product using reduce().
+169. Find the maximum using reduce().
+170. Find the minimum using reduce().
+171. Count even numbers using reduce().
+172. Count occurrences of each number using reduce().
+173. Convert an array of names into a single string using reduce().
+174. Group numbers into even and odd groups using reduce().
+175. Calculate total salary from employee objects using reduce().
+176. Calculate the total cart price using reduce().
+177. Flatten a nested array using reduce().
+178. Remove duplicate primitive values using reduce().
+179. Explain why an initial accumulator value is useful.
+180. Predict the result of reducing an empty array without an initial value.
+181. Use reduceRight() to concatenate strings from right to left.
+182. Compare reduce() with reduceRight().
+183. Use fill() to fill an entire array with a value.
+184. Fill only a selected range using fill().
+185. Create an array of five zeros using fill().
+186. Explain why fill() mutates the original array.
+187. Use copyWithin() to copy elements inside the same array.
+188. Use copyWithin() with positive target and source indexes.
+189. Use negative indexes with copyWithin().
+190. Explain how overlapping ranges behave with copyWithin().
+191. Replace an element immutably using with().
+192. Use with(-1, value) to replace the last element.
+193. Explain why with() returns a new array.
+194. Remove elements immutably using toSpliced().
+195. Insert elements immutably using toSpliced().
+196. Replace elements immutably using toSpliced().
+197. Compare splice() and toSpliced().
+198. Compare reverse() and toReversed().
+199. Compare sort() and toSorted().
+200. Demonstrate how to use all four modern non-mutating methods: toReversed(), toSorted(), toSpliced(), and with().
+
+----------------------------------------------------------------------
+
+Level 6 — Output prediction and debugging (Questions 201–240)
+
+201. Predict the output of console.log([1, 2, 3].length).
+202. Predict the result of new Array(3).
+203. Predict the result of Array.of(3).
+204. Predict the output of arr.at(-1).
+205. Predict the output when pop() is called on an empty array.
+206. Predict the output when shift() is called on an empty array.
+207. Predict the return value of push() and unshift().
+208. Predict the result of slice() without arguments.
+209. Predict the result of splice() without arguments.
+210. Predict the output of indexOf() for a missing value.
+211. Predict the result of includes(NaN) on an array containing NaN.
+212. Compare includes(NaN) with indexOf(NaN).
+213. Predict the result of find() when no element matches.
+214. Predict the result of findIndex() when no element matches.
+215. Predict the result of every() on an empty array.
+216. Predict the result of some() on an empty array.
+217. Predict the result of reduce() on an empty array with an initial value.
+218. Predict the result of map() on a sparse array.
+219. Predict the result of forEach() on a sparse array.
+220. Predict the result of filter() on a sparse array.
+221. Find the bug in a loop that runs one iteration too many.
+222. Fix a program that skips the last element.
+223. Fix a program that incorrectly uses = instead of a comparison operator.
+224. Fix a program that adds strings instead of numbers.
+225. Explain why sort() can sort numbers incorrectly without a comparator.
+226. Explain why assigning b = a does not create an independent array copy.
+227. Fix an array reversal program that swaps the wrong indexes.
+228. Fix a duplicate-removal program that skips elements after splice().
+229. Explain why changing a nested object in a shallow copy can affect the original.
+230. Predict the behavior of two variables referencing the same array.
+231. Predict the output of [1, 2] + [3, 4].
+232. Predict the result of comparing two separate arrays using ===.
+233. Explain the difference between an array's index and its value.
+234. Explain why typeof [] returns "object".
+235. Predict the effect of assigning to an index beyond the array's length.
+236. Explain what sparse arrays are.
+237. Predict the result of delete arr[1] and compare it with splice().
+238. Debug a callback that forgets to return a value in map().
+239. Debug a reduce() callback with an incorrect accumulator update.
+240. Identify which methods mutate an array and which return a new array.
+
+----------------------------------------------------------------------
+
+Level 7 — Core array logic programs (Questions 241–280)
+
+241. Reverse an array using two pointers.
+242. Reverse an array using a new array.
+243. Find the second-largest distinct number.
+244. Find the third-largest distinct number.
+245. Find the second-smallest distinct number.
+246. Find all duplicate values.
+247. Find all unique values.
+248. Count the frequency of every element.
+249. Find the most frequent element.
+250. Find the least frequent element.
+251. Remove duplicates without using Set.
+252. Remove duplicates using Set.
+253. Merge two arrays and remove duplicates.
+254. Find the common elements of two arrays.
+255. Find the union of two arrays.
+256. Find the intersection of two arrays.
+257. Find the difference between two arrays.
+258. Find elements present in either array but not both.
+259. Check whether one array is a subset of another.
+260. Check whether two arrays contain the same elements regardless of order.
+261. Check whether an array is sorted in ascending order.
+262. Check whether an array is sorted in descending order.
+263. Sort an array without using sort().
+264. Implement bubble sort.
+265. Implement selection sort.
+266. Implement insertion sort.
+267. Move all zeros to the beginning.
+268. Move all negative numbers to the beginning.
+269. Move all even numbers before odd numbers.
+270. Rotate an array one position to the left.
+271. Rotate an array one position to the right.
+272. Rotate an array by k positions to the left.
+273. Rotate an array by k positions to the right.
+274. Find the missing number from a sequence of 1 to n.
+275. Find the one number that appears once when all others appear twice.
+276. Find two numbers that appear an odd number of times, if exactly two such values exist.
+277. Find a pair whose sum equals a target.
+278. Find all pairs whose sum equals a target.
+279. Find a pair with the smallest absolute difference.
+280. Merge two sorted arrays into one sorted array.
+
+----------------------------------------------------------------------
+
+Level 8 — DSA, subarrays and interview problems (Questions 281–320)
+
+281. Generate all subarrays of an array.
+282. Count the total number of subarrays.
+283. Find the sum of every subarray.
+284. Find the maximum subarray sum using brute force.
+285. Solve the maximum subarray sum problem using Kadane's algorithm.
+286. Find the minimum subarray sum.
+287. Find the longest subarray with a given sum for positive numbers.
+288. Find the longest subarray with a given sum when negative numbers may occur.
+289. Find a subarray whose sum equals a target.
+290. Count subarrays whose sum equals a target.
+291. Find the maximum sum of any subarray of size k.
+292. Find the minimum sum of any subarray of size k.
+293. Find the first negative number in every window of size k.
+294. Find the maximum element in every window of size k.
+295. Find the equilibrium index of an array.
+296. Find the leaders in an array.
+297. Find the majority element appearing more than n / 2 times.
+298. Find all elements appearing more than n / 3 times.
+299. Find the product of an array except self.
+300. Find the maximum product subarray.
+301. Find the trapped rainwater between bars.
+302. Calculate the maximum profit from one stock transaction.
+303. Calculate the maximum profit with multiple stock transactions.
+304. Solve the two-sum problem using a hash map.
+305. Solve the three-sum problem.
+306. Solve the four-sum problem.
+307. Find the closest pair sum to a target.
+308. Find the longest consecutive sequence.
+309. Find the longest increasing contiguous subarray.
+310. Find the length of the longest increasing subsequence.
+311. Find the next greater element for each element.
+312. Find the previous greater element for each element.
+313. Find the next smaller element for each element.
+314. Find the first repeating element.
+315. Find the first non-repeating element.
+316. Find the maximum difference where the larger element comes later.
+317. Find the minimum number of jumps to reach the end.
+318. Determine whether you can reach the last index.
+319. Find the minimum number of platforms required from arrival and departure arrays.
+320. Solve the container-with-most-water problem.
+
+----------------------------------------------------------------------
+
+Level 9 — Nested arrays, objects and advanced problems (Questions 321–360)
+
+321. Create a two-dimensional array representing a matrix.
+322. Print all elements of a matrix using nested loops.
+323. Calculate the sum of all matrix elements.
+324. Calculate the sum of each row.
+325. Calculate the sum of each column.
+326. Find the largest element in each row.
+327. Find the smallest element in each column.
+328. Calculate the main diagonal sum.
+329. Calculate the secondary diagonal sum.
+330. Transpose a matrix.
+331. Add two matrices.
+332. Subtract two matrices.
+333. Multiply two matrices.
+334. Rotate a square matrix 90 degrees clockwise.
+335. Rotate a square matrix 90 degrees anticlockwise.
+336. Print matrix elements in spiral order.
+337. Search for a target in a row-wise and column-wise sorted matrix.
+338. Flatten a matrix into a one-dimensional array.
+339. Flatten arbitrarily nested arrays recursively.
+340. Find the depth of a nested array.
+341. Extract names from an array of employee objects using map().
+342. Filter employees whose salaries exceed a specified amount.
+343. Calculate the total salary using reduce().
+344. Find the employee with the highest salary.
+345. Sort employees by salary.
+346. Group employees by department.
+347. Count employees in each department.
+348. Find employees who share the same skill.
+349. Convert an array of key-value pairs into an object.
+350. Convert an object into an array of key-value pairs.
+351. Group products by category.
+352. Calculate the total price of products by category.
+353. Create a shopping cart with add, update, and remove operations.
+354. Find duplicate objects based on an id property.
+355. Merge two arrays of objects by matching IDs.
+356. Remove objects whose IDs appear in another array.
+357. Sort students by marks and then by name.
+358. Calculate student grades from an array of marks.
+359. Build a frequency report from an array of transactions.
+360. Transform API response data into a table-ready array of objects.
+
+----------------------------------------------------------------------
+
+Level 10 — Advanced challenges and real-world practice (Questions 361–400+)
+
+361. Implement your own map() using a loop.
+362. Implement your own filter() using a loop.
+363. Implement your own find() using a loop.
+364. Implement your own some() using a loop.
+365. Implement your own every() using a loop.
+366. Implement your own reduce() using a loop.
+367. Implement your own includes() using a loop.
+368. Implement your own indexOf() using a loop.
+369. Implement a custom flat() function.
+370. Implement a custom array reversal function.
+371. Implement a custom duplicate-removal function.
+372. Implement a custom sorting algorithm and explain its time complexity.
+373. Compare linear search and binary search.
+374. Implement binary search on a sorted array.
+375. Find the first and last positions of a target in a sorted array.
+376. Find the insertion position of a target in a sorted array.
+377. Search for an element in a rotated sorted array.
+378. Find the minimum element in a rotated sorted array.
+379. Merge overlapping intervals represented as nested arrays.
+380. Insert a new interval into a sorted interval list.
+381. Find the longest substring without repeating characters using an array or related data structures.
+382. Find the longest palindromic subarray of characters by using an appropriate string/array representation.
+383. Find all triplets whose sum equals zero.
+384. Find the median of two sorted arrays.
+385. Find the smallest missing positive integer.
+386. Find the maximum circular subarray sum.
+387. Find the maximum sum of non-adjacent elements.
+388. Solve the climbing-stairs problem using an array for dynamic programming.
+389. Solve the coin-change problem using an array for dynamic programming.
+390. Find the longest common subsequence of two arrays.
+391. Implement pagination for a large array of records.
+392. Implement search, filtering, and sorting for employee records.
+393. Generate a sales summary from transaction arrays.
+394. Find the top five highest-selling products.
+395. Calculate monthly totals from an array of dated transactions.
+396. Implement undo and redo using arrays as stacks.
+397. Implement a queue using array operations.
+398. Implement a circular queue.
+399. Build a leaderboard that handles ties and ranks.
+400. Create a complete student management program using arrays: add, update, delete, search, sort, filter, and calculate results.
+
+----------------------------------------------------------------------
+
+Bonus questions — 401–420
+
+These extra challenges will take you beyond the first 400.
+401. Find the k most frequent elements.
+402. Find the kth-largest element without fully sorting the array.
+403. Find the median of an unsorted array.
+404. Find all duplicate values in an array with minimal extra space, under clearly specified input constraints.
+405. Find the intersection of multiple sorted arrays.
+406. Find the longest subarray containing at most two distinct values.
+407. Find the shortest subarray whose sum is at least a target.
+408. Find the maximum XOR of two elements.
+409. Count inversions in an array.
+410. Find the minimum swaps required to sort an array.
+411. Find the minimum number of deletions to make an array sorted.
+412. Partition an array around a pivot.
+413. Solve the Dutch National Flag problem.
+414. Find the maximum sum of a subsequence with no adjacent elements.
+415. Solve the subset-sum problem.
+416. Generate all permutations of an array.
+417. Generate all combinations of size k.
+418. Generate the power set of an array.
+419. Find the shortest path through a grid represented by a two-dimensional array.
+420. Design a reusable array utility module with validation, searching, transformations, and tests.
+
+----------------------------------------------------------------------
+
+421	Find the middle index where the left and right sums are equal.
+422	Print every second element starting from index 0.
+423	Print every second element starting from the last index.
+424	Replace every element with its index.
+425	Replace every element with the sum of its neighbors.
+426	Create a new array containing the absolute value of each element.
+427	Create a new array containing the last digit of each integer.
+428	Create a new array containing the first digit of each positive integer.
+429	Reverse the digits of every number in an array.
+430	Find numbers whose digits are in ascending order.
+431	Find numbers whose digits are in descending order.
+432	Separate integers into single-digit, double-digit, and larger numbers.
+433	Find all numbers divisible by both 3 and 5.
+434	Replace each number with "Even" or "Odd".
+435	Find the difference between adjacent elements.
+436	Create an array of cumulative sums.
+437	Create an array of cumulative products.
+438	Calculate the running average of an array.
+439	Find the longest sequence of identical adjacent values.
+440	Count how many times adjacent elements change value.
+441	Find the longest consecutive run of even numbers.
+442	Find the longest consecutive run of positive numbers.
+443	Split an array into two halves.
+444	Split an array into three approximately equal parts.
+445	Interleave the first half and second half of an array.
+446	Alternate elements from two arrays of unequal lengths.
+447	Create an array by repeating each element twice.
+448	Create an array by repeating each element according to its value, for nonnegative integers.
+449	Remove elements at every second position.
+450	Replace each element with the greatest element to its right, using -1 for the last element.
+
+----------------------------------------------------------------------
+
+2. Additional intermediate programs (451–490)
+
+451	Find all missing values between the minimum and maximum values.
+452	Find the smallest missing nonnegative integer.
+453	Find the smallest missing value in a sorted array of consecutive integers.
+454	Find all pairs whose difference equals a given number.
+455	Find all triplets whose product equals a target.
+456	Find all pairs with a specified XOR value.
+457	Find the pair whose sum is closest to zero.
+458	Find the pair with the maximum product.
+459	Find the pair with the minimum product.
+460	Find three elements whose sum is closest to a target.
+461	Find the longest subarray with equal numbers of zeros and ones.
+462	Find the longest subarray with equal counts of positive and negative values.
+463	Find the longest alternating even-odd subarray.
+464	Find the longest strictly increasing contiguous subarray.
+465	Find the longest strictly decreasing contiguous subarray.
+466	Find the maximum number of consecutive ones after flipping at most one zero.
+467	Find the maximum number of consecutive ones after flipping at most k zeros.
+468	Find the minimum-length subarray that must be sorted to sort the entire array.
+469	Find the maximum sum of a circular window of size k.
+470	Find all indexes where a value is greater than both neighbors.
+471	Find all local minima in an array.
+472	Find a peak element using binary search.
+473	Find the first index where the prefix sum exceeds a target.
+474	Answer multiple range-sum queries using prefix sums.
+475	Find a range whose sum is divisible by a given number.
+476	Find the maximum length of a subarray whose sum is divisible by k.
+477	Count subarrays with an even sum.
+478	Count subarrays with an odd sum.
+479	Count subarrays whose product is less than a positive target.
+480	Find the maximum sum after deleting exactly one element.
+481	Find the minimum swaps needed to group all values below a threshold together.
+482	Group all values equal to a target together with minimum swaps.
+483	Find the minimum swaps required to group all ones together.
+484	Rearrange an array into wave form.
+485	Rearrange an array into zigzag order.
+486	Rearrange positive and negative values alternately while preserving relative order.
+487	Arrange values in alternating high-low order.
+488	Find the next lexicographical permutation.
+489	Find the previous lexicographical permutation.
+490	Find the lexicographically smallest array obtainable by one allowed swap.
+
+----------------------------------------------------------------------
+
+3. Advanced array and DSA programs (491–530)
+
+491	Find the maximum sum of a subsequence with a fixed number of elements.
+492	Find the minimum cost of selecting non-adjacent elements.
+493	Find the maximum sum of elements with no three consecutive selections.
+494	Find the minimum number of coins needed to form a target amount.
+495	Count the number of ways to form a target sum using given numbers.
+496	Partition an array into two subsets with equal sums.
+497	Find the minimum difference between two subset sums.
+498	Find the number of subsets whose sum equals a target.
+499	Find the longest bitonic subsequence.
+500	Find the longest alternating subsequence.
+501	Find the maximum sum increasing subsequence.
+502	Find the minimum number of jumps when each element specifies the maximum jump length.
+503	Find the minimum cost path through a grid using a matrix.
+504	Count unique paths through a grid with blocked cells.
+505	Find the shortest path in a binary grid using breadth-first search.
+506	Set every row and column to zero if a matrix contains zero.
+507	Find the row containing the maximum number of ones in a binary matrix.
+508	Find the number of islands in a two-dimensional grid.
+509	Find connected components in a grid.
+510	Search for a word in a character grid.
+511	Merge multiple sorted arrays.
+512	Find the smallest range containing at least one element from each sorted array.
+513	Find the median from a stream of numbers stored in arrays.
+514	Find the top k elements by frequency.
+515	Find the k closest numbers to a target.
+516	Find the maximum number of overlapping intervals.
+517	Find the minimum number of intervals to remove to eliminate overlap.
+518	Find the minimum number of meeting rooms required.
+519	Insert an interval into a sorted list and merge overlaps.
+520	Find the maximum profit from multiple stock transactions with a transaction fee.
+521	Find the best stock profit with a cooldown period.
+522	Calculate the maximum profit with at most k transactions.
+523	Find the longest subarray with at most k distinct values.
+524	Count subarrays containing exactly k distinct values.
+525	Find the minimum window containing all required values.
+526	Find the shortest subarray with sum at least a target, allowing negative values.
+527	Count inversions using merge sort.
+528	Find the maximum sum of a circular subarray.
+529	Find the maximum XOR of any two array elements using a trie or bitwise approach.
+530	Find the smallest positive integer that cannot be represented as a subset sum of the array.
+
+----------------------------------------------------------------------
+
+4. Practical JavaScript and real-project programs (531–560)
+
+531	Search employees by name in an array of objects.
+532	Filter employees by department and salary.
+533	Sort employees by salary, then by joining date.
+534	Group employees by department and designation.
+535	Calculate department-wise average salary.
+536	Find the highest-paid employee in each department.
+537	Remove duplicate API records using a unique ID.
+538	Merge updated API records into an existing array without duplicating IDs.
+539	Update one object in an array immutably.
+540	Delete an object from an array immutably.
+541	Implement client-side pagination using page number and page size.
+542	Implement a combined search, filter, and sort pipeline.
+543	Convert nested API response data into a flat table format.
+544	Compare two API response arrays and report added, removed, and changed records.
+545	Build a shopping cart that recalculates quantities and totals.
+546	Calculate daily, weekly, and monthly transaction summaries.
+547	Find duplicate payment transaction IDs.
+548	Reconcile payment records from two arrays using transaction IDs.
+549	Group expenses by category and calculate each category's total.
+550	Calculate running account balance from ordered transactions.
+551	Find missing dates in a daily transaction report.
+552	Build a leaderboard with tie handling and competition rankings.
+553	Implement multi-column sorting with configurable sort directions.
+554	Implement an undo/redo history using arrays.
+555	Implement a task queue and process tasks in order.
+556	Implement a recent-items list with a maximum size.
+557	Implement a bounded event log that removes the oldest entries when full.
+558	Compare two nested arrays and objects for deep equality.
+559	Write unit tests for custom array utilities, including empty and boundary cases.
+560	Benchmark two array algorithms and compare their performance on large inputs.
+
+----------------------------------------------------------------------
+
+5. Array method mastery challenges (561–580)
+
+561	Implement a simplified Array.from() for iterable inputs.
+562	Implement a simplified Array.isArray() conceptually and explain its limitations.
+563	Implement push() behavior for an ordinary array in a controlled exercise.
+564	Implement pop() behavior in a controlled exercise.
+565	Implement slice() behavior for positive and negative indexes.
+566	Implement splice() behavior for insertion and deletion.
+567	Implement a custom flatMap() using loops.
+568	Implement a custom reduceRight() using a loop.
+569	Implement a custom stable sort for numeric records.
+570	Implement a non-mutating reverse function.
+571	Implement a non-mutating array update function like with().
+572	Implement a chunking function that preserves the final incomplete group.
+573	Implement a function that zips two arrays together.
+574	Implement a function that transposes rows and columns of a rectangular matrix.
+575	Implement a function that rotates an array by any positive or negative offset.
+576	Implement a function that returns all combinations of two arrays.
+577	Implement a function that compares arrays with a custom equality callback.
+578	Implement a function that removes values based on a predicate.
+579	Implement a function that groups array values using a callback-generated key.
+580	Create a reusable array utility library with documentation and tests.
+
+----------------------------------------------------------------------
