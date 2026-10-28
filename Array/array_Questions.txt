@@ -255,44 +255,83 @@ Level 3 — Array methods: creation, access and modification (Questions 81–120
 Level 4 — Searching, testing and iteration (Questions 121–160)
 
 121. Check for a value using includes().
+
 122. Use includes() with a starting index.
+
 123. Find an element's index using indexOf().
+
 124. Find the last matching index using lastIndexOf().
+
 125. Explain why indexOf() returns -1 when no match exists.
+
 126. Find the first even number using find().
+
 127. Find the first number greater than 50 using find().
+
 128. Find the first student's name beginning with A.
+
 129. Use findIndex() to locate an element.
+
 130. Use findLast() to find the last matching element.
+
 131. Use findLastIndex() to find the last matching index.
+
 132. Compare find() with filter().
+
 133. Check whether every number is positive using every().
+
 134. Check whether every student has passed using every().
+
 135. Check whether at least one number is negative using some().
+
 136. Check whether any student scored above 90.
+
 137. Compare every() with some().
+
 138. Use filter() to select even numbers.
+
 139. Filter numbers greater than the average.
+
 140. Filter strings longer than five characters.
+
 141. Filter active users from an array of objects.
+
 142. Use map() to double each number.
+
 143. Use map() to extract student names from objects.
+
 144. Use map() to calculate prices after a discount.
+
 145. Compare map() with forEach().
+
 146. Use forEach() to print each element.
+
 147. Calculate a sum using forEach().
+
 148. Explain why forEach() returns undefined.
+
 149. Use keys() to iterate over array indexes.
+
 150. Use entries() to print indexes and values.
+
 151. Convert the iterator from keys() into an array.
+
 152. Convert the iterator from entries() into an array.
+
 153. Use join() to combine names with commas.
+
 154. Join numbers using a hyphen separator.
+
 155. Convert an array into a comma-separated string using toString().
+
 156. Compare join() with toString().
+
 157. Use valueOf() and inspect the returned value.
+
 158. Determine whether valueOf() creates a separate copy.
+
 159. Use flat() on a nested array.
+
 160. Flatten an array containing three levels of nesting.
 
 ----------------------------------------------------------------------
