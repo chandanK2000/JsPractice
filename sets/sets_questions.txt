@@ -1,0 +1,299 @@
+Level 1 – Beginner (30 Questions)
+
+A. Basic concept questions
+1. What is a Set in JavaScript?
+2. How is Set different from Array?
+3. Why does Set not allow duplicate primitive values?
+4. How do you create an empty Set?
+5. How do you create a Set with initial values?
+6. Can a Set store numbers, strings and booleans together?
+7. Can a Set store objects?
+8. Does Set maintain insertion order?
+9. What happens when you add the same value twice?
+10. Is Set an iterable object?
+B. Method-based questions
+11. Create an empty Set and add five numbers.
+12. Create a Set containing five names.
+13. Add a new name using add().
+14. Delete one name using delete().
+15. Check whether a particular name exists using has().
+16. Find the total number of values using size.
+17. Remove all values using clear().
+18. Display all Set values using values().
+19. Display all Set values using keys().
+20. Display all entries using entries().
+C. Coding questions
+21. Create a Set of 10 numbers and print it.
+22. Create a Set of five student names and display each name.
+23. Add three new values to an existing Set.
+24. Delete a particular number from a Set.
+25. Check whether 50 exists in a Set.
+26. Find the size of a Set without manually counting.
+27. Convert a Set into an Array.
+28. Convert an Array into a Set.
+29. Remove duplicate names from an Array.
+30. Print all Set elements using for...of.
+
+Level 2 – Intermediate (35 Questions)
+Medium
+ Focus: Logic building and output prediction
+A. Output prediction
+31. What is the output?
+const numbers = new Set([10, 20, 30, 10, 20]);
+
+console.log(numbers.size);
+
+
+32. Predict the output:
+const fruits = new Set();
+
+fruits.add("Apple");
+fruits.add("Banana");
+fruits.add("Apple");
+
+console.log([...fruits]);
+
+
+33. What will this return?
+const nums = new Set([1, 2, 3]);
+
+console.log(nums.has("1"));
+
+
+34. Predict the output:
+const data = new Set([10, 20, 30]);
+
+data.delete(20);
+
+console.log(data);
+
+
+35. What happens here?
+const values = new Set([1, 2, 3]);
+
+values.clear();
+
+console.log(values.size);
+
+
+B. Coding challenges
+36. Remove duplicate numbers from an Array.
+37. Remove duplicate strings from an Array.
+38. Find the unique characters in a string.
+39. Count the unique numbers in an Array.
+40. Find duplicate values from an Array using Set.
+41. Find the first repeated element in an Array.
+42. Find the first non-repeated element in an Array.
+43. Check whether two Arrays contain exactly the same unique values.
+44. Find common values between two Arrays.
+45. Find values that exist only in the first Array.
+46. Merge two Arrays and remove duplicates.
+47. Convert a Set into a comma-separated string.
+48. Find the largest unique number in an Array.
+49. Find the smallest unique number in an Array.
+50. Sort unique numbers in ascending order.
+51. Sort unique numbers in descending order.
+52. Count unique words in a sentence.
+53. Find all unique vowels in a string.
+54. Find unique even numbers.
+55. Find unique odd numbers.
+56. Remove duplicate employee IDs.
+57. Find unique student names from two classes.
+58. Check whether a Set is empty.
+59. Iterate over a Set using forEach().
+60. Find the sum of unique numbers.
+C. Debugging questions
+61. Find the mistake:
+const students = new Set(["Ram", "Raj"]);
+
+students.push("Rohan");
+
+console.log(students);
+
+
+62. Fix this code:
+const numbers = new Set([10, 20, 30]);
+
+console.log(numbers.length);
+
+
+63. Why does this code produce an error?
+const names = new Set(["Ram", "Raj"]);
+
+for (const names of names) {
+    console.log(names);
+}
+
+
+64. Fix the following:
+const nums = new Set([1, 2, 3]);
+
+nums[0] = 100;
+
+console.log(nums);
+
+
+65. Find the problem:
+const fruits = new Set(["Apple", "Banana"]);
+
+console.log(fruits[0]);
+
+
+
+Level 3 – Advanced (35 Questions)
+Hard
+ Focus: Problem solving and interview preparation
+A. Advanced coding
+66. Find the intersection of two Sets.
+67. Find the union of two Sets.
+68. Find the difference between two Sets.
+69. Find the symmetric difference between two Sets.
+70. Check whether one Set is a subset of another.
+71. Check whether two Sets are disjoint.
+72. Find common elements from three Arrays.
+73. Find duplicate elements without using filter().
+74. Find unique elements without using includes().
+75. Remove duplicate objects based on employee ID.
+76. Remove duplicate objects based on email.
+77. Find unique products based on product ID.
+78. Find unique values from a nested Array.
+79. Find unique words regardless of uppercase or lowercase.
+80. Find unique characters while ignoring spaces.
+81. Find unique characters while ignoring special symbols.
+82. Find the longest word using Set.
+83. Find the number of distinct elements in a matrix.
+84. Find unique elements from multiple Arrays.
+85. Compare two Sets without using JSON.stringify().
+86. Implement your own union() function.
+87. Implement your own intersection() function.
+88. Implement your own difference() function.
+89. Implement your own isSubsetOf() function.
+90. Implement your own isDisjointFrom() function.
+B. Output prediction and tricky questions
+91. Predict the output:
+const a = new Set([1, 2, 3]);
+const b = new Set([3, 2, 1]);
+
+console.log(a === b);
+
+
+92. Predict the output:
+const values = new Set();
+
+values.add({});
+values.add({});
+
+console.log(values.size);
+
+
+93. What is the output?
+const nums = new Set([1, 2, 3]);
+
+nums.add(2);
+nums.add(4);
+
+console.log([...nums]);
+
+
+94. Predict:
+const set = new Set([NaN, NaN, 10, 10]);
+
+console.log(set.size);
+
+
+95. What is the output?
+const set = new Set([0, -0, false]);
+
+console.log(set.size);
+
+
+96. What happens?
+const set = new Set(["A", "B", "C"]);
+
+for (const value of set) {
+    if (value === "B") {
+        set.delete("B");
+    }
+
+    console.log(value);
+}
+
+
+97. Predict the output:
+const set = new Set([1, 2, 3]);
+
+const arr = [...set];
+
+arr.push(4);
+
+console.log(set.size);
+console.log(arr.length);
+
+
+98. What is the difference between these?
+const a = new Set([1, 2, 3]);
+const b = new Set([1, 2, 3]);
+
+console.log(a === b);
+
+
+99. What happens when you add undefined multiple times?
+100. Does Set compare objects by their contents or reference?
+
+Level 4 – Expert (50 Questions)
+Expert
+ Focus: Real-world applications, DSA and interviews
+A. Real-world coding problems
+101. You have 10,000 employee IDs. Remove all duplicate IDs.
+102. You have two warehouse stock lists. Find common product IDs.
+103. Find products available in warehouse A but not warehouse B.
+104. Combine stock lists from five warehouses without duplicate product IDs.
+105. Find unique customer email addresses.
+106. Find customers who purchased from both online and offline stores.
+107. Find users who logged in at least once during the last seven days, without duplicates.
+108. Find unique IP addresses from server logs.
+109. Find unique API endpoints accessed by users.
+110. Find unique transaction IDs from a payment history.
+111. Find duplicate invoice numbers.
+112. Find all unique skills from employee records.
+113. Find students enrolled in at least one common course.
+114. Find products shared by three warehouses.
+115. Find unique words from multiple text files.
+B. DSA and logical challenges
+116. Find the longest substring without repeating characters.
+117. Find the longest substring containing unique characters.
+118. Find the longest sequence of consecutive unique numbers.
+119. Find the first missing positive integer.
+120. Find the longest consecutive sequence in an Array.
+121. Find the number of distinct pairs with a given sum.
+122. Check whether two strings are anagrams using Set and other suitable logic.
+123. Find all repeated characters in a string.
+124. Find the first unique character in a string.
+125. Find the intersection of multiple sorted Arrays.
+126. Find unique combinations of numbers that produce a target sum.
+127. Find the number of distinct elements in every sliding window of size K.
+128. Find the longest subarray with K distinct elements.
+129. Find the count of distinct elements in a large dataset.
+130. Detect duplicate records in a data stream.
+C. Expert JavaScript concepts
+131. Explain SameValueZero comparison in Set.
+132. How does Set compare NaN values?
+133. Why are two identical object literals treated as separate Set values?
+134. Explain Set iteration order.
+135. Explain the difference between keys(), values() and entries().
+136. What is the difference between Set and WeakSet?
+137. Why is WeakSet not iterable?
+138. Can WeakSet contain primitive values?
+139. What is garbage collection, and how does WeakSet relate to it?
+140. What are the performance advantages of Set over Array for membership checking?
+141. What is the time complexity of add(), has() and delete()?
+142. Can a Set be frozen using Object.freeze() to prevent adding values?
+143. Can you use objects as keys in a Set?
+144. What happens if you modify an object after adding it to a Set?
+145. Explain Set methods introduced in modern JavaScript.
+D. Mini projects
+146. Build a student registration system that prevents duplicate student IDs.
+147. Build a unique product inventory manager.
+148. Build a website visitor tracker that stores unique visitors.
+149. Build a duplicate email detection system.
+150. Build a warehouse product comparison system using Set operations.
