@@ -3,45 +3,85 @@ JavaScript DOM – 300+ Practice Questions
 Level 1: Basic DOM Selection (1–40)
 
 Practice selecting HTML elements using different DOM methods.
+
 1. Select an element using getElementById().
+
 2. Select an element using getElementsByClassName().
+
 3. Select all paragraph elements using getElementsByTagName().
+
 4. Select an element using querySelector().
+
 5. Select all elements using querySelectorAll().
+
 6. Select an element using its ID with querySelector().
+
 7. Select an element using its class with querySelector().
+
 8. Select all elements having the same class using querySelectorAll().
+
 9. Select the first <h1> element.
+
 10. Select all <h2> elements.
+
 11. Select all buttons from a webpage.
+
 12. Select all input elements.
+
 13. Select the first paragraph inside a div.
+
 14. Select all paragraphs inside a div.
+
 15. Select an element using a combination of ID and class.
+
 16. Select an element using a CSS attribute selector.
+
 17. Select all elements having the data-id attribute.
+
 18. Select an input using its type.
+
 19. Select an element using its name attribute.
+
 20. Select all elements having the required attribute.
+
 21. Select the first element with a particular class.
+
 22. Select the last element with a particular class.
+
 23. Select all elements with multiple classes.
+
 24. Select an element inside another element.
+
 25. Select all list items inside an unordered list.
+
 26. Select all links inside a navbar.
+
 27. Select all images inside a container.
+
 28. Select all checkboxes.
+
 29. Select all radio buttons.
+
 30. Select all elements having a specific attribute value.
+
 31. Select the first element using a CSS selector.
+
 32. Select multiple elements using a CSS selector.
+
 33. Select elements using a descendant selector.
+
 34. Select elements using a child selector.
+
 35. Select elements using a sibling selector.
+
 36. Select elements using a group selector.
+
 37. Select elements using :first-child.
+
 38. Select elements using :last-child.
+
 39. Select elements using :nth-child().
+
 40. Explain the difference between querySelector() and querySelectorAll() with an example.
 
 ---------------------------------------------------------------
