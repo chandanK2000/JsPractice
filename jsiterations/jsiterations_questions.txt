@@ -1,0 +1,418 @@
+-------------------------------------------------------------------------
+
+Topics covered
+- JavaScript loops
+- Nested loops
+- for...in and for...of
+- Iterables and iterators
+- Iterator protocol
+- Custom iterators
+- Generators and yield
+- Generator methods
+- Advanced coding challenges
+
+---------------------------------------------------------------------------
+
+Level 1 – Beginner (Questions 1–60)
+A. Basic JavaScript Loops (1–15)
+1. What is a loop in JavaScript?
+2. What is the difference between a loop and a conditional statement?
+3. What is the syntax of a for loop?
+4. What is the syntax of a while loop?
+5. What is the syntax of a do...while loop?
+6. What is the difference between while and do...while?
+7. How many times will a for loop execute if the condition is initially false?
+8. Can we write a for loop without initialization?
+9. Can we write a for loop without a condition?
+10. What happens if we forget to update the counter in a loop?
+11. Print numbers from 1 to 10 using a for loop.
+12. Print numbers from 10 to 1 using a while loop.
+13. Print all even numbers from 1 to 50.
+14. Print all odd numbers from 1 to 50.
+15. Calculate the sum of numbers from 1 to 100.
+
+------------------------------------------------------------------------------
+
+B. Loop Control Statements (16–25)
+16. What is the break statement?
+17. What is the continue statement?
+18. What is the difference between break and continue?
+19. Can we use break inside a while loop?
+20. Can we use continue inside a for loop?
+21. Print numbers from 1 to 10 but stop when the number reaches 6.
+22. Print numbers from 1 to 10 but skip number 5.
+23. Print only numbers divisible by 3 between 1 and 30.
+24. Find the first number divisible by both 5 and 7 between 1 and 100.
+25. What is an infinite loop? Give an example.
+
+------------------------------------------------------------------------------
+
+C. Nested Loops (26–35)
+
+26. What is a nested loop?
+27. How many times will the inner loop execute in a nested loop?
+28. Print a 5 × 5 square using *.
+29. Print a right-angle triangle using *.
+30. Print an inverted triangle using *.
+31. Print numbers in this pattern:
+1
+12
+123
+1234
+12345
+
+
+32. Print this pattern:
+*****
+****
+***
+**
+*
+
+
+33. Print a multiplication table from 1 to 5.
+34. Print all pairs from two arrays using nested loops.
+35. Explain the execution order of inner and outer loops.
+
+------------------------------------------------------------------------------
+
+D. Loop Output Prediction (36–45)
+
+36. Predict the output:
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+
+37. Predict the output:
+let i = 1;
+
+while (i <= 3) {
+    console.log(i);
+    i++;
+}
+
+
+38. Predict the output:
+let i = 5;
+
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+
+
+39. Predict the output:
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) continue;
+    console.log(i);
+}
+
+
+40. Predict the output:
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) break;
+    console.log(i);
+}
+
+
+41. Predict the output:
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 2; j++) {
+        console.log(i, j);
+    }
+}
+
+
+42. Predict the output:
+let i = 1;
+
+while (i < 4) {
+    console.log(i);
+    i += 2;
+}
+
+
+43. Predict the output:
+for (let i = 5; i > 0; i -= 2) {
+    console.log(i);
+}
+
+
+44. Predict the output:
+let i = 0;
+
+do {
+    console.log(i);
+    i++;
+} while (i < 3);
+
+
+45. Predict the output:
+for (let i = 1; i <= 3; i++) {
+    console.log("A");
+
+    for (let j = 1; j <= 2; j++) {
+        console.log("B");
+    }
+}
+
+------------------------------------------------------------------------------
+
+E. Basic Iterables and Iterators (46–55)
+
+46. What is an iterable in JavaScript?
+47. What is an iterator in JavaScript?
+48. What is the difference between iterable and iterator?
+49. What is Symbol.iterator?
+50. What is the next() method?
+51. What is the purpose of value?
+52. What is the purpose of done?
+53. Name five built-in iterable types or objects in JavaScript.
+54. Is a normal number iterable?
+55. What is the output?
+const numbers = [10, 20, 30];
+
+const iterator = numbers[Symbol.iterator]();
+
+console.log(iterator.next());
+console.log(iterator.next());
+
+------------------------------------------------------------------------------
+
+F. Basic Generator Questions (56–60)
+
+56. What is a generator function?
+57. What is the difference between a normal function and a generator function?
+58. What is the function* syntax?
+59. What is the yield keyword?
+60. What does a generator function return when called?
+
+Level 2 – Medium (Questions 61–130)
+
+------------------------------------------------------------------------------
+
+G. Advanced Loop Logic (61–75)
+
+61. Find the factorial of a number using a loop.
+62. Reverse a number using a while loop.
+63. Count the digits of a number.
+64. Find the sum of digits of a number.
+65. Check whether a number is a palindrome.
+66. Check whether a number is prime.
+67. Print all prime numbers between 1 and 100.
+68. Find the greatest common divisor (GCD) using loops.
+69. Find the least common multiple (LCM) using loops.
+70. Generate the Fibonacci series using a loop.
+71. Find the second-largest number in an array using loops.
+72. Find duplicate values in an array using nested loops.
+73. Count the frequency of each element in an array.
+74. Remove duplicate array elements without using Set.
+75. Sort an array in ascending order without using sort().
+
+------------------------------------------------------------------------------
+
+H. for...in and for...of (76–85)
+
+76. What is for...in in JavaScript?
+77. What is for...of in JavaScript?
+78. Explain the difference between for...in and for...of.
+79. Can we use for...of with strings?
+80. Can we use for...in with arrays?
+81. Why does for...of not work directly with a normal object?
+82. Predict the output:
+const name = "Chandan";
+
+for (const index in name) {
+    console.log(index);
+}
+
+
+83. Predict the output:
+const name = "Chandan";
+
+for (const value of name) {
+    console.log(value);
+}
+
+
+84. Iterate over an object and print its keys and values using for...in.
+85. Create an array of object values using for...of and Object.values().
+
+------------------------------------------------------------------------------
+
+I. Iterator Concepts (86–100)
+
+86. How do you create an iterator from an array?
+87. What does array[Symbol.iterator]() return?
+88. What happens when next() is called repeatedly after completion?
+89. Can two iterators from the same array have independent positions?
+90. What is iterator exhaustion?
+91. Can we pause and resume an iterator?
+92. Write a program to manually iterate an array using next().
+93. Write a program to iterate an array using while and next().
+94. Create a new iterator and print only the first two values.
+95. What happens if you create two iterators from the same array?
+96. Can an iterator return an object as its value?
+97. Can an iterator generate an infinite sequence?
+98. What is the difference between calling next() and using for...of?
+99. Explain the relationship between Symbol.iterator and next().
+100. Predict the output:
+const arr = [10, 20];
+
+const iterator = arr[Symbol.iterator]();
+
+console.log(iterator.next().value);
+console.log(iterator.next().done);
+console.log(iterator.next().value);
+
+------------------------------------------------------------------------------
+
+J. Iterator Coding Challenges (101–115)
+
+101. Create a custom iterator that returns numbers from 1 to 5.
+102. Create an iterator that returns only even numbers from 1 to 20.
+103. Create an iterator that returns numbers in descending order from 10 to 1.
+104. Create an iterator that returns the characters of a string one by one.
+105. Create an iterator that returns the square of each number from an array.
+106. Create an iterator that returns only positive numbers from an array.
+107. Create an iterator that returns array elements in reverse order.
+108. Create an iterator that generates multiplication table values.
+109. Create an iterator that generates Fibonacci numbers.
+110. Create an iterator that returns student names one by one.
+111. Create an iterator that stops after a specified number of values.
+112. Create an iterator that returns only values divisible by 5.
+113. Create an iterator that returns alternating values from an array.
+114. Create an iterator that returns a custom message for each iteration.
+115. Create an iterator that returns objects containing id and name.
+
+------------------------------------------------------------------------------
+
+K. Generator Concepts (116–130)
+
+116. Explain the difference between yield and return.
+117. What happens when a generator function is called?
+118. What happens when we call .next() on a generator?
+119. What does a generator return after the final yield?
+120. Can a generator pause execution?
+121. Can a generator resume execution?
+122. Can a generator contain multiple yield statements?
+123. What is the difference between a generator and an iterator?
+124. Are generator objects iterable?
+125. Can we use a generator with for...of?
+126. What happens when we call .return() on a generator?
+127. What is the .throw() method of a generator?
+128. Can we pass a value into a generator using next(value)?
+129. What happens when we call .next() multiple times?
+130. Predict the output:
+function* numbers() {
+    yield 10;
+    yield 20;
+    yield 30;
+}
+
+const gen = numbers();
+
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+
+------------------------------------------------------------------------------
+
+Level 3 – Advanced (Questions 131–200)
+
+L. Advanced Iterator Protocol (131–145)
+
+131. What is the Iterable Protocol?
+132. What is the Iterator Protocol?
+133. What properties must an iterator result object contain?
+134. What should [Symbol.iterator]() return?
+135. Can an iterator also be an iterable?
+136. What is the difference between a self-iterable iterator and a normal iterator?
+137. Why should a custom iterator return { value, done }?
+138. What happens if next() returns a number instead of an object?
+139. What happens if [Symbol.iterator]() does not return an iterator?
+140. Can we make a plain object iterable?
+141. Create a custom iterable object using Symbol.iterator.
+142. Create an object whose iterator returns values from 1 to 10.
+143. Create a custom iterable that can be used with for...of.
+144. Create a custom iterable that returns student records.
+145. Explain why a normal JavaScript object is not iterable by default.
+
+------------------------------------------------------------------------------
+
+M. Advanced Iterator Coding (146–160)
+
+146. Build a custom iterator with a configurable starting value and ending value.
+147. Build an iterator that returns every third number.
+148. Build an iterator that skips duplicate values.
+149. Build an iterator that returns only strings from a mixed array.
+150. Build an iterator that returns only objects from an array.
+151. Build an iterator that combines two arrays into one sequence without creating a combined array.
+152. Build an iterator that cycles through array values continuously.
+153. Build an iterator that returns values in batches of three.
+154. Build an iterator that generates a sequence of random numbers.
+155. Build an iterator that returns a nested array's values one by one.
+156. Build an iterator that flattens a nested array using an iterator.
+157. Build an iterator that returns object properties one by one.
+158. Build a custom iterator with a return() cleanup method.
+159. Build an iterator that supports resetting its position.
+160. Build a reusable custom iterable that creates a fresh iterator every time.
+
+------------------------------------------------------------------------------
+
+N. Advanced Generator Concepts (161–175)
+
+161. What is a generator's execution lifecycle?
+162. Explain the difference between yield and yield*.
+163. What does yield* do?
+164. Can one generator delegate to another generator?
+165. Explain generator delegation with an example.
+166. What is a generator's internal state?
+167. What are the possible generator states?
+168. Explain next(value) with a practical example.
+169. How does .throw() work inside a generator?
+170. How does .return() affect a generator?
+171. What happens when return() is called inside a try...finally block in a generator?
+172. Can generators be infinite?
+173. What are asynchronous generators?
+174. What is for await...of?
+175. What is the difference between a generator and an async generator?
+
+------------------------------------------------------------------------------
+
+O. Advanced Generator Coding (176–190)
+
+176. Create a generator that produces numbers from 1 to 100.
+177. Create a generator that produces even numbers indefinitely.
+178. Create a generator for the Fibonacci sequence.
+179. Create a generator that produces prime numbers.
+180. Create a generator that produces factorial values.
+181. Create a generator that reverses a string one character at a time.
+182. Create a generator that produces array elements in batches.
+183. Create a generator that generates multiplication tables.
+184. Create a generator that yields values from multiple arrays using yield*.
+185. Create a generator that accepts a starting number through next(value).
+186. Create a generator that accepts values and calculates their running sum.
+187. Create a generator that handles errors using .throw().
+188. Create a generator that performs cleanup using finally.
+189. Create an async generator that produces values using await.
+190. Consume an async generator using for await...of.
+
+------------------------------------------------------------------------------
+
+P. Interview and Real-World Challenges (191–200)
+
+191. What is the difference between loops, iterables, iterators, and generators?
+192. Why are generators memory-efficient compared with creating large arrays?
+193. When would you choose an iterator instead of a normal loop?
+194. What is lazy evaluation, and how do generators support it?
+195. Explain how for...of works internally.
+196. Explain how break in for...of can close an iterator.
+197. What is the difference between Array.prototype.map() and an iterator's next()?
+198. How would you process one million records without loading them all into memory at once?
+199. Design a custom pagination iterator that returns 10 records per iteration.
+200. Build a complete custom iterable + generator combination that produces employee records one at a time.
+
+------------------------------------------------------------------------------

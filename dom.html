@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .myStyle {
+        color: red;
+        background-color: yellow;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      .mytitle {
+        color: white;
+        background-color: black;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 12px;
+        border-radius: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dom example in javascript</h1>
+    <h1 id="heading">Hello Sir</h1>
+
+    <h2>App Paragraphs Below Here:</h2>
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p>Third Paragraph</p>
+
+    <h3 class="title">Heading One</h3>
+
+    <p class="title">Paragraph One</p>
+
+    <p class="title">Paragraph Two</p>
+
+    <hr />
+
+    <h2>Query Selector Practice</h2>
+
+    <!-- 1. ID selector -->
+    <h3 id="myHeading">Select Me Using ID</h3>
+    <h3 id="myHeading">Select Me Using ID</h3>
+
+    <!-- 2. Class selector -->
+    <p class="myPara">First Class Paragraph</p>
+    <p class="myPara">Second Class Paragraph</p>
+
+    <!-- 3. Tag selector -->
+    <h4>First H4 Heading</h4>
+    <h4>Second H4 Heading</h4>
+
+    <!-- 4. Multiple classes -->
+    <div class="box active">First Box</div>
+    <div class="box">Second Box</div>
+    <div class="box active">Third Box</div>
+
+    <!-- 5. Attribute selector -->
+    <input type="text" placeholder="Enter Your Name" />
+    <input type="text" placeholder="Enter Your address" />
+    <input type="email" placeholder="Enter Your Email" />
+
+    <!-- 6. Nested selector -->
+    <div class="container">
+      <p>Paragraph inside container</p>
+      <h3>Heading inside container</h3>
+    </div>
+
+    <!-- 7. Child selector -->
+    <div class="parent">
+      <p>Direct Child One</p>
+      <p>Direct Child Two</p>
+
+      <section>
+        <p>Nested Child Paragraph</p>
+      </section>
+    </div>
+
+    <!-- 8. Button selector -->
+    <button class="btn">First Button</button>
+    <button class="btn">Second Button</button>
+
+    <!-- 9. Pseudo-class selector -->
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+
+    <div>
+      <input
+        type="password"
+        placeholder="please enter your password"
+        disabled
+      />
+    </div>
+
+    <input type="text" name="username" placeholder="Enter username" />
+
+    <input type="email" name="email" placeholder="Enter email" />
+
+    <input type="password" name="password" placeholder="Enter password" />
+
+    <hr />
+
+    <input type="radio" name="gender" value="Male" />
+    <input type="radio" name="gender" value="Female" />
+    <input type="radio" name="gender" value="Other" />
+
+    <!-- ==================================================================== -->
+
+    <hr />
+
+    <div id="myDiv">
+      <h4 style="padding: 20px; display: none">Hello Sir</h4>
+      <p>Learning JavaScript</p>
+    </div>
+
+    <!-- =================================== -->
+
+    <input
+      id="username"
+      type="text"
+      placeholder="Enter your name"
+      value="Chandan"
+    />
+
+    <div id="container">
+      <p id="myPara">Hello World</p>
+      <p id="oldPara">Old Content</p>
+    </div>
+
+
+    <hr>
+
+    <h3>EventListener example in javascript </h3>
+
+    <button id="mybutton">click me </button>
+
+
+    <!-- <script src="./dom_events/selectElements.js"></script> -->
+    <!-- <script src="./dom_events/accessElements.js"></script> -->
+    <!-- <script src="./dom_events/accessAttributes.js"></script> -->
+    <script src="./dom_events/Manipulatingdom.js"></script>
+  </body>
+</html>

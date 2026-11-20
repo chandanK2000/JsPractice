@@ -1,0 +1,463 @@
+---------------------------------------------------------------
+JavaScript DOM – 300+ Practice Questions
+Level 1: Basic DOM Selection (1–40)
+
+Practice selecting HTML elements using different DOM methods.
+1. Select an element using getElementById().
+2. Select an element using getElementsByClassName().
+3. Select all paragraph elements using getElementsByTagName().
+4. Select an element using querySelector().
+5. Select all elements using querySelectorAll().
+6. Select an element using its ID with querySelector().
+7. Select an element using its class with querySelector().
+8. Select all elements having the same class using querySelectorAll().
+9. Select the first <h1> element.
+10. Select all <h2> elements.
+11. Select all buttons from a webpage.
+12. Select all input elements.
+13. Select the first paragraph inside a div.
+14. Select all paragraphs inside a div.
+15. Select an element using a combination of ID and class.
+16. Select an element using a CSS attribute selector.
+17. Select all elements having the data-id attribute.
+18. Select an input using its type.
+19. Select an element using its name attribute.
+20. Select all elements having the required attribute.
+21. Select the first element with a particular class.
+22. Select the last element with a particular class.
+23. Select all elements with multiple classes.
+24. Select an element inside another element.
+25. Select all list items inside an unordered list.
+26. Select all links inside a navbar.
+27. Select all images inside a container.
+28. Select all checkboxes.
+29. Select all radio buttons.
+30. Select all elements having a specific attribute value.
+31. Select the first element using a CSS selector.
+32. Select multiple elements using a CSS selector.
+33. Select elements using a descendant selector.
+34. Select elements using a child selector.
+35. Select elements using a sibling selector.
+36. Select elements using a group selector.
+37. Select elements using :first-child.
+38. Select elements using :last-child.
+39. Select elements using :nth-child().
+40. Explain the difference between querySelector() and querySelectorAll() with an example.
+
+---------------------------------------------------------------
+
+Level 2: DOM Collections & Traversal (41–70)
+
+41. Display the length of a collection returned by getElementsByClassName().
+42. Display the length of a collection returned by querySelectorAll().
+43. Access the first element from a collection.
+44. Access the last element from a collection.
+45. Access the third element from a collection.
+46. Loop through elements using a for loop.
+47. Loop through elements using a while loop.
+48. Loop through elements using for...of.
+49. Loop through elements using forEach().
+50. Change the color of all paragraphs using a loop.
+51. Change the background color of all buttons.
+52. Change the font size of all headings.
+53. Hide all images using a loop.
+54. Display all elements having a particular class.
+55. Print the text of all paragraphs.
+56. Print the IDs of all selected elements.
+57. Print the classes of all selected elements.
+58. Print the tag names of all selected elements.
+59. Access the parent element using parentElement.
+60. Access the parent node using parentNode.
+61. Access the first child using firstElementChild.
+62. Access the last child using lastElementChild.
+63. Access the next sibling using nextElementSibling.
+64. Access the previous sibling using previousElementSibling.
+65. Access all children using children.
+66. Access all child nodes using childNodes.
+67. Count the number of children inside a div.
+68. Find the parent of a button.
+69. Find the closest element having a particular class using closest().
+70. Explain the difference between children and childNodes.
+
+---------------------------------------------------------------
+
+Level 3: Accessing & Modifying Content (71–110)
+
+Practice innerHTML, textContent, and innerText.
+71. Read the content of an element using innerHTML.
+72. Read the content of an element using textContent.
+73. Read the content of an element using innerText.
+74. Change the text of a paragraph using textContent.
+75. Change the text of a heading using innerText.
+76. Change the HTML content using innerHTML.
+77. Add bold text using innerHTML.
+78. Add an italic element using innerHTML.
+79. Add a line break using innerHTML.
+80. Add a link inside a paragraph using innerHTML.
+81. Replace the content of a div with new text.
+82. Replace the content of a div with new HTML.
+83. Clear the content of an element.
+84. Display a username inside a heading.
+85. Display a message inside a paragraph.
+86. Display the current date inside a div.
+87. Display the current time inside a div.
+88. Display the result of a calculation inside a paragraph.
+89. Add a prefix to existing text.
+90. Add a suffix to existing text.
+91. Append text to existing content.
+92. Replace existing text with new text.
+93. Remove all HTML content from a container.
+94. Add multiple paragraphs using innerHTML.
+95. Add a list of items using innerHTML.
+96. Add a table using innerHTML.
+97. Add an image using innerHTML.
+98. Add a button using innerHTML.
+99. Create a simple profile card using innerHTML.
+100. Create a product card using innerHTML.
+101. Compare innerHTML and textContent.
+102. Compare textContent and innerText.
+103. Explain what happens when HTML is assigned to textContent.
+104. Explain what happens when HTML is assigned to innerHTML.
+105. Read content from a hidden element using textContent.
+106. Read content from an element containing HTML tags.
+107. Replace text in a heading without changing its HTML structure.
+108. Display multiline content inside an element.
+109. Dynamically update a notification message.
+110. Create a welcome message based on a username variable.
+
+
+---------------------------------------------------------------
+Level 4: Attributes & Properties (111–150)
+
+Practice getAttribute(), setAttribute(), removeAttribute(), hasAttribute() and properties.
+111. Read an element's ID.
+112. Read an element's class name.
+113. Read an input's type.
+114. Read an input's placeholder.
+115. Read an input's value.
+116. Read an image's source.
+117. Read an image's alt text.
+118. Read a link's href.
+119. Read an element's title attribute.
+120. Read an attribute using getAttribute().
+121. Set an input's placeholder.
+122. Set an input's value.
+123. Change an input's type from text to password.
+124. Change an image's source.
+125. Change an image's alt text.
+126. Change a link's href.
+127. Change a link's text.
+128. Set a button's disabled property.
+129. Enable a disabled button.
+130. Set an element's title attribute.
+131. Add a custom attribute using setAttribute().
+132. Read a custom attribute using getAttribute().
+133. Remove an attribute using removeAttribute().
+134. Check whether an element has an attribute using hasAttribute().
+135. Add a required attribute dynamically.
+136. Remove the required attribute dynamically.
+137. Add a readonly attribute.
+138. Remove the readonly attribute.
+139. Add a disabled attribute.
+140. Remove the disabled attribute.
+141. Add a target="_blank" attribute to a link.
+142. Add a data-user-id attribute.
+143. Read a data-user-id attribute.
+144. Change an element's id.
+145. Change an element's class attribute.
+146. Compare getAttribute() and direct property access.
+147. Compare setAttribute() and direct property assignment.
+148. Explain the difference between HTML attributes and DOM properties.
+149. Create a button and dynamically add attributes to it.
+150. Create an image and dynamically set all required attributes.
+
+---------------------------------------------------------------
+Level 5: DOM Styling (151–185)
+
+Practice the style property and CSS manipulation.
+151. Change the text color of a paragraph.
+152. Change the background color of a div.
+153. Change the font size of a heading.
+154. Change the font family of an element.
+155. Change the font weight of a heading.
+156. Change the text alignment of a paragraph.
+157. Change the width of a div.
+158. Change the height of a div.
+159. Change the border of an element.
+160. Change the border radius of a button.
+161. Add padding to a div.
+162. Add margin to a div.
+163. Change the display property.
+164. Change an element's visibility.
+165. Hide an element using display: none.
+166. Show a hidden element using display: block.
+167. Change the opacity of an element.
+168. Change the cursor style of a button.
+169. Change the position of an element.
+170. Change the background image of an element.
+171. Change multiple styles of one element.
+172. Change multiple styles of multiple elements.
+173. Apply styles to all paragraphs using a loop.
+174. Apply styles to all buttons using a loop.
+175. Apply styles to all headings using a loop.
+176. Create a red warning message using JavaScript styles.
+177. Create a green success message using JavaScript styles.
+178. Create a highlighted paragraph using JavaScript styles.
+179. Change the styles of an element when a button is clicked.
+180. Change the styles of an element when the mouse moves over it.
+181. Reset the styles of an element.
+182. Read the inline style of an element.
+183. Change the width and height of an image.
+184. Create a simple card using JavaScript styles.
+185. Explain the difference between inline styles and CSS classes.
+
+---------------------------------------------------------------
+Level 6: classList Practice (186–220)
+
+Practice classList.add(), remove(), toggle(), contains().
+186. Add a class to an element using classList.add().
+187. Remove a class using classList.remove().
+188. Toggle a class using classList.toggle().
+189. Check whether an element contains a class using classList.contains().
+190. Add two classes to an element.
+191. Remove two classes from an element.
+192. Toggle a dark mode class.
+193. Toggle a light mode class.
+194. Toggle a hidden class.
+195. Toggle an active class on a button.
+196. Add a success class to a message.
+197. Add an error class to a message.
+198. Remove the error class after correcting input.
+199. Change a button's appearance using classList.
+200. Change a card's appearance using classList.
+201. Add a class to all paragraphs.
+202. Remove a class from all paragraphs.
+203. Toggle a class on all buttons.
+204. Check whether a heading contains a particular class.
+205. Create a dark mode toggle button.
+206. Create a show/hide password feature using classList.
+207. Create a sidebar toggle using classList.
+208. Create an active navigation menu using classList.
+209. Create a selected tab using classList.
+210. Create a notification badge using classList.
+211. Create a loading state using classList.
+212. Create a disabled state using classList.
+213. Create a form error state using classList.
+214. Create a form success state using classList.
+215. Add a class conditionally based on a variable.
+216. Remove a class conditionally based on a variable.
+217. Toggle multiple classes using JavaScript.
+218. Create a simple theme switcher.
+219. Create a button that changes between active and inactive states.
+220. Explain why classList is better than changing multiple inline styles in many situations.
+
+---------------------------------------------------------------
+Level 7: DOM Structure Manipulation (221–260)
+
+Practice createElement(), appendChild(), removeChild(), replaceChild() and related methods.
+221. Create a new paragraph using createElement().
+222. Create a new heading using createElement().
+223. Create a new button using createElement().
+224. Create a new div using createElement().
+225. Create a new list item using createElement().
+226. Create a new image using createElement().
+227. Create a new anchor using createElement().
+228. Create a new input using createElement().
+229. Create a new table row using createElement().
+230. Create a new table cell using createElement().
+231. Add a new paragraph using appendChild().
+232. Add a new heading using appendChild().
+233. Add a new button using appendChild().
+234. Add a new list item to an unordered list.
+235. Add five list items using a loop.
+236. Add ten paragraphs using a loop.
+237. Create a dynamic list using an array.
+238. Create a dynamic list of names using an array.
+239. Create a dynamic list of products using an array.
+240. Create a dynamic list of students using an array.
+241. Remove a paragraph using removeChild().
+242. Remove a list item using removeChild().
+243. Remove a button using removeChild().
+244. Remove the first child of a container.
+245. Remove the last child of a container.
+246. Remove all children from a container using a loop.
+247. Replace a paragraph with a heading using replaceChild().
+248. Replace a button with another button.
+249. Replace an image with another image.
+250. Replace a list item with another list item.
+251. Create an element and add its attributes dynamically.
+252. Create an element and add its class dynamically.
+253. Create an element and add its styles dynamically.
+254. Create a paragraph and add text using textContent.
+255. Create a paragraph and add HTML using innerHTML.
+256. Create a card dynamically with a heading, paragraph and button.
+257. Create a profile card dynamically.
+258. Create a product card dynamically.
+259. Create a notification element dynamically.
+260. Explain the difference between appendChild() and replaceChild().
+
+---------------------------------------------------------------
+
+Level 8: Event Handling Basics (261–300)
+
+Practice addEventListener() and common events.
+261. Add a click event to a button.
+262. Display an alert when a button is clicked.
+263. Display a message in the console when a button is clicked.
+264. Change a paragraph's text when a button is clicked.
+265. Change a heading's color when a button is clicked.
+266. Change the background color when a button is clicked.
+267. Hide a div when a button is clicked.
+268. Show a div when a button is clicked.
+269. Toggle the visibility of a div when a button is clicked.
+270. Change an image when a button is clicked.
+271. Change a button's text when it is clicked.
+272. Add a mouseover event to a button.
+273. Add a mouseout event to a button.
+274. Change a div's background when the mouse enters.
+275. Change a div's background when the mouse leaves.
+276. Add a dblclick event to an element.
+277. Display a message when an element is double-clicked.
+278. Add a keydown event to an input.
+279. Display the pressed key using keydown.
+280. Add a keyup event to an input.
+281. Display the entered text using keyup.
+282. Add an input event to a textbox.
+283. Display the current input value while typing.
+284. Add a change event to a select element.
+285. Display the selected option.
+286. Add a focus event to an input.
+287. Change an input's border color when focused.
+288. Add a blur event to an input.
+289. Display a message when the input loses focus.
+290. Add a submit event to a form.
+291. Prevent the default form submission.
+292. Display form data in the console.
+293. Display form data on the webpage.
+294. Add multiple event listeners to one button.
+295. Add the same event to multiple buttons.
+296. Add a click event to all paragraphs.
+297. Add a click event to all list items.
+298. Create a button that increments a counter.
+299. Create a button that decrements a counter.
+300. Create a button that resets a counter.
+
+---------------------------------------------------------------
+
+Level 9: Intermediate DOM & Event Handling (301–340)
+
+301. Create a counter with increment, decrement and reset buttons.
+302. Create a digital clock using DOM manipulation.
+303. Create a live character counter for a textarea.
+304. Create a live word counter for a textarea.
+305. Create a show/hide password feature.
+306. Create a password strength indicator.
+307. Create a color picker that changes the background.
+308. Create a button that generates a random background color.
+309. Create a button that generates a random number.
+310. Create a random quote generator.
+311. Create a simple calculator using DOM events.
+312. Create a temperature converter.
+313. Create a BMI calculator.
+314. Create a simple age calculator.
+315. Create a multiplication table generator.
+316. Create a dropdown that displays the selected value.
+317. Create a custom dropdown using DOM elements.
+318. Create a tabs system using click events.
+319. Create an accordion using click events.
+320. Create a modal popup using DOM manipulation.
+321. Create a modal popup with a close button.
+322. Close a modal when clicking outside it.
+323. Create a notification popup.
+324. Create a notification that disappears after a few seconds.
+325. Create a progress bar that updates when a button is clicked.
+326. Create a progress bar that increases automatically.
+327. Create a simple image gallery.
+328. Create next and previous buttons for an image gallery.
+329. Create a slideshow using DOM manipulation.
+330. Create a search box that filters a list of names.
+331. Create a search box that filters products.
+332. Create a search box that filters table rows.
+333. Create a dynamic dropdown based on an array.
+334. Create a dropdown where selecting a country displays its cities.
+335. Create a dropdown where selecting a category displays its products.
+336. Create a checkbox that selects all checkboxes.
+337. Create a checkbox that deselects all checkboxes.
+338. Create a checkbox that toggles all checkboxes.
+339. Display the number of selected checkboxes.
+340. Create a simple voting system using DOM events.
+
+---------------------------------------------------------------
+Level 10: Advanced DOM Practice (341–380)
+
+341. Create a dynamic table from an array of objects.
+342. Add a new row to a table using DOM manipulation.
+343. Delete a table row using a button.
+344. Edit a table row using a button.
+345. Create a student management table.
+346. Create a product management table.
+347. Create a user management table.
+348. Create a table with search functionality.
+349. Create a table with sorting functionality.
+350. Create a table with filtering functionality.
+351. Create a table with pagination.
+352. Create a table with add, edit and delete functionality.
+353. Create a dynamic form using DOM manipulation.
+354. Create a form that adds multiple input fields.
+355. Create a form that removes input fields.
+356. Create a form that adds multiple phone numbers.
+357. Create a form that adds multiple email addresses.
+358. Create a form that adds multiple skills.
+359. Create a form that adds multiple education records.
+360. Create a form that adds multiple experience records.
+361. Create a dynamic invoice form.
+362. Calculate the total amount dynamically.
+363. Calculate subtotal, tax and total dynamically.
+364. Create a shopping cart using DOM manipulation.
+365. Add products to a shopping cart.
+366. Remove products from a shopping cart.
+367. Increase and decrease product quantity.
+368. Calculate the shopping cart total.
+369. Display the number of items in the cart.
+370. Create a product filter by price.
+371. Create a product filter by category.
+372. Create a product filter by availability.
+373. Create a combined search and filter system.
+374. Create a drag-and-drop list.
+375. Create a sortable list.
+376. Create a dynamic sidebar menu.
+377. Create a collapsible sidebar.
+378. Create a responsive navbar toggle.
+379. Create a custom tooltip.
+380. Create a custom notification system.
+
+
+---------------------------------------------------------------
+Level 11: Real-World DOM Projects (381–400)
+
+These projects combine multiple DOM concepts together.
+No.	Project	Concepts
+381	Todo List	Create, delete, complete tasks
+382	Notes App	Create, edit, delete notes
+383	Expense Tracker	DOM, forms, calculations
+384	Calculator	Events, inputs, calculations
+385	Student Management System	CRUD, table, forms
+386	Product Management System	CRUD, search, filters
+387	Shopping Cart	Dynamic elements, calculations
+388	Quiz Application	Events, conditions, score
+389	Login Form Validation	Inputs, events, validation
+390	Registration Form	DOM, validation, error messages
+391	Weather UI	DOM, inputs, dynamic rendering
+392	Movie Search UI	Search, cards, filtering
+393	Image Gallery	DOM, events, navigation
+394	Kanban Board	Drag-and-drop, dynamic elements
+395	Inventory Dashboard	Tables, search, filters
+396	Admin Dashboard	Sidebar, tabs, cards, charts UI
+397	Employee Management UI	CRUD, forms, tables
+398	Dynamic Invoice Generator	Inputs, calculations, rows
+399	Multi-Step Registration Form	Events, validation, navigation
+400	Complete CRUD Dashboard	Create, read, update, delete, search, filter
+
+
+
+---------------------------------------------------------------

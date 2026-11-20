@@ -1,0 +1,1 @@
+console.log('--------------docuement reference example with w3schools---------');
